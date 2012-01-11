@@ -1,0 +1,88 @@
+@import 'nib'
+
+global-reset()
+
+iconic-stroke('iconic')
+
+iconic-before(letter='j', size=18px)
+  &:before
+    color rgba(0,0,0,0.5)
+    position relative
+    left -13px
+    top 2px
+    line-height 10px
+    content letter
+    font-family 'IconicStroke'
+    font-size size
+    font-weight normal
+
+blue = #377ad0
+
+html
+  background url('img/groovepaper.png') repeat
+  border-top 4px solid blue
+  border-bottom 4px solid blue
+
+body
+  font-family 'Gill Sans'
+  width 640px
+  margin 0 auto
+  line-height 1.5
+  padding 32px 64px
+  background none
+  text-shadow 0px 1px 0px #fff
+
+h1
+  font-size 96px
+
+p
+  font-size 20px
+
+#demo
+  display block
+
+
+.left, .right
+  width 320px
+
+.left
+  float left
+  & a
+    width 240px
+    download-button(bg = blue, height = 32px)
+    color #fff
+    font-size 16px
+    line-height 1.5
+    margin-bottom 16px
+    font-weight bold
+
+.right
+  float right
+
+  & a
+    minimal-button()
+    float right
+    width 160px
+    margin-bottom: 20px
+  
+  #twitter
+    iconic-before('@')
+
+  #group
+    iconic-before('j')
+
+.divider
+  border none
+  clear both
+  margin-bottom 32px
+
+#fork_me
+  display block
+  position absolute
+  top 0px
+  right 0px
+
+footer
+  clear both
+  text-align center
+  padding 32px
