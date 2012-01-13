@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AFHTTPClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AFHTTPClient</TokenIdentifier>
+			<Abstract type="html">AFHTTPClient captures the common patterns of communicating with an web application over HTTP. It encapsulates information like base URL, authorization credentials, and HTTP headers, and uses them to construct and manage the execution of HTTP request operations.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/setBaseURL:</TokenIdentifier>
+			<Abstract type="html">The url used as the base for paths specified in methods such as getPath:parameteres:success:failure</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSURL *baseURL</Declaration>
+			
+			
+			<Anchor>//api/name/baseURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFHTTPClient/baseURL</TokenIdentifier>
+			<Abstract type="html">The url used as the base for paths specified in methods such as getPath:parameteres:success:failure</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSURL *baseURL</Declaration>
+			
+			
+			<Anchor>//api/name/baseURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/setStringEncoding:</TokenIdentifier>
+			<Abstract type="html">The string encoding used in constructing url requests. This is NSUTF8StringEncoding by default.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSStringEncoding stringEncoding</Declaration>
+			
+			
+			<Anchor>//api/name/stringEncoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFHTTPClient/stringEncoding</TokenIdentifier>
+			<Abstract type="html">The string encoding used in constructing url requests. This is NSUTF8StringEncoding by default.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSStringEncoding stringEncoding</Declaration>
+			
+			
+			<Anchor>//api/name/stringEncoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/setParameterEncoding:</TokenIdentifier>
+			<Abstract type="html">The AFHTTPClientParameterEncoding value corresponding to how parameters are encoded into a request body. This is AFFormURLParameterEncoding by default.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) AFHTTPClientParameterEncoding parameterEncoding</Declaration>
+			
+			
+			<Anchor>//api/name/parameterEncoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFHTTPClient/parameterEncoding</TokenIdentifier>
+			<Abstract type="html">The AFHTTPClientParameterEncoding value corresponding to how parameters are encoded into a request body. This is AFFormURLParameterEncoding by default.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) AFHTTPClientParameterEncoding parameterEncoding</Declaration>
+			
+			
+			<Anchor>//api/name/parameterEncoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/setOperationQueue:</TokenIdentifier>
+			<Abstract type="html">The operation queue which manages operations enqueued by the HTTP client.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSOperationQueue *operationQueue</Declaration>
+			
+			
+			<Anchor>//api/name/operationQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFHTTPClient/operationQueue</TokenIdentifier>
+			<Abstract type="html">The operation queue which manages operations enqueued by the HTTP client.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSOperationQueue *operationQueue</Declaration>
+			
+			
+			<Anchor>//api/name/operationQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AFHTTPClient/clientWithBaseURL:</TokenIdentifier>
+			<Abstract type="html">Creates and initializes an AFHTTPClient object with the specified base URL.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>+ (AFHTTPClient *)clientWithBaseURL:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The base URL for the HTTP client. This argument must not be nil.
+  </Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The newly-initialized HTTP client</Abstract></ReturnValue>
+			<Anchor>//api/name/clientWithBaseURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/initWithBaseURL:</TokenIdentifier>
+			<Abstract type="html">Initializes an AFHTTPClient object with the specified base URL.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithBaseURL:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The base URL for the HTTP client. This argument must not be nil.
+
+@discussion This is the designated initializer.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The newly-initialized HTTP client</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithBaseURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/registerHTTPOperationClass:</TokenIdentifier>
+			<Abstract type="html">Attempts to register a class conforming to the AFHTTPClientOperation protocol, adding it to a chain to automatically generate request operations from a URL request.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)registerHTTPOperationClass:(Class)operationClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>The</Name>
+					<Abstract type="html">class conforming to the AFHTTPClientOperation protocol to register</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the registration is successful, NO otherwise. The only failure condition is if operationClass does not conform to the AFHTTPCLientOperation protocol.
+
+@discussion When enqueueHTTPRequestOperationWithRequest:success:failure is invoked, each registered class is consulted in turn to see if it can handle the specific request. The first class to return YES when sent a canProcessRequest: message is used to generate an operation using HTTPRequestOperationWithRequest:success:failure:. There is no guarantee that all registered classes will be consulted. Classes are consulted in the reverse order of their registration. Attempting to register an already-registered class will move it to the top of the chain.</Abstract></ReturnValue>
+			<Anchor>//api/name/registerHTTPOperationClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/unregisterHTTPOperationClass:</TokenIdentifier>
+			<Abstract type="html">Unregisteres the specified class conforming to the AFHTTPClientOperation protocol.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)unregisterHTTPOperationClass:(Class)operationClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>The</Name>
+					<Abstract type="html">class conforming to the AFHTTPClientOperation protocol to unregister
+
+@discussion After this method is invoked, operationClass is no longer consulted when requestWithMethod:path:parameters is invoked.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unregisterHTTPOperationClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/defaultValueForHeader:</TokenIdentifier>
+			<Abstract type="html">Returns the value for the HTTP headers set in request objects created by the HTTP client.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)defaultValueForHeader:(NSString *)header</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>header</Name>
+					<Abstract type="html">The HTTP header to return the default value for</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The default value for the HTTP header, or nil if unspecified</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultValueForHeader:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/setDefaultHeader:value:</TokenIdentifier>
+			<Abstract type="html">Sets the value for the HTTP headers set in request objects made by the HTTP client. If nil, removes the existing value for that header.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)setDefaultHeader:(NSString *)header value:(NSString *)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>header</Name>
+					<Abstract type="html">The HTTP header to set a default value for</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">The value set as default for the specified header, or `nil</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDefaultHeader:value:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/setAuthorizationHeaderWithUsername:password:</TokenIdentifier>
+			<Abstract type="html">Sets the "Authorization" HTTP header set in request objects made by the HTTP client to a basic authentication value with Base64-encoded username and password. This overwrites any existing value for this header.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)setAuthorizationHeaderWithUsername:(NSString *)username password:(NSString *)password</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>username</Name>
+					<Abstract type="html">The HTTP basic auth username</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract type="html">The HTTP basic auth password</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setAuthorizationHeaderWithUsername:password:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/setAuthorizationHeaderWithToken:</TokenIdentifier>
+			<Abstract type="html">Sets the "Authorization" HTTP header set in request objects made by the HTTP client to a token-based authentication value, such as an OAuth access token. This overwrites any existing value for this header.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)setAuthorizationHeaderWithToken:(NSString *)token</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>token</Name>
+					<Abstract type="html">The authentication token</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setAuthorizationHeaderWithToken:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/clearAuthorizationHeader</TokenIdentifier>
+			<Abstract type="html">Clears any existing value for the "Authorization" HTTP header.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)clearAuthorizationHeader</Declaration>
+			
+			
+			<Anchor>//api/name/clearAuthorizationHeader</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/requestWithMethod:path:parameters:</TokenIdentifier>
+			<Abstract type="html">Creates an NSMutableURLRequest object with the specified HTTP method and path. By default, this method scans through the registered operation classes (in reverse order of when they were specified), until finding one that can handle the specified request.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/AFHTTPClientOperation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSMutableURLRequest *)requestWithMethod:(NSString *)method path:(NSString *)path parameters:(NSDictionary *)parameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>method</Name>
+					<Abstract type="html">The HTTP method for the request, such as GET, POST, PUT, or DELETE.</Abstract>
+				</Parameter><Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to be appended to the HTTP client's base URL and used as the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be either set as a query string for GET requests, or the request HTTP body.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSMutableURLRequest object</Abstract></ReturnValue>
+			<Anchor>//api/name/requestWithMethod:path:parameters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/multipartFormRequestWithMethod:path:parameters:constructingBodyWithBlock:</TokenIdentifier>
+			<Abstract type="html">Creates an NSMutableURLRequest object with the specified HTTP method and path, and constructs a multipart/form-data HTTP body, using the specified parameters and multipart form data block. See http://www.w3.org/TR/html4/interact/forms.html#h-17.13.4.2</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AFMultipartFormData</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSMutableURLRequest *)multipartFormRequestWithMethod:(NSString *)method path:(NSString *)path parameters:(NSDictionary *)parameters constructingBodyWithBlock:(void ( ^ ) ( id&lt;AFMultipartFormData&gt; formData ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>method</Name>
+					<Abstract type="html">The HTTP method for the request. Must be either POST, PUT, or DELETE.</Abstract>
+				</Parameter><Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to be appended to the HTTP client's base URL and used as the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded and set in the request HTTP body.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block that takes a single argument and appends data to the HTTP body. The block argument is an object adopting the AFMultipartFormData protocol. This can be used to upload files, encode HTTP body as JSON or XML, or specify multiple values for the same parameter, as one might for array values.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSMutableURLRequest object</Abstract></ReturnValue>
+			<Anchor>//api/name/multipartFormRequestWithMethod:path:parameters:constructingBodyWithBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/enqueueHTTPRequestOperationWithRequest:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates and enqueues an AFHTTPRequestOperation to the HTTP client's operation queue.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)enqueueHTTPRequestOperationWithRequest:(NSURLRequest *)request success:(void ( ^ ) ( id object ))success failure:(void ( ^ ) ( NSHTTPURLResponse *response , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The request object to be loaded asynchronously during execution of the operation.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the request operation finishes successfully. This block has no return value and takes a single argument, which is an object created from the response data of request.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the resonse data. This block has no return value and takes a single argument, which is the NSError object describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enqueueHTTPRequestOperationWithRequest:success:failure:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/enqueueHTTPRequestOperation:</TokenIdentifier>
+			<Abstract type="html">Enqueues an AFHTTPRequestOperation to the HTTP client's operation queue.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)enqueueHTTPRequestOperation:(AFHTTPRequestOperation *)operation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>operation</Name>
+					<Abstract type="html">The HTTP request operation to be enqueued.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enqueueHTTPRequestOperation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/cancelHTTPOperationsWithMethod:andURL:</TokenIdentifier>
+			<Abstract type="html">Cancels all operations in the HTTP client's operation queue that match the specified HTTP method and URL.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancelHTTPOperationsWithMethod:(NSString *)method andURL:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>method</Name>
+					<Abstract type="html">The HTTP method to match for the cancelled requests, such as GET, POST, PUT, or DELETE.</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The URL to match for the cancelled requests.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cancelHTTPOperationsWithMethod:andURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/getPath:parameters:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates an AFHTTPRequestOperation with a GET request, and enqueues it to the HTTP client's operation queue.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)getPath:(NSString *)path parameters:(NSDictionary *)parameters success:(void ( ^ ) ( id object ))success failure:(void ( ^ ) ( NSHTTPURLResponse *response , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to be appended to the HTTP client's base URL and used as the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded and appended as the query string for the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the request operation finishes successfully, with a status code in the 2xx range, and with an acceptable content type (e.g. application/json). This block has no return value and takes a single argument, which is the response object created from the response data of request.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the resonse data as JSON. This block has no return value and takes a single argument, which is the NSError object describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getPath:parameters:success:failure:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/postPath:parameters:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates an AFHTTPRequestOperation with a POST request, and enqueues it to the HTTP client's operation queue.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)postPath:(NSString *)path parameters:(NSDictionary *)parameters success:(void ( ^ ) ( id object ))success failure:(void ( ^ ) ( NSHTTPURLResponse *response , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to be appended to the HTTP client's base URL and used as the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded and set in the request HTTP body.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the request operation finishes successfully, with a status code in the 2xx range, and with an acceptable content type (e.g. application/json). This block has no return value and takes a single argument, which is the response object created from the response data of request.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the resonse data as JSON. This block has no return value and takes a single argument, which is the NSError object describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/postPath:parameters:success:failure:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/putPath:parameters:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates an AFHTTPRequestOperation with a PUT request, and enqueues it to the HTTP client's operation queue.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)putPath:(NSString *)path parameters:(NSDictionary *)parameters success:(void ( ^ ) ( id object ))success failure:(void ( ^ ) ( NSHTTPURLResponse *response , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to be appended to the HTTP client's base URL and used as the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded and set in the request HTTP body.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the request operation finishes successfully, with a status code in the 2xx range, and with an acceptable content type (e.g. application/json). This block has no return value and takes a single argument, which is the response object created from the response data of request.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the resonse data as JSON. This block has no return value and takes a single argument, which is the NSError object describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/putPath:parameters:success:failure:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPClient/deletePath:parameters:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates an AFHTTPRequestOperation with a DELETE request, and enqueues it to the HTTP client's operation queue.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)deletePath:(NSString *)path parameters:(NSDictionary *)parameters success:(void ( ^ ) ( id object ))success failure:(void ( ^ ) ( NSHTTPURLResponse *response , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to be appended to the HTTP client's base URL and used as the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded and set in the request HTTP body.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the request operation finishes successfully, with a status code in the 2xx range, and with an acceptable content type (e.g. application/json). This block has no return value and takes a single argument, which is the response object created from the response data of request.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the resonse data as JSON. This block has no return value and takes a single argument, which is the NSError object describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deletePath:parameters:success:failure:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

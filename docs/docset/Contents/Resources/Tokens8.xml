@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AFHTTPClientOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AFHTTPClientOperation</TokenIdentifier>
+			<Abstract type="html">The AFHTTPClientOperation protocol defines the methods used for the automatic content parsing functionality of AFHTTPClient.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AFHTTPClient</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFHTTPClientOperation/canProcessRequest:</TokenIdentifier>
+			<Abstract type="html">A Boolean value determining whether or not the class can process the specified request. For example, AFJSONRequestOperation may check to make sure the content type was application/json or the URL path extension was .json.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)canProcessRequest:(NSURLRequest *)urlRequest</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urlRequest</Name>
+					<Abstract type="html">The request that is determined to be supported or not supported for this class.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/canProcessRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFHTTPClientOperation/HTTPRequestOperationWithRequest:success:failure:</TokenIdentifier>
+			<Abstract type="html">Constructs and initializes an operation with success and failure callbacks.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>+ (id)HTTPRequestOperationWithRequest:(NSURLRequest *)urlRequest success:(void ( ^ ) ( id object ))success failure:(void ( ^ ) ( NSHTTPURLResponse *response , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urlRequest</Name>
+					<Abstract type="html">The request used by the operation connection.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the operation finishes successfully. The block has no return value and takes a single argument, the response object from the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the operation finishes unsuccessfully. The block has no return value and takes two arguments: the response received from the server, and the error describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/HTTPRequestOperationWithRequest:success:failure:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
