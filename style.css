@@ -8,6 +8,7 @@ a img{border:none}
 html{background:url("img/groovepaper.png") repeat;border-top:4px solid #377ad0;border-bottom:4px solid #377ad0}
 body{font-family:'Gill Sans';width:640px;margin:0 auto;line-height:1.5;padding:32px 64px;background:none;text-shadow:0 1px 0 #fff}
 h1{font-size:96px}
+h2{font-size:56px}
 p{font-size:20px}
 #demo{display:block}
 .left,.right{width:320px}

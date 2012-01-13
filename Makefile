@@ -1,7 +1,7 @@
-JADE = $(shell find *.jade)
+JADE = $(shell find . -name *.jade)
 HTML = $(JADE:.jade=.html)
 
-STYLUS = $(shell find *.styl)
+STYLUS = $(shell find . -name *.styl)
 CSS = $(STYLUS:.styl=.css)
 
 STYLUS_PARAMETERS = -I /usr/local/lib/node_modules/nib/lib/
