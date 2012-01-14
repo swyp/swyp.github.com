@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/swypPendingConnectionManagerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/swypPendingConnectionManagerDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypPendingConnectionManagerDelegate/swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:</TokenIdentifier>
+			<Abstract type="html">	
+	callback is called only after a connectionMethodTimedOut: or addSwypClientCandidate:forSwypRef:forConnectionMethod:
+		* not called after a nextConnectionSessionToAttemptHandshakeForSwypRef:
+			instead, you should call nextConnectionSessionToAttemptHandshakeForSwypRef: until == nil</Abstract>
+			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:(swypInfoRef *)ref</Declaration>
+			
+			
+			<Anchor>//api/name/swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypPendingConnectionManagerDelegate/swypPendingConnectionManagerFinishedForSwyp:</TokenIdentifier>
+			<Abstract type="html">called anytime ref is no longer needed; including clearAllPendingConnectionsForSwypRef</Abstract>
+			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)swypPendingConnectionManagerFinishedForSwyp:(swypInfoRef *)ref</Declaration>
+			
+			
+			<Anchor>//api/name/swypPendingConnectionManagerFinishedForSwyp:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

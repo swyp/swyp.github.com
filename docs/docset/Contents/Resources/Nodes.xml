@@ -16,6 +16,7 @@
 						<NodeRef refid="4"/>
 						<NodeRef refid="5"/>
 						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
 						
 					</Subnodes>
 				</Node>
@@ -25,7 +26,7 @@
 					<Name>Categories</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
 						
 					</Subnodes>
 				</Node>
@@ -35,8 +36,9 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="8"/>
 						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
 						
 					</Subnodes>
 				</Node>
@@ -69,19 +71,27 @@
 			<Name>swypNetworkAccessMonitor</Name>
 			<Path>Classes/swypNetworkAccessMonitor.html</Path>
 		</Node>
-		
 		<Node id="7">
+			<Name>swypPendingConnectionManager</Name>
+			<Path>Classes/swypPendingConnectionManager.html</Path>
+		</Node>
+		
+		<Node id="8">
 			<Name>NSString(swypFileTypeNSStringAdditions)</Name>
 			<Path>Categories/NSString+swypFileTypeNSStringAdditions.html</Path>
 		</Node>
 		
-		<Node id="8">
+		<Node id="9">
 			<Name>AFHTTPClientOperation</Name>
 			<Path>Protocols/AFHTTPClientOperation.html</Path>
 		</Node>
-		<Node id="9">
+		<Node id="10">
 			<Name>AFMultipartFormData</Name>
 			<Path>Protocols/AFMultipartFormData.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>swypPendingConnectionManagerDelegate</Name>
+			<Path>Protocols/swypPendingConnectionManagerDelegate.html</Path>
 		</Node>
 		
 	</Library>
