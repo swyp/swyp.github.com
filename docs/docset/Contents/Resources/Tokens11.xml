@@ -1,47 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/swypHandshakeManager.html">
+	<File path="Classes/swypGestureRecognizer.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/swypHandshakeManager</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>swypHandshakeManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/swypGestureRecognizer</TokenIdentifier>
+			<Abstract type="html">This class and its subclasses handle the actual detection of swyp gestures on UIViews.
+	
+	This class acts as a typical touch recognizer, and as such is not a permenent representation of a gesture-- see swypInfoRef for that. </Abstract>
+			<DeclaredIn>swypGestureRecognizer.h</DeclaredIn>
 			
 			<NodeRef refid="11"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypHandshakeManager/referenceSwypOutAsPending:</TokenIdentifier>
-			<Abstract type="html">Increment reference count for a particular swyp out.</Abstract>
-			<DeclaredIn>swypHandshakeManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypGestureRecognizer/swypGestureInfo</TokenIdentifier>
+			<Abstract type="html">The permenent representation of the current gesture.</Abstract>
+			<DeclaredIn>swypGestureRecognizer.h</DeclaredIn>			
 			
-			<Declaration>- (void)referenceSwypOutAsPending:(swypInfoRef *)swypInfoRef</Declaration>
+			<Declaration>- (swypInfoRef *)swypGestureInfo</Declaration>
 			
 			
-			<Anchor>//api/name/referenceSwypOutAsPending:</Anchor>
+			<Anchor>//api/name/swypGestureInfo</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypHandshakeManager/connectionIsPendingForSwypRef:</TokenIdentifier>
-			<Abstract type="html">Returns whether connection is pending for swypInfoRef;</Abstract>
-			<DeclaredIn>swypHandshakeManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypGestureRecognizer/velocity</TokenIdentifier>
+			<Abstract type="html">This is the velocity of a finger of the screen in mm/sec</Abstract>
+			<DeclaredIn>swypGestureRecognizer.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)connectionIsPendingForSwypRef:(swypInfoRef *)ref</Declaration>
-			
-			
-			<Anchor>//api/name/connectionIsPendingForSwypRef:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypHandshakeManager/beginHandshakeProcessWithConnectionSession:forSwypRef:</TokenIdentifier>
-			<Abstract type="html">The method for attaching swypConnectionSessions which have already been paired through NSInputStreams and NSOutputStreams, and supposedly work.</Abstract>
-			<DeclaredIn>swypHandshakeManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)beginHandshakeProcessWithConnectionSession:(swypConnectionSession *)session forSwypRef:(swypInfoRef *)ref</Declaration>
+			<Declaration>- (double)velocity</Declaration>
 			
 			
-			<Anchor>//api/name/beginHandshakeProcessWithConnectionSession:forSwypRef:</Anchor>
+			<Anchor>//api/name/velocity</Anchor>
 		</Token>
 		
 	</File>

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/swypPhotoArrayDatasource.html">
+	<File path="Protocols/swypConnectionSessionDataDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/swypPhotoArrayDatasource</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intf/swypConnectionSessionDataDelegate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>swypPhotoArrayDatasource.h</DeclaredIn>
+			<DeclaredIn>swypConnectionSession.h</DeclaredIn>
 			
-			<NodeRef refid="17"/>
+			<NodeRef refid="22"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypConnectionSessionDataDelegate/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</TokenIdentifier>
 			<Abstract type="html">See whether delegate will handle data stream.</Abstract>
-			<DeclaredIn>swypPhotoArrayDatasource.m</DeclaredIn>			
+			<DeclaredIn>swypConnectionSession.h</DeclaredIn>			
 			
 			<Declaration>- (BOOL)delegateWillHandleDiscernedStream:(swypDiscernedInputStream *)discernedStream wantsAsData:(BOOL *)wantsProvidedAsNSData inConnectionSession:(swypConnectionSession *)session</Declaration>
 			

@@ -1,59 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/swypInfoRef.html">
+	<File path="Classes/swypHandshakeManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/swypInfoRef</TokenIdentifier>
-			<Abstract type="html">This class encapsulates the logical components of the gestures found in swypGestureRecognizer.
-	The swypInfoRef is the tracking method for all connections based on gestures. </Abstract>
-			<DeclaredIn>swypInfoRef.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/swypHandshakeManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>swypHandshakeManager.h</DeclaredIn>
 			
 			<NodeRef refid="12"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypInfoRef/setStartPoint:</TokenIdentifier>
-			<Abstract type="html">in mm/second</Abstract>
-			<DeclaredIn>swypInfoRef.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypHandshakeManager/referenceSwypOutAsPending:</TokenIdentifier>
+			<Abstract type="html">Increment reference count for a particular swyp out.</Abstract>
+			<DeclaredIn>swypHandshakeManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) CGPoint startPoint</Declaration>
+			<Declaration>- (void)referenceSwypOutAsPending:(swypInfoRef *)swypInfoRef</Declaration>
 			
 			
-			<Anchor>//api/name/startPoint</Anchor>
+			<Anchor>//api/name/referenceSwypOutAsPending:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/swypInfoRef/startPoint</TokenIdentifier>
-			<Abstract type="html">in mm/second</Abstract>
-			<DeclaredIn>swypInfoRef.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypHandshakeManager/connectionIsPendingForSwypRef:</TokenIdentifier>
+			<Abstract type="html">Returns whether connection is pending for swypInfoRef;</Abstract>
+			<DeclaredIn>swypHandshakeManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) CGPoint startPoint</Declaration>
+			<Declaration>- (BOOL)connectionIsPendingForSwypRef:(swypInfoRef *)ref</Declaration>
 			
 			
-			<Anchor>//api/name/startPoint</Anchor>
+			<Anchor>//api/name/connectionIsPendingForSwypRef:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypInfoRef/setSwypBeginningContentView:</TokenIdentifier>
-			<Abstract type="html">property is filled when swyp out occurs on top of displayed content, not filled when swyp begins on workspace</Abstract>
-			<DeclaredIn>swypInfoRef.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypHandshakeManager/beginHandshakeProcessWithConnectionSession:forSwypRef:</TokenIdentifier>
+			<Abstract type="html">The method for attaching swypConnectionSessions which have already been paired through NSInputStreams and NSOutputStreams, and supposedly work.</Abstract>
+			<DeclaredIn>swypHandshakeManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIView *swypBeginningContentView</Declaration>
+			<Declaration>- (void)beginHandshakeProcessWithConnectionSession:(swypConnectionSession *)session forSwypRef:(swypInfoRef *)ref</Declaration>
 			
 			
-			<Anchor>//api/name/swypBeginningContentView</Anchor>
+			<Anchor>//api/name/beginHandshakeProcessWithConnectionSession:forSwypRef:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/swypInfoRef/swypBeginningContentView</TokenIdentifier>
-			<Abstract type="html">property is filled when swyp out occurs on top of displayed content, not filled when swyp begins on workspace</Abstract>
-			<DeclaredIn>swypInfoRef.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypHandshakeManager/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</TokenIdentifier>
+			<Abstract type="html">See whether delegate will handle data stream.</Abstract>
+			<DeclaredIn>swypHandshakeManager.m</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIView *swypBeginningContentView</Declaration>
+			<Declaration>- (BOOL)delegateWillHandleDiscernedStream:(swypDiscernedInputStream *)discernedStream wantsAsData:(BOOL *)wantsProvidedAsNSData inConnectionSession:(swypConnectionSession *)session</Declaration>
 			
 			
-			<Anchor>//api/name/swypBeginningContentView</Anchor>
+			<Anchor>//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</Anchor>
 		</Token>
 		
 	</File>

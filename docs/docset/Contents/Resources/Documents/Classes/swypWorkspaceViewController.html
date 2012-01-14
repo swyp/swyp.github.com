@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>NSString(swypFileTypeNSStringAdditions) Category Reference</title>
+		<title>swypWorkspaceViewController Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">NSString(swypFileTypeNSStringAdditions) Category Reference</h1>
+				<h1 class="hideInXcode">swypWorkspaceViewController Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -38,22 +38,18 @@
 	
 	
 	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/showContentWithoutConnection">&nbsp;&nbsp;&nbsp;&nbsp;showContentWithoutConnection</option>
 	
 	
-	<option value="class_methods">Class Methods</option>
-	
-	<option value="//api/name/imageJPEGFileType">&nbsp;&nbsp;&nbsp;&nbsp;+ imageJPEGFileType</option>
-	
-	<option value="//api/name/imagePNGFileType">&nbsp;&nbsp;&nbsp;&nbsp;+ imagePNGFileType</option>
-	
-	<option value="//api/name/swypControlPacketFileType">&nbsp;&nbsp;&nbsp;&nbsp;+ swypControlPacketFileType</option>
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/isFileType:">&nbsp;&nbsp;&nbsp;&nbsp;- isFileType:</option>
+	<option value="//api/name/initWithWorkspaceDelegate:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithWorkspaceDelegate:</option>
 	
 	
 	
@@ -77,23 +73,19 @@
 
 
 
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageJPEGFileType">imageJPEGFileType</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imagePNGFileType">imagePNGFileType</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/swypControlPacketFileType">swypControlPacketFileType</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showContentWithoutConnection">showContentWithoutConnection</a></span></li>
 	
 </ul></li>
 
 
 
+
+
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isFileType:">isFileType:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithWorkspaceDelegate:">initWithWorkspaceDelegate:</a></span></li>
 	
 </ul></li>
 
@@ -102,7 +94,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="NSString(swypFileTypeNSStringAdditions) Category Reference" name="top"></a>
+				<a title="swypWorkspaceViewController Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -111,15 +103,21 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">NSString(swypFileTypeNSStringAdditions) Category Reference</h1>
+						<h1 class="title title-header">swypWorkspaceViewController Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">UIGestureRecognizerDelegate<br />swypConnectionManagerDelegate<br />swypContentInteractionManagerDelegate</td>
+</tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">swypFileTypeString.h<br />swypFileTypeString.m</td>
+	<td class="specification-value">swypWorkspaceViewController.h<br />swypWorkspaceViewController.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -129,10 +127,10 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Predefinied file types to use if needed</p>
+						<p>This class is the UIViewController displayed to the user.</p>
 
-<pre><code>PNG is manditory if your app exports data.
-</code></pre>
+<p>Set a datasource, display it to the user, and you&rsquo;re off!
+See <a href="../Classes/swypContentInteractionManager.html">swypContentInteractionManager</a> for methods for setting display view controller and data model.</p>
 					</div>
 					
 					
@@ -150,37 +148,15 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/isFileType:">&ndash;&nbsp;isFileType:</a></code>
-		<span class="tooltip"><p>File type equality check</p></span>
+		<code><a href="#//api/name/showContentWithoutConnection">&nbsp;&nbsp;showContentWithoutConnection</a></code>
+		<span class="tooltip"><p>if set to TRUE, then content is displayed before swyp connection is made, and if content is swyped, then connection + content transfer is made</p></span>
 	</span>
-	
+	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/imagePNGFileType">+&nbsp;imagePNGFileType</a></code>
-		<span class="tooltip"><pre><code>    PNG, the universally supported filetype.
-</code></pre></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/imageJPEGFileType">+&nbsp;imageJPEGFileType</a></code>
-		<span class="tooltip"><pre><code>jpeg is a way smaller smaller file than PNG; perhaps it's a good thing to support too
-
-MIME: "image/jpeg"
-</code></pre></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/swypControlPacketFileType">+&nbsp;swypControlPacketFileType</a></code>
-		<span class="tooltip"><pre><code>    Used in conjunction with specifc tags during connection negotiation.
-    Used to set things like session hue color.
-    Used to notify peer of changes in connection state, like intention to terminate.
-    MIME: "swyp/ControlPacket"
-</code></pre></span>
+		<code><a href="#//api/name/initWithWorkspaceDelegate:">&ndash;&nbsp;initWithWorkspaceDelegate:</a></code>
+		<span class="tooltip"><p>the main workspace init method</p></span>
 	</span>
 	
 	
@@ -193,27 +169,22 @@ MIME: "image/jpeg"
 					
 					
 					
-					
-					
 					<div class="section section-methods">
-						<a title="Class Methods" name="class_methods"></a>
-						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/imageJPEGFileType" title="imageJPEGFileType"></a>
-	<h3 class="subsubtitle method-title">imageJPEGFileType</h3>
+	<a name="//api/name/showContentWithoutConnection" title="showContentWithoutConnection"></a>
+	<h3 class="subsubtitle method-title">showContentWithoutConnection</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<pre><code>jpeg is a way smaller smaller file than PNG; perhaps it's a good thing to support too
-
-MIME: "image/jpeg"
-</code></pre>
+		<p>if set to TRUE, then content is displayed before swyp connection is made, and if content is swyped, then connection + content transfer is made</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>+ (id)imageJPEGFileType</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL showContentWithoutConnection</code></div>
 	
 	
 	
@@ -224,10 +195,7 @@ MIME: "image/jpeg"
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<pre><code>jpeg is a way smaller smaller file than PNG; perhaps it's a good thing to support too
-
-MIME: "image/jpeg"
-</code></pre>
+		<p>if set to TRUE, then content is displayed before swyp connection is made, and if content is swyped, then connection + content transfer is made</p><div class="warning"><p>this method is deprecated. The default is now YES.</p></div>
 	</div>
 	
 	
@@ -238,101 +206,7 @@ MIME: "image/jpeg"
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">swypFileTypeString.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/imagePNGFileType" title="imagePNGFileType"></a>
-	<h3 class="subsubtitle method-title">imagePNGFileType</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<pre><code>    PNG, the universally supported filetype.
-</code></pre>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>+ (id)imagePNGFileType</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<pre><code>    PNG, the universally supported filetype.
-</code></pre>
-
-<p>This is the one type that all swypDataContent <em>must</em> support exporting. I&rsquo;m serious&mdash; I will develop blacklisting, implement exceptions, etc.
-You can choose whatever you want your app to accept, but obviously PNG is a good option.</p>
-
-<pre><code>MIME: "image/png"
-</code></pre><div class="warning"><p>This is the one type that all swypDataContent <em>must</em> support exporting.</p></div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">swypFileTypeString.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/swypControlPacketFileType" title="swypControlPacketFileType"></a>
-	<h3 class="subsubtitle method-title">swypControlPacketFileType</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<pre><code>    Used in conjunction with specifc tags during connection negotiation.
-    Used to set things like session hue color.
-    Used to notify peer of changes in connection state, like intention to terminate.
-    MIME: "swyp/ControlPacket"
-</code></pre>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>+ (id)swypControlPacketFileType</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<pre><code>    Used in conjunction with specifc tags during connection negotiation.
-    Used to set things like session hue color.
-    Used to notify peer of changes in connection state, like intention to terminate.
-    MIME: "swyp/ControlPacket"
-</code></pre><div class="warning"><p>an exception is thrown if you use this yourself. Use invalidate on <a href="../Classes/swypConnectionSession.html">swypConnectionSession</a> instead.</p></div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">swypFileTypeString.h</code><br />
+		<code class="declared-in-ref">swypWorkspaceViewController.h</code><br />
 	</div>				
 	
 	
@@ -342,22 +216,24 @@ You can choose whatever you want your app to accept, but obviously PNG is a good
 					
 					
 					
+					
+					
 					<div class="section section-methods">
 						<a title="Instance Methods" name="instance_methods"></a>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/isFileType:" title="isFileType:"></a>
-	<h3 class="subsubtitle method-title">isFileType:</h3>
+	<a name="//api/name/initWithWorkspaceDelegate:" title="initWithWorkspaceDelegate:"></a>
+	<h3 class="subsubtitle method-title">initWithWorkspaceDelegate:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>File type equality check</p>
+		<p>the main workspace init method</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (BOOL)isFileType:(NSString *)<em>fileType</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)initWithWorkspaceDelegate:(id&lt;swypWorkspaceDelegate&gt;)<em>worspaceDelegate</em></code></div>
 	
 	
 	
@@ -368,7 +244,9 @@ You can choose whatever you want your app to accept, but obviously PNG is a good
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>File type equality check</p>
+		<p>the main workspace init method</p>
+
+<p>You&rsquo;ll need to set the workpace delegate to be told when workspace wants to be dismissed.</p>
 	</div>
 	
 	
@@ -379,7 +257,7 @@ You can choose whatever you want your app to accept, but obviously PNG is a good
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">swypFileTypeString.h</code><br />
+		<code class="declared-in-ref">swypWorkspaceViewController.h</code><br />
 	</div>				
 	
 	

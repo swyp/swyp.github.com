@@ -1,93 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/swypInterfaceManager.html">
+	<File path="Categories/NSString+swypFileTypeNSStringAdditions.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/swypInterfaceManager</TokenIdentifier>
-			<Abstract type="html">Defines how network interfaces should behave</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(swypFileTypeNSStringAdditions)</TokenIdentifier>
+			<Abstract type="html">Predefinied file types to use if needed
+	PNG is manditory if your app exports data.</Abstract>
+			<DeclaredIn>swypFileTypeString.h</DeclaredIn>
 			
 			<NodeRef refid="19"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManager/suspendNetworkActivity</TokenIdentifier>
-			<Abstract type="html">Pause network activity on this interface. Ususally app is going background.</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(swypFileTypeNSStringAdditions)/isFileType:</TokenIdentifier>
+			<Abstract type="html">File type equality check</Abstract>
+			<DeclaredIn>swypFileTypeString.h</DeclaredIn>			
 			
-			<Declaration>- (void)suspendNetworkActivity</Declaration>
+			<Declaration>- (BOOL)isFileType:(NSString *)fileType</Declaration>
 			
 			
-			<Anchor>//api/name/suspendNetworkActivity</Anchor>
+			<Anchor>//api/name/isFileType:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManager/resumeNetworkActivity</TokenIdentifier>
-			<Abstract type="html">Allow network activity to resume on this interface. Ususally app is going foreground, or workspace is opening for first time.</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(swypFileTypeNSStringAdditions)/imagePNGFileType</TokenIdentifier>
+			<Abstract type="html">		PNG, the universally supported filetype.</Abstract>
+			<DeclaredIn>swypFileTypeString.h</DeclaredIn>			
 			
-			<Declaration>- (void)resumeNetworkActivity</Declaration>
+			<Declaration>+ (id)imagePNGFileType</Declaration>
 			
 			
-			<Anchor>//api/name/resumeNetworkActivity</Anchor>
+			<Anchor>//api/name/imagePNGFileType</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManager/advertiseSwypOutAsPending:</TokenIdentifier>
-			<Abstract type="html">Begin advertising a specifc swypOut. Don't accept any connections from it yet as it hasn't completed successfully.</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)advertiseSwypOutAsPending:(swypInfoRef *)ref</Declaration>
-			
-			
-			<Anchor>//api/name/advertiseSwypOutAsPending:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManager/advertiseSwypOutAsCompleted:</TokenIdentifier>
-			<Abstract type="html">Continue advertising specifc swypOut, perhaps updating with finalized swyp-info where necessary. Accept connections.</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)advertiseSwypOutAsCompleted:(swypInfoRef *)ref</Declaration>
-			
-			
-			<Anchor>//api/name/advertiseSwypOutAsCompleted:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManager/stopAdvertisingSwypOut:</TokenIdentifier>
-			<Abstract type="html">No longer advertise a swyp out; remove from reference queue. No longer accept a connection for it (if an interface is able to tell this).</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)stopAdvertisingSwypOut:(swypInfoRef *)ref</Declaration>
-			
-			
-			<Anchor>//api/name/stopAdvertisingSwypOut:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManager/startFindingSwypInServerCandidatesForRef:</TokenIdentifier>
-			<Abstract type="html">Start looking for and resolving for any networked candidates. Candidates are returned to swypInterfaceManagerDelegate.</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)startFindingSwypInServerCandidatesForRef:(swypInfoRef *)ref</Declaration>
-			
-			
-			<Anchor>//api/name/startFindingSwypInServerCandidatesForRef:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManager/stopFindingSwypInServerCandidatesForRef:</TokenIdentifier>
-			<Abstract type="html">No longer search for additional swypIn servers for this ref; remove from reference queue.
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(swypFileTypeNSStringAdditions)/imageJPEGFileType</TokenIdentifier>
+			<Abstract type="html">	jpeg is a way smaller smaller file than PNG; perhaps it's a good thing to support too
 	
-	Do not send further delegate messages with this ref. </Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
+	MIME: "image/jpeg"</Abstract>
+			<DeclaredIn>swypFileTypeString.h</DeclaredIn>			
 			
-			<Declaration>- (void)stopFindingSwypInServerCandidatesForRef:(swypInfoRef *)ref</Declaration>
+			<Declaration>+ (id)imageJPEGFileType</Declaration>
 			
 			
-			<Anchor>//api/name/stopFindingSwypInServerCandidatesForRef:</Anchor>
+			<Anchor>//api/name/imageJPEGFileType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(swypFileTypeNSStringAdditions)/swypControlPacketFileType</TokenIdentifier>
+			<Abstract type="html">		Used in conjunction with specifc tags during connection negotiation.
+		Used to set things like session hue color.
+		Used to notify peer of changes in connection state, like intention to terminate.
+		MIME: "swyp/ControlPacket"</Abstract>
+			<DeclaredIn>swypFileTypeString.h</DeclaredIn>			
+			
+			<Declaration>+ (id)swypControlPacketFileType</Declaration>
+			
+			
+			<Anchor>//api/name/swypControlPacketFileType</Anchor>
 		</Token>
 		
 	</File>

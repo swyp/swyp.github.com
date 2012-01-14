@@ -34,5 +34,16 @@
 			<Anchor>//api/name/stopServices</Anchor>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</TokenIdentifier>
+			<Abstract type="html">See whether delegate will handle data stream.</Abstract>
+			<DeclaredIn>swypConnectionManager.m</DeclaredIn>			
+			
+			<Declaration>- (BOOL)delegateWillHandleDiscernedStream:(swypDiscernedInputStream *)discernedStream wantsAsData:(BOOL *)wantsProvidedAsNSData inConnectionSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</Anchor>
+		</Token>
+		
 	</File>
 </Tokens>

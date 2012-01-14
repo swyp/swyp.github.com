@@ -1,113 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/AFMultipartFormData.html">
+	<File path="Classes/swypWorkspaceViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/AFMultipartFormData</TokenIdentifier>
-			<Abstract type="html">The AFMultipartFormData protocol defines the methods supported by the parameter in the block argument of multipartFormRequestWithMethod:path:parameters:constructingBodyWithBlock:.</Abstract>
-			<DeclaredIn>AFHTTPClient.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/swypWorkspaceViewController</TokenIdentifier>
+			<Abstract type="html">This class is the UIViewController displayed to the user.</Abstract>
+			<DeclaredIn>swypWorkspaceViewController.h</DeclaredIn>
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/cl/AFHTTPClient</TokenIdentifier>
-		
-	</RelatedTokens>
-	
 			<NodeRef refid="18"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/appendPartWithHeaders:body:</TokenIdentifier>
-			<Abstract type="html">Appends HTTP headers, followed by the encoded data and the multipart form boundary.</Abstract>
-			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypWorkspaceViewController/setShowContentWithoutConnection:</TokenIdentifier>
+			<Abstract type="html">if set to TRUE, then content is displayed before swyp connection is made, and if content is swyped, then connection + content transfer is made</Abstract>
+			<DeclaredIn>swypWorkspaceViewController.h</DeclaredIn>			
 			
-			<Declaration>- (void)appendPartWithHeaders:(NSDictionary *)headers body:(NSData *)body</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>headers</Name>
-					<Abstract type="html">The HTTP headers to be appended to the form data.</Abstract>
-				</Parameter><Parameter>
-					<Name>body</Name>
-					<Abstract type="html">The data to be encoded and appended to the form data.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, assign) BOOL showContentWithoutConnection</Declaration>
 			
-			<Anchor>//api/name/appendPartWithHeaders:body:</Anchor>
+			
+			<Anchor>//api/name/showContentWithoutConnection</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/appendPartWithFormData:name:</TokenIdentifier>
-			<Abstract type="html">Appends the HTTP headers Content-Disposition: form-data; name=#{name}", followed by the encoded data and the multipart form boundary.</Abstract>
-			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/swypWorkspaceViewController/showContentWithoutConnection</TokenIdentifier>
+			<Abstract type="html">if set to TRUE, then content is displayed before swyp connection is made, and if content is swyped, then connection + content transfer is made</Abstract>
+			<DeclaredIn>swypWorkspaceViewController.h</DeclaredIn>			
 			
-			<Declaration>- (void)appendPartWithFormData:(NSData *)data name:(NSString *)name</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>data</Name>
-					<Abstract type="html">The data to be encoded and appended to the form data.</Abstract>
-				</Parameter><Parameter>
-					<Name>name</Name>
-					<Abstract type="html">The name to be associated with the specified data. This parameter must not be nil.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, assign) BOOL showContentWithoutConnection</Declaration>
 			
-			<Anchor>//api/name/appendPartWithFormData:name:</Anchor>
+			
+			<Anchor>//api/name/showContentWithoutConnection</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/appendPartWithFileData:mimeType:name:</TokenIdentifier>
-			<Abstract type="html">Appends the HTTP header Content-Disposition: file; filename=#{generated filename}; name=#{name}" and Content-Type: #{mimeType}, followed by the encoded file data and the multipart form boundary.</Abstract>
-			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypWorkspaceViewController/initWithWorkspaceDelegate:</TokenIdentifier>
+			<Abstract type="html">the main workspace init method</Abstract>
+			<DeclaredIn>swypWorkspaceViewController.h</DeclaredIn>			
 			
-			<Declaration>- (void)appendPartWithFileData:(NSData *)data mimeType:(NSString *)mimeType name:(NSString *)name</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>data</Name>
-					<Abstract type="html">The data to be encoded and appended to the form data.</Abstract>
-				</Parameter><Parameter>
-					<Name>mimeType</Name>
-					<Abstract type="html">The MIME type of the specified data. (For example, the MIME type for a JPEG image is image/jpeg.) For a list of valid MIME types, see http://www.iana.org/assignments/media-types/. This parameter must not be nil.</Abstract>
-				</Parameter><Parameter>
-					<Name>name</Name>
-					<Abstract type="html">The name to be associated with the specified data. This parameter must not be nil.
-
-@discussion The filename associated with this data in the form will be automatically generated using the parameter name specified and a unique timestamp-based hash.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (id)initWithWorkspaceDelegate:(id&lt;swypWorkspaceDelegate&gt;)worspaceDelegate</Declaration>
 			
-			<Anchor>//api/name/appendPartWithFileData:mimeType:name:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/appendData:</TokenIdentifier>
-			<Abstract type="html">Appends encoded data to the form data.</Abstract>
-			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
 			
-			<Declaration>- (void)appendData:(NSData *)data</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>data</Name>
-					<Abstract type="html">The data to be encoded and appended to the form data.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/appendData:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/appendString:</TokenIdentifier>
-			<Abstract type="html">Appends a string to the form data.</Abstract>
-			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
-			
-			<Declaration>- (void)appendString:(NSString *)string</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>string</Name>
-					<Abstract type="html">The string to be encoded and appended to the form data.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/appendString:</Anchor>
+			<Anchor>//api/name/initWithWorkspaceDelegate:</Anchor>
 		</Token>
 		
 	</File>
