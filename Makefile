@@ -1,4 +1,4 @@
-JADE = $(shell find . -name *.jade)
+JADE = $(shell find -s . -name index.jade)
 HTML = $(JADE:.jade=.html)
 
 STYLUS = $(shell find . -name *.styl)
