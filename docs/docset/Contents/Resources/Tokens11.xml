@@ -1,39 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/swypPendingConnectionManagerDelegate.html">
+	<File path="Classes/swypHandshakeManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/swypPendingConnectionManagerDelegate</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/swypHandshakeManager</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>
+			<DeclaredIn>swypHandshakeManager.h</DeclaredIn>
 			
 			<NodeRef refid="11"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypPendingConnectionManagerDelegate/swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:</TokenIdentifier>
-			<Abstract type="html">	
-	callback is called only after a connectionMethodTimedOut: or addSwypClientCandidate:forSwypRef:forConnectionMethod:
-		* not called after a nextConnectionSessionToAttemptHandshakeForSwypRef:
-			instead, you should call nextConnectionSessionToAttemptHandshakeForSwypRef: until == nil</Abstract>
-			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypHandshakeManager/referenceSwypOutAsPending:</TokenIdentifier>
+			<Abstract type="html">Increment reference count for a particular swyp out.</Abstract>
+			<DeclaredIn>swypHandshakeManager.h</DeclaredIn>			
 			
-			<Declaration>- (void)swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:(swypInfoRef *)ref</Declaration>
+			<Declaration>- (void)referenceSwypOutAsPending:(swypInfoRef *)swypInfoRef</Declaration>
 			
 			
-			<Anchor>//api/name/swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:</Anchor>
+			<Anchor>//api/name/referenceSwypOutAsPending:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypPendingConnectionManagerDelegate/swypPendingConnectionManagerFinishedForSwyp:</TokenIdentifier>
-			<Abstract type="html">called anytime ref is no longer needed; including clearAllPendingConnectionsForSwypRef</Abstract>
-			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypHandshakeManager/connectionIsPendingForSwypRef:</TokenIdentifier>
+			<Abstract type="html">Returns whether connection is pending for swypInfoRef;</Abstract>
+			<DeclaredIn>swypHandshakeManager.h</DeclaredIn>			
 			
-			<Declaration>- (void)swypPendingConnectionManagerFinishedForSwyp:(swypInfoRef *)ref</Declaration>
+			<Declaration>- (BOOL)connectionIsPendingForSwypRef:(swypInfoRef *)ref</Declaration>
 			
 			
-			<Anchor>//api/name/swypPendingConnectionManagerFinishedForSwyp:</Anchor>
+			<Anchor>//api/name/connectionIsPendingForSwypRef:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypHandshakeManager/beginHandshakeProcessWithConnectionSession:forSwypRef:</TokenIdentifier>
+			<Abstract type="html">The method for attaching swypConnectionSessions which have already been paired through NSInputStreams and NSOutputStreams, and supposedly work.</Abstract>
+			<DeclaredIn>swypHandshakeManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)beginHandshakeProcessWithConnectionSession:(swypConnectionSession *)session forSwypRef:(swypInfoRef *)ref</Declaration>
+			
+			
+			<Anchor>//api/name/beginHandshakeProcessWithConnectionSession:forSwypRef:</Anchor>
 		</Token>
 		
 	</File>

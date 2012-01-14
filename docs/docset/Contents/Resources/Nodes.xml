@@ -17,6 +17,14 @@
 						<NodeRef refid="5"/>
 						<NodeRef refid="6"/>
 						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
 						
 					</Subnodes>
 				</Node>
@@ -26,7 +34,7 @@
 					<Name>Categories</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="8"/>
+						<NodeRef refid="16"/>
 						
 					</Subnodes>
 				</Node>
@@ -36,9 +44,11 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="9"/>
-						<NodeRef refid="10"/>
-						<NodeRef refid="11"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
 						
 					</Subnodes>
 				</Node>
@@ -68,28 +78,68 @@
 			<Path>Classes/AFURLConnectionOperation.html</Path>
 		</Node>
 		<Node id="6">
+			<Name>swypBidirectionalMutableDictionary</Name>
+			<Path>Classes/swypBidirectionalMutableDictionary.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>swypBonjourPairManager</Name>
+			<Path>Classes/swypBonjourPairManager.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>swypConnectionManager</Name>
+			<Path>Classes/swypConnectionManager.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>swypConnectionSession</Name>
+			<Path>Classes/swypConnectionSession.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>swypGestureRecognizer</Name>
+			<Path>Classes/swypGestureRecognizer.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>swypHandshakeManager</Name>
+			<Path>Classes/swypHandshakeManager.html</Path>
+		</Node>
+		<Node id="12">
+			<Name>swypInfoRef</Name>
+			<Path>Classes/swypInfoRef.html</Path>
+		</Node>
+		<Node id="13">
 			<Name>swypNetworkAccessMonitor</Name>
 			<Path>Classes/swypNetworkAccessMonitor.html</Path>
 		</Node>
-		<Node id="7">
+		<Node id="14">
 			<Name>swypPendingConnectionManager</Name>
 			<Path>Classes/swypPendingConnectionManager.html</Path>
 		</Node>
+		<Node id="15">
+			<Name>swypPendingConnectionQueue</Name>
+			<Path>Classes/swypPendingConnectionQueue.html</Path>
+		</Node>
 		
-		<Node id="8">
+		<Node id="16">
 			<Name>NSString(swypFileTypeNSStringAdditions)</Name>
 			<Path>Categories/NSString+swypFileTypeNSStringAdditions.html</Path>
 		</Node>
 		
-		<Node id="9">
+		<Node id="17">
 			<Name>AFHTTPClientOperation</Name>
 			<Path>Protocols/AFHTTPClientOperation.html</Path>
 		</Node>
-		<Node id="10">
+		<Node id="18">
 			<Name>AFMultipartFormData</Name>
 			<Path>Protocols/AFMultipartFormData.html</Path>
 		</Node>
-		<Node id="11">
+		<Node id="19">
+			<Name>swypInterfaceManager</Name>
+			<Path>Protocols/swypInterfaceManager.html</Path>
+		</Node>
+		<Node id="20">
+			<Name>swypInterfaceManagerDelegate</Name>
+			<Path>Protocols/swypInterfaceManagerDelegate.html</Path>
+		</Node>
+		<Node id="21">
 			<Name>swypPendingConnectionManagerDelegate</Name>
 			<Path>Protocols/swypPendingConnectionManagerDelegate.html</Path>
 		</Node>

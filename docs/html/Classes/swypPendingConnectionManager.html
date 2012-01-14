@@ -44,13 +44,17 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/addSwypClientCandidate:forSwypRef:forConnectionMethod:">&nbsp;&nbsp;&nbsp;&nbsp;- addSwypClientCandidate:forSwypRef:forConnectionMethod:</option>
+	<option value="//api/name/addSwypClientCandidateConnectionSession:forSwypRef:forConnectionMethod:">&nbsp;&nbsp;&nbsp;&nbsp;- addSwypClientCandidateConnectionSession:forSwypRef:forConnectionMethod:</option>
 	
 	<option value="//api/name/clearAllPendingConnectionsForSwypRef:">&nbsp;&nbsp;&nbsp;&nbsp;- clearAllPendingConnectionsForSwypRef:</option>
 	
 	<option value="//api/name/connectionMethodTimedOut:forSwypRef:">&nbsp;&nbsp;&nbsp;&nbsp;- connectionMethodTimedOut:forSwypRef:</option>
 	
+	<option value="//api/name/initWithDelegate:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDelegate:</option>
+	
 	<option value="//api/name/nextConnectionSessionToAttemptHandshakeForSwypRef:">&nbsp;&nbsp;&nbsp;&nbsp;- nextConnectionSessionToAttemptHandshakeForSwypRef:</option>
+	
+	<option value="//api/name/prioritizedInterfaceMethodsArray">&nbsp;&nbsp;&nbsp;&nbsp;- prioritizedInterfaceMethodsArray</option>
 	
 	<option value="//api/name/setSwypOutPending:forConnectionMethods:">&nbsp;&nbsp;&nbsp;&nbsp;- setSwypOutPending:forConnectionMethods:</option>
 	
@@ -82,13 +86,17 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addSwypClientCandidate:forSwypRef:forConnectionMethod:">addSwypClientCandidate:forSwypRef:forConnectionMethod:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addSwypClientCandidateConnectionSession:forSwypRef:forConnectionMethod:">addSwypClientCandidateConnectionSession:forSwypRef:forConnectionMethod:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clearAllPendingConnectionsForSwypRef:">clearAllPendingConnectionsForSwypRef:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionMethodTimedOut:forSwypRef:">connectionMethodTimedOut:forSwypRef:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDelegate:">initWithDelegate:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/nextConnectionSessionToAttemptHandshakeForSwypRef:">nextConnectionSessionToAttemptHandshakeForSwypRef:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prioritizedInterfaceMethodsArray">prioritizedInterfaceMethodsArray</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSwypOutPending:forConnectionMethods:">setSwypOutPending:forConnectionMethods:</a></span></li>
 	
@@ -129,9 +137,12 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>This class is key in managing the prioritization of connection accross multiple interfaces.
-It communicates directly with swypConnectionManager to ensure priorities are kept.
-Prioritization occurs through the comparative value of each swypConnectionMethod</p>
+						<p>This class is key in managing the prioritization of connection accross multiple interfaces.</p>
+
+<p>It communicates directly with <a href="../Classes/swypConnectionManager.html">swypConnectionManager</a> to ensure priorities are kept.
+After a</p>
+
+<p>Prioritization occurs through the comparative value of each swypConnectionMethod. See <a href="#//api/name/prioritizedInterfaceMethodsArray">prioritizedInterfaceMethodsArray</a> for manually entered priority.</p>
 					</div>
 					
 					
@@ -149,8 +160,15 @@ Prioritization occurs through the comparative value of each swypConnectionMethod
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
+		<code><a href="#//api/name/initWithDelegate:">&ndash;&nbsp;initWithDelegate:</a></code>
+		<span class="tooltip"><p><a href="swypPendingConnectionManager.html">swypPendingConnectionManager</a> is initialized with probably <a href="../Classes/swypConnectionManager.html">swypConnectionManager</a> as delegate</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/setSwypOutPending:forConnectionMethods:">&ndash;&nbsp;setSwypOutPending:forConnectionMethods:</a></code>
-		<span class="tooltip"><p>After swypConnnectionManager posts swypInfoRef to an interface, it sets it as pending here</p></span>
+		<span class="tooltip"><p>After swypConnnectionManager posts <a href="../Classes/swypInfoRef.html">swypInfoRef</a> to an interface, it sets it as pending here</p></span>
 	</span>
 	
 	
@@ -165,14 +183,14 @@ This allows the manager to clear out deadspace and proceed to call swypPendingCo
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/clearAllPendingConnectionsForSwypRef:">&ndash;&nbsp;clearAllPendingConnectionsForSwypRef:</a></code>
-		<span class="tooltip"><p>After swypConnnectionManager has found its match for a swypCandidate, it acts responsibly by calling this method</p></span>
+		<span class="tooltip"><p>After swypConnnectionManager has found its match for a <a href="../Classes/swypCandidate.html">swypCandidate</a>, it acts responsibly by calling this method</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/addSwypClientCandidate:forSwypRef:forConnectionMethod:">&ndash;&nbsp;addSwypClientCandidate:forSwypRef:forConnectionMethod:</a></code>
-		<span class="tooltip"><p>After a swypConnectionMethod has returned a swypCandidate to swypConnnectionManager, swypConnnectionManager calls this method to add it to the queue for a specific swypInfoRef.</p></span>
+		<code><a href="#//api/name/addSwypClientCandidateConnectionSession:forSwypRef:forConnectionMethod:">&ndash;&nbsp;addSwypClientCandidateConnectionSession:forSwypRef:forConnectionMethod:</a></code>
+		<span class="tooltip"><p>After a swypConnectionMethod has returned a <a href="../Classes/swypCandidate.html">swypCandidate</a> to swypConnnectionManager, swypConnnectionManager calls this method to add it to the queue for a specific <a href="../Classes/swypInfoRef.html">swypInfoRef</a>.</p></span>
 	</span>
 	
 	
@@ -180,6 +198,13 @@ This allows the manager to clear out deadspace and proceed to call swypPendingCo
 	<span class="tooltip">
 		<code><a href="#//api/name/nextConnectionSessionToAttemptHandshakeForSwypRef:">&ndash;&nbsp;nextConnectionSessionToAttemptHandshakeForSwypRef:</a></code>
 		<span class="tooltip"><p>This method is called by swypConnnectionManager after the delegate protocol swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp: is called</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/prioritizedInterfaceMethodsArray">&ndash;&nbsp;prioritizedInterfaceMethodsArray</a></code>
+		<span class="tooltip"><p>A nice array for iterating over all the interfaceMethods defined in swypConnectionMethod</p></span>
 	</span>
 	
 	
@@ -201,17 +226,17 @@ This allows the manager to clear out deadspace and proceed to call swypPendingCo
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/addSwypClientCandidate:forSwypRef:forConnectionMethod:" title="addSwypClientCandidate:forSwypRef:forConnectionMethod:"></a>
-	<h3 class="subsubtitle method-title">addSwypClientCandidate:forSwypRef:forConnectionMethod:</h3>
+	<a name="//api/name/addSwypClientCandidateConnectionSession:forSwypRef:forConnectionMethod:" title="addSwypClientCandidateConnectionSession:forSwypRef:forConnectionMethod:"></a>
+	<h3 class="subsubtitle method-title">addSwypClientCandidateConnectionSession:forSwypRef:forConnectionMethod:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>After a swypConnectionMethod has returned a swypCandidate to swypConnnectionManager, swypConnnectionManager calls this method to add it to the queue for a specific swypInfoRef.</p>
+		<p>After a swypConnectionMethod has returned a <a href="../Classes/swypCandidate.html">swypCandidate</a> to swypConnnectionManager, swypConnnectionManager calls this method to add it to the queue for a specific <a href="../Classes/swypInfoRef.html">swypInfoRef</a>.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)addSwypClientCandidate:(swypClientCandidate *)<em>candidate</em> forSwypRef:(swypInfoRef *)<em>ref</em> forConnectionMethod:(swypConnectionMethod)<em>method</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)addSwypClientCandidateConnectionSession:(swypConnectionSession *)<em>connectionSession</em> forSwypRef:(swypInfoRef *)<em>ref</em> forConnectionMethod:(swypConnectionMethod)<em>method</em></code></div>
 	
 	
 	
@@ -222,7 +247,7 @@ This allows the manager to clear out deadspace and proceed to call swypPendingCo
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>After a swypConnectionMethod has returned a swypCandidate to swypConnnectionManager, swypConnnectionManager calls this method to add it to the queue for a specific swypInfoRef.</p>
+		<p>After a swypConnectionMethod has returned a <a href="../Classes/swypCandidate.html">swypCandidate</a> to swypConnnectionManager, swypConnnectionManager calls this method to add it to the queue for a specific <a href="../Classes/swypInfoRef.html">swypInfoRef</a>.</p>
 	</div>
 	
 	
@@ -246,7 +271,7 @@ This allows the manager to clear out deadspace and proceed to call swypPendingCo
 	
 	
 	<div class="method-subsection brief-description">
-		<p>After swypConnnectionManager has found its match for a swypCandidate, it acts responsibly by calling this method</p>
+		<p>After swypConnnectionManager has found its match for a <a href="../Classes/swypCandidate.html">swypCandidate</a>, it acts responsibly by calling this method</p>
 	</div>		
 	
 	
@@ -261,7 +286,7 @@ This allows the manager to clear out deadspace and proceed to call swypPendingCo
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>After swypConnnectionManager has found its match for a swypCandidate, it acts responsibly by calling this method</p>
+		<p>After swypConnnectionManager has found its match for a <a href="../Classes/swypCandidate.html">swypCandidate</a>, it acts responsibly by calling this method</p>
 	</div>
 	
 	
@@ -320,6 +345,45 @@ This allows the manager to clear out deadspace and proceed to call swypPendingCo
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/initWithDelegate:" title="initWithDelegate:"></a>
+	<h3 class="subsubtitle method-title">initWithDelegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p><a href="swypPendingConnectionManager.html">swypPendingConnectionManager</a> is initialized with probably <a href="../Classes/swypConnectionManager.html">swypConnectionManager</a> as delegate</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithDelegate:(id&lt;swypPendingConnectionManagerDelegate&gt;)<em>delegate</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="swypPendingConnectionManager.html">swypPendingConnectionManager</a> is initialized with probably <a href="../Classes/swypConnectionManager.html">swypConnectionManager</a> as delegate</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypPendingConnectionManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/nextConnectionSessionToAttemptHandshakeForSwypRef:" title="nextConnectionSessionToAttemptHandshakeForSwypRef:"></a>
 	<h3 class="subsubtitle method-title">nextConnectionSessionToAttemptHandshakeForSwypRef:</h3>
 	
@@ -359,18 +423,72 @@ This allows the manager to clear out deadspace and proceed to call swypPendingCo
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/prioritizedInterfaceMethodsArray" title="prioritizedInterfaceMethodsArray"></a>
+	<h3 class="subsubtitle method-title">prioritizedInterfaceMethodsArray</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A nice array for iterating over all the interfaceMethods defined in swypConnectionMethod</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)prioritizedInterfaceMethodsArray</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>returns NSArray of NSNumber objects init&rsquo;d w/ int of swypConnectionMethod</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A nice array for iterating over all the interfaceMethods defined in swypConnectionMethod</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypPendingConnectionManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/setSwypOutPending:forConnectionMethods:" title="setSwypOutPending:forConnectionMethods:"></a>
 	<h3 class="subsubtitle method-title">setSwypOutPending:forConnectionMethods:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>After swypConnnectionManager posts swypInfoRef to an interface, it sets it as pending here</p>
+		<p>After swypConnnectionManager posts <a href="../Classes/swypInfoRef.html">swypInfoRef</a> to an interface, it sets it as pending here</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)setSwypOutPending:(swypInfoRef *)<em>swypRef</em> forConnectionMethods:(swypConnectionMethod)<em>methods</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)setSwypOutPending:(swypInfoRef *)<em>swypRef</em> forConnectionMethods:(NSArray *)<em>methods</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>methods</em></dt>
+			<dd><p>NSArray of swypConnectionMethod in NSNumber objects as ints</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -380,7 +498,7 @@ This allows the manager to clear out deadspace and proceed to call swypPendingCo
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>After swypConnnectionManager posts swypInfoRef to an interface, it sets it as pending here</p>
+		<p>After swypConnnectionManager posts <a href="../Classes/swypInfoRef.html">swypInfoRef</a> to an interface, it sets it as pending here</p>
 	</div>
 	
 	
@@ -410,7 +528,7 @@ This allows the manager to clear out deadspace and proceed to call swypPendingCo
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-13)</span><br />
+						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-14)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
 						

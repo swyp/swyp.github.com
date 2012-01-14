@@ -42,9 +42,9 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/swypPendingConnectionManagerFinishedForSwyp:">&nbsp;&nbsp;&nbsp;&nbsp;- swypPendingConnectionManagerFinishedForSwyp:</option>
+	<option value="//api/name/swypPendingConnectioManager:finishedForSwyp:">&nbsp;&nbsp;&nbsp;&nbsp;- swypPendingConnectioManager:finishedForSwyp:</option>
 	
-	<option value="//api/name/swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:">&nbsp;&nbsp;&nbsp;&nbsp;- swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:</option>
+	<option value="//api/name/swypPendingConnectionManager:hasAvailableHandshakeableConnectionSessionsForSwyp:">&nbsp;&nbsp;&nbsp;&nbsp;- swypPendingConnectionManager:hasAvailableHandshakeableConnectionSessionsForSwyp:</option>
 	
 	
 	
@@ -72,9 +72,9 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/swypPendingConnectionManagerFinishedForSwyp:">swypPendingConnectionManagerFinishedForSwyp:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/swypPendingConnectioManager:finishedForSwyp:">swypPendingConnectioManager:finishedForSwyp:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:">swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/swypPendingConnectionManager:hasAvailableHandshakeableConnectionSessionsForSwyp:">swypPendingConnectionManager:hasAvailableHandshakeableConnectionSessionsForSwyp:</a></span></li>
 	
 </ul></li>
 
@@ -123,18 +123,17 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:">&ndash;&nbsp;swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:</a></code>
-		<span class="tooltip"><pre><code>callback is called only after a connectionMethodTimedOut: or addSwypClientCandidate:forSwypRef:forConnectionMethod:
-    * not called after a nextConnectionSessionToAttemptHandshakeForSwypRef:
-        instead, you should call nextConnectionSessionToAttemptHandshakeForSwypRef: until == nil
+		<code><a href="#//api/name/swypPendingConnectionManager:hasAvailableHandshakeableConnectionSessionsForSwyp:">&ndash;&nbsp;swypPendingConnectionManager:hasAvailableHandshakeableConnectionSessionsForSwyp:</a></code>
+		<span class="tooltip"><pre><code>Callback is called to indicate swypConnectionSession(s) are available for use by connection manager. 
+Callback is called only after a connectionMethodTimedOut: or addSwypClientCandidate:forSwypRef:forConnectionMethod:.
 </code></pre></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/swypPendingConnectionManagerFinishedForSwyp:">&ndash;&nbsp;swypPendingConnectionManagerFinishedForSwyp:</a></code>
-		<span class="tooltip"><p>called anytime ref is no longer needed; including clearAllPendingConnectionsForSwypRef</p></span>
+		<code><a href="#//api/name/swypPendingConnectioManager:finishedForSwyp:">&ndash;&nbsp;swypPendingConnectioManager:finishedForSwyp:</a></code>
+		<span class="tooltip"><p>Called when swypInforef is no longer needed; including clearAllPendingConnectionsForSwypRef</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
@@ -156,18 +155,28 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/swypPendingConnectionManagerFinishedForSwyp:" title="swypPendingConnectionManagerFinishedForSwyp:"></a>
-	<h3 class="subsubtitle method-title">swypPendingConnectionManagerFinishedForSwyp:</h3>
+	<a name="//api/name/swypPendingConnectioManager:finishedForSwyp:" title="swypPendingConnectioManager:finishedForSwyp:"></a>
+	<h3 class="subsubtitle method-title">swypPendingConnectioManager:finishedForSwyp:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>called anytime ref is no longer needed; including clearAllPendingConnectionsForSwypRef</p>
+		<p>Called when swypInforef is no longer needed; including clearAllPendingConnectionsForSwypRef</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)swypPendingConnectionManagerFinishedForSwyp:(swypInfoRef *)<em>ref</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)swypPendingConnectioManager:(swypPendingConnectionManager *)<em>manager</em> finishedForSwyp:(swypInfoRef *)<em>ref</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ref</em></dt>
+			<dd><p>a <a href="../Classes/swypInfoRef.html">swypInfoRef</a> that&rsquo;s no longer needed</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -177,7 +186,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>called anytime ref is no longer needed; including clearAllPendingConnectionsForSwypRef</p>
+		<p>Called when swypInforef is no longer needed; including clearAllPendingConnectionsForSwypRef</p>
 	</div>
 	
 	
@@ -195,21 +204,30 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:" title="swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:"></a>
-	<h3 class="subsubtitle method-title">swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:</h3>
+	<a name="//api/name/swypPendingConnectionManager:hasAvailableHandshakeableConnectionSessionsForSwyp:" title="swypPendingConnectionManager:hasAvailableHandshakeableConnectionSessionsForSwyp:"></a>
+	<h3 class="subsubtitle method-title">swypPendingConnectionManager:hasAvailableHandshakeableConnectionSessionsForSwyp:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<pre><code>callback is called only after a connectionMethodTimedOut: or addSwypClientCandidate:forSwypRef:forConnectionMethod:
-    * not called after a nextConnectionSessionToAttemptHandshakeForSwypRef:
-        instead, you should call nextConnectionSessionToAttemptHandshakeForSwypRef: until == nil
+		<pre><code>Callback is called to indicate swypConnectionSession(s) are available for use by connection manager. 
+Callback is called only after a connectionMethodTimedOut: or addSwypClientCandidate:forSwypRef:forConnectionMethod:.
 </code></pre>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:(swypInfoRef *)<em>ref</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)swypPendingConnectionManager:(swypPendingConnectionManager *)<em>manager</em> hasAvailableHandshakeableConnectionSessionsForSwyp:(swypInfoRef *)<em>ref</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ref</em></dt>
+			<dd><p>a <a href="../Classes/swypInfoRef.html">swypInfoRef</a> that&rsquo;s been added by the <a href="../Classes/swypConnectionManager.html">swypConnectionManager</a></p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -219,10 +237,9 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<pre><code>callback is called only after a connectionMethodTimedOut: or addSwypClientCandidate:forSwypRef:forConnectionMethod:
-    * not called after a nextConnectionSessionToAttemptHandshakeForSwypRef:
-        instead, you should call nextConnectionSessionToAttemptHandshakeForSwypRef: until == nil
-</code></pre>
+		<pre><code>Callback is called to indicate swypConnectionSession(s) are available for use by connection manager. 
+Callback is called only after a connectionMethodTimedOut: or addSwypClientCandidate:forSwypRef:forConnectionMethod:.
+</code></pre><div class="warning"><p>this method is not called after a nextConnectionSessionToAttemptHandshakeForSwypRef:, nor is there a runloop managing this method. Instead, you should call nextConnectionSessionToAttemptHandshakeForSwypRef: until == nil.</p></div>
 	</div>
 	
 	
@@ -252,7 +269,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-13)</span><br />
+						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-14)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
 						

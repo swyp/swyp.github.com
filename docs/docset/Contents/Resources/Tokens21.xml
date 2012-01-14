@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/swypPendingConnectionManagerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/swypPendingConnectionManagerDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypPendingConnectionManagerDelegate/swypPendingConnectionManager:hasAvailableHandshakeableConnectionSessionsForSwyp:</TokenIdentifier>
+			<Abstract type="html">	
+	Callback is called to indicate swypConnectionSession are available for use by connection manager. 
+	Callback is called only after a connectionMethodTimedOut: or addSwypClientCandidate:forSwypRef:forConnectionMethod:.
+	</Abstract>
+			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)swypPendingConnectionManager:(swypPendingConnectionManager *)manager hasAvailableHandshakeableConnectionSessionsForSwyp:(swypInfoRef *)ref</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>ref</Name>
+					<Abstract type="html">a swypInfoRef that's been added by the swypConnectionManager</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/swypPendingConnectionManager:hasAvailableHandshakeableConnectionSessionsForSwyp:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypPendingConnectionManagerDelegate/swypPendingConnectioManager:finishedForSwyp:</TokenIdentifier>
+			<Abstract type="html">Called when swypInforef is no longer needed; including clearAllPendingConnectionsForSwypRef</Abstract>
+			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)swypPendingConnectioManager:(swypPendingConnectionManager *)manager finishedForSwyp:(swypInfoRef *)ref</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>ref</Name>
+					<Abstract type="html">a swypInfoRef that's no longer needed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/swypPendingConnectioManager:finishedForSwyp:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
