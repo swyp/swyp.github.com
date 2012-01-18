@@ -1,85 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/swypPendingConnectionQueue.html">
+	<File path="Classes/swypDiscernedInputStream.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/swypPendingConnectionQueue</TokenIdentifier>
-			<Abstract type="html">This class further encapsulates pending connections for the swypPendingConnectionManager.</Abstract>
-			<DeclaredIn>swypPendingConnectionQueue.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/swypDiscernedInputStream</TokenIdentifier>
+			<Abstract type="html">This class allows discrete files to be removed from a flowing NSInputStream.</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>
 			
 			<NodeRef refid="16"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionQueue/setPendingInterfaceMethods:</TokenIdentifier>
-			<Abstract type="html">mutableSet set of interface methods supported &amp; not timed-out</Abstract>
-			<DeclaredIn>swypPendingConnectionQueue.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypDiscernedInputStream/setIsIndefinite:</TokenIdentifier>
+			<Abstract type="html">	Indefinite streams occur when both endpoints support the same proprietary protocol, and set stream payload length to 0
+	When the indefinite stream is to be ended, endIndefiniteStreamAtByteIndex: must be called referencing a byte that has either not yet been read, or has been read in the last read cycle.</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSMutableSet *pendingInterfaceMethods</Declaration>
+			<Declaration>@property (nonatomic, readonly) BOOL isIndefinite</Declaration>
 			
 			
-			<Anchor>//api/name/pendingInterfaceMethods</Anchor>
+			<Anchor>//api/name/isIndefinite</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/swypPendingConnectionQueue/pendingInterfaceMethods</TokenIdentifier>
-			<Abstract type="html">mutableSet set of interface methods supported &amp; not timed-out</Abstract>
-			<DeclaredIn>swypPendingConnectionQueue.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/swypDiscernedInputStream/isIndefinite</TokenIdentifier>
+			<Abstract type="html">	Indefinite streams occur when both endpoints support the same proprietary protocol, and set stream payload length to 0
+	When the indefinite stream is to be ended, endIndefiniteStreamAtByteIndex: must be called referencing a byte that has either not yet been read, or has been read in the last read cycle.</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSMutableSet *pendingInterfaceMethods</Declaration>
+			<Declaration>@property (nonatomic, readonly) BOOL isIndefinite</Declaration>
 			
 			
-			<Anchor>//api/name/pendingInterfaceMethods</Anchor>
+			<Anchor>//api/name/isIndefinite</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionQueue/initWithInterfaceMethods:</TokenIdentifier>
-			<Abstract type="html">Inits with supported interfaces</Abstract>
-			<DeclaredIn>swypPendingConnectionQueue.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypDiscernedInputStream/initWithStreamDataSource:type:tag:length:</TokenIdentifier>
+			<Abstract type="html">the primary init function</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithInterfaceMethods:(NSArray *)supportedInterfaceMethods</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>supportedInterfaceMethods</Name>
-					<Abstract type="html">swypConnectionMethod(s) as NSNumber intergers in NSArray</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (id)initWithStreamDataSource:(id&lt;swypDiscernedInputStreamDataSource&gt;)dataSource type:(NSString *)type tag:(NSString *)tag length:(NSUInteger)streamLength</Declaration>
 			
-			<Anchor>//api/name/initWithInterfaceMethods:</Anchor>
+			
+			<Anchor>//api/name/initWithStreamDataSource:type:tag:length:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionQueue/connectionSessionArrayForInterfaceMethod:</TokenIdentifier>
-			<Abstract type="html">Returns a mutable array for managing connection sessions within a specific connection method</Abstract>
-			<DeclaredIn>swypPendingConnectionQueue.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypDiscernedInputStream/endIndefiniteStreamAtByteIndex:</TokenIdentifier>
+			<Abstract type="html">	This method enables the next input stream to be queued out of data already consumed by reading this object's NSStream
+	byteIndex must exist within the most recent read, or in the future
+		eg, it can't be from two stream reads back
+	Calling this method on a discernedInputStream makes it become definite</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
 			
-			<Declaration>- (NSMutableArray *)connectionSessionArrayForInterfaceMethod:(swypConnectionMethod)connectionMethod</Declaration>
+			<Declaration>- (void)endIndefiniteStreamAtByteIndex:(NSUInteger)byteIndex</Declaration>
 			
-			<ReturnValue><Abstract type="html">returns mutable array for manipulation at will, or returns nil if either not supported or removed</Abstract></ReturnValue>
-			<Anchor>//api/name/connectionSessionArrayForInterfaceMethod:</Anchor>
+			
+			<Anchor>//api/name/endIndefiniteStreamAtByteIndex:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionQueue/removeConnectionSessionArrayForInterfaceMethod:</TokenIdentifier>
-			<Abstract type="html">Returns a mutable array for managing connection sessions within a specific connection method</Abstract>
-			<DeclaredIn>swypPendingConnectionQueue.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypDiscernedInputStream/shouldPullData</TokenIdentifier>
+			<Abstract type="html">this method tells the discernedInputStream that there is data available, and that it should pull it!</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
 			
-			<Declaration>- (void)removeConnectionSessionArrayForInterfaceMethod:(swypConnectionMethod)connectionMethod</Declaration>
-			
-			<ReturnValue><Abstract type="html">returns mutable array for manipulation at will</Abstract></ReturnValue>
-			<Anchor>//api/name/removeConnectionSessionArrayForInterfaceMethod:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionQueue/hasPendingConnectionSessions</TokenIdentifier>
-			<Abstract type="html">Relates if any connectionSessionArray(s) are not nil</Abstract>
-			<DeclaredIn>swypPendingConnectionQueue.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)hasPendingConnectionSessions</Declaration>
+			<Declaration>- (void)shouldPullData</Declaration>
 			
 			
-			<Anchor>//api/name/hasPendingConnectionSessions</Anchor>
+			<Anchor>//api/name/shouldPullData</Anchor>
 		</Token>
 		
 	</File>

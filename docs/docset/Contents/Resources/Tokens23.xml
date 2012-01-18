@@ -1,93 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/swypInterfaceManager.html">
+	<File path="Classes/swypInputToOutputStreamConnector.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/swypInterfaceManager</TokenIdentifier>
-			<Abstract type="html">Defines how network interfaces should behave</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/swypInputToOutputStreamConnector</TokenIdentifier>
+			<Abstract type="html">This class was written to address the need of sending NSInputStream data over socket NSOutputStreams.</Abstract>
+			<DeclaredIn>swypInputToOutputStreamConnector.h</DeclaredIn>
 			
 			<NodeRef refid="23"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManager/suspendNetworkActivity</TokenIdentifier>
-			<Abstract type="html">Pause network activity on this interface. Ususally app is going background.</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypInputToOutputStreamConnector/setDelegate:</TokenIdentifier>
+			<Abstract type="html">this protocol will let you know about encountered errors</Abstract>
+			<DeclaredIn>swypInputToOutputStreamConnector.h</DeclaredIn>			
 			
-			<Declaration>- (void)suspendNetworkActivity</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;swypInputToOutputStreamConnectorDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/suspendNetworkActivity</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManager/resumeNetworkActivity</TokenIdentifier>
-			<Abstract type="html">Allow network activity to resume on this interface. Ususally app is going foreground, or workspace is opening for first time.</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/swypInputToOutputStreamConnector/delegate</TokenIdentifier>
+			<Abstract type="html">this protocol will let you know about encountered errors</Abstract>
+			<DeclaredIn>swypInputToOutputStreamConnector.h</DeclaredIn>			
 			
-			<Declaration>- (void)resumeNetworkActivity</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;swypInputToOutputStreamConnectorDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/resumeNetworkActivity</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManager/advertiseSwypOutAsPending:</TokenIdentifier>
-			<Abstract type="html">Begin advertising a specifc swypOut. Don't accept any connections from it yet as it hasn't completed successfully.</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypInputToOutputStreamConnector/initWithOutputStream:readStream:</TokenIdentifier>
+			<Abstract type="html">the main init function which sets up streams as open, and begins sending any available inStream data over any available space in outputStream.</Abstract>
+			<DeclaredIn>swypInputToOutputStreamConnector.h</DeclaredIn>			
 			
-			<Declaration>- (void)advertiseSwypOutAsPending:(swypInfoRef *)ref</Declaration>
-			
-			
-			<Anchor>//api/name/advertiseSwypOutAsPending:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManager/advertiseSwypOutAsCompleted:</TokenIdentifier>
-			<Abstract type="html">Continue advertising specifc swypOut, perhaps updating with finalized swyp-info where necessary. Accept connections.</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)advertiseSwypOutAsCompleted:(swypInfoRef *)ref</Declaration>
+			<Declaration>- (id)initWithOutputStream:(NSOutputStream *)outputStream readStream:(NSInputStream *)inStream</Declaration>
 			
 			
-			<Anchor>//api/name/advertiseSwypOutAsCompleted:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManager/stopAdvertisingSwypOut:</TokenIdentifier>
-			<Abstract type="html">No longer advertise a swyp out; remove from reference queue. No longer accept a connection for it (if an interface is able to tell this).</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)stopAdvertisingSwypOut:(swypInfoRef *)ref</Declaration>
-			
-			
-			<Anchor>//api/name/stopAdvertisingSwypOut:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManager/startFindingSwypInServerCandidatesForRef:</TokenIdentifier>
-			<Abstract type="html">Start looking for and resolving for any networked candidates. Candidates are returned to swypInterfaceManagerDelegate.</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)startFindingSwypInServerCandidatesForRef:(swypInfoRef *)ref</Declaration>
-			
-			
-			<Anchor>//api/name/startFindingSwypInServerCandidatesForRef:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManager/stopFindingSwypInServerCandidatesForRef:</TokenIdentifier>
-			<Abstract type="html">No longer search for additional swypIn servers for this ref; remove from reference queue.
-	
-	Do not send further delegate messages with this ref. </Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)stopFindingSwypInServerCandidatesForRef:(swypInfoRef *)ref</Declaration>
-			
-			
-			<Anchor>//api/name/stopFindingSwypInServerCandidatesForRef:</Anchor>
+			<Anchor>//api/name/initWithOutputStream:readStream:</Anchor>
 		</Token>
 		
 	</File>

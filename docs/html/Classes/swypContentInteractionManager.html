@@ -51,18 +51,28 @@
 	
 	<option value="class_methods">Class Methods</option>
 	
-	<option value="//api/name/supportedFileTypes">&nbsp;&nbsp;&nbsp;&nbsp;+ supportedFileTypes</option>
+	<option value="//api/name/supportedReceiptFileTypes">&nbsp;&nbsp;&nbsp;&nbsp;+ supportedReceiptFileTypes</option>
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/completedSendingStream:connectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- completedSendingStream:connectionSession:</option>
+	
 	<option value="//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</option>
+	
+	<option value="//api/name/didBeginReceivingDataInConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- didBeginReceivingDataInConnectionSession:</option>
+	
+	<option value="//api/name/didFinnishReceivingDataInConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- didFinnishReceivingDataInConnectionSession:</option>
+	
+	<option value="//api/name/failedSendingStream:error:connectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- failedSendingStream:error:connectionSession:</option>
 	
 	<option value="//api/name/initWithMainWorkspaceView:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithMainWorkspaceView:</option>
 	
 	<option value="//api/name/initWithMainWorkspaceView:showingContentBeforeConnection:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithMainWorkspaceView:showingContentBeforeConnection:</option>
+	
+	<option value="//api/name/yieldedData:discernedStream:inConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- yieldedData:discernedStream:inConnectionSession:</option>
 	
 	
 	
@@ -100,7 +110,7 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/supportedFileTypes">supportedFileTypes</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/supportedReceiptFileTypes">supportedReceiptFileTypes</a></span></li>
 	
 </ul></li>
 
@@ -108,11 +118,21 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/completedSendingStream:connectionSession:">completedSendingStream:connectionSession:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didBeginReceivingDataInConnectionSession:">didBeginReceivingDataInConnectionSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didFinnishReceivingDataInConnectionSession:">didFinnishReceivingDataInConnectionSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/failedSendingStream:error:connectionSession:">failedSendingStream:error:connectionSession:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithMainWorkspaceView:">initWithMainWorkspaceView:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithMainWorkspaceView:showingContentBeforeConnection:">initWithMainWorkspaceView:showingContentBeforeConnection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/yieldedData:discernedStream:inConnectionSession:">yieldedData:discernedStream:inConnectionSession:</a></span></li>
 	
 </ul></li>
 
@@ -208,8 +228,40 @@ this value is assigned at <a href="#//api/name/init">init</a> by workspace manag
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/supportedFileTypes">+&nbsp;supportedFileTypes</a></code>
-		<span class="tooltip"><p>swyp in order of preference where index 0=most preferant</p></span>
+		<code><a href="#//api/name/supportedReceiptFileTypes">+&nbsp;supportedReceiptFileTypes</a></code>
+		<span class="tooltip"><p>Supported swyp receipt file types; in order of greatest preference, where index 0=most preferant</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didBeginReceivingDataInConnectionSession:">&ndash;&nbsp;didBeginReceivingDataInConnectionSession:</a></code>
+		<span class="tooltip"><pre><code>Will notify you when the data IN stream is receiving so that UI can be updated accordingly
+</code></pre></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didFinnishReceivingDataInConnectionSession:">&ndash;&nbsp;didFinnishReceivingDataInConnectionSession:</a></code>
+		<span class="tooltip"><pre><code>Will notify you when the data IN stream is DONE receiving so that UI can be updated accordingly
+</code></pre></span>
 	</span>
 	
 	
@@ -225,6 +277,52 @@ this value is assigned at <a href="#//api/name/init">init</a> by workspace manag
 	<span class="tooltip">
 		<code><a href="#//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">&ndash;&nbsp;delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</a></code>
 		<span class="tooltip"><p>See whether delegate will handle data stream.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/yieldedData:discernedStream:inConnectionSession:">&ndash;&nbsp;yieldedData:discernedStream:inConnectionSession:</a></code>
+		<span class="tooltip"><pre><code>The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.
+</code></pre></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/failedSendingStream:error:connectionSession:">&ndash;&nbsp;failedSendingStream:error:connectionSession:</a></code>
+		<span class="tooltip"><p>Upon failing to send data</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/completedSendingStream:connectionSession:">&ndash;&nbsp;completedSendingStream:connectionSession:</a></code>
+		<span class="tooltip"><p>Upon happily sending data</p></span>
 	</span>
 	
 	
@@ -371,17 +469,17 @@ this value is assigned at <a href="#//api/name/init">init</a> by workspace manag
 						<h2 class="subtitle subtitle-methods">Class Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/supportedFileTypes" title="supportedFileTypes"></a>
-	<h3 class="subsubtitle method-title">supportedFileTypes</h3>
+	<a name="//api/name/supportedReceiptFileTypes" title="supportedReceiptFileTypes"></a>
+	<h3 class="subsubtitle method-title">supportedReceiptFileTypes</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>swyp in order of preference where index 0=most preferant</p>
+		<p>Supported swyp receipt file types; in order of greatest preference, where index 0=most preferant</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>+ (NSArray *)supportedFileTypes</code></div>
+	<div class="method-subsection method-declaration"><code>+ (NSArray *)supportedReceiptFileTypes</code></div>
 	
 	
 	
@@ -392,7 +490,7 @@ this value is assigned at <a href="#//api/name/init">init</a> by workspace manag
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>swyp in order of preference where index 0=most preferant</p><div class="warning"><p>Swyp&rsquo;s devs need to update this to be a modifible property.</p></div>
+		<p>Supported swyp receipt file types; in order of greatest preference, where index 0=most preferant</p><div class="warning"><p>This value is only non-nil after setting a dataSource</p></div>
 	</div>
 	
 	
@@ -416,6 +514,45 @@ this value is assigned at <a href="#//api/name/init">init</a> by workspace manag
 					<div class="section section-methods">
 						<a title="Instance Methods" name="instance_methods"></a>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/completedSendingStream:connectionSession:" title="completedSendingStream:connectionSession:"></a>
+	<h3 class="subsubtitle method-title">completedSendingStream:connectionSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Upon happily sending data</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)completedSendingStream:(NSInputStream *)<em>stream</em> connectionSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Upon happily sending data</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:" title="delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:"></a>
@@ -448,6 +585,127 @@ this value is assigned at <a href="#//api/name/init">init</a> by workspace manag
 discernedStream can be read as an input stream, and attached to output streams using SwypInputToOutput, for example
 Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be set to true, *wantsProvidedAsNSData = TRUE;, to have data provided in a method bellow
 </code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didBeginReceivingDataInConnectionSession:" title="didBeginReceivingDataInConnectionSession:"></a>
+	<h3 class="subsubtitle method-title">didBeginReceivingDataInConnectionSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>Will notify you when the data IN stream is receiving so that UI can be updated accordingly
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didBeginReceivingDataInConnectionSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>Will notify you when the data IN stream is receiving so that UI can be updated accordingly
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didFinnishReceivingDataInConnectionSession:" title="didFinnishReceivingDataInConnectionSession:"></a>
+	<h3 class="subsubtitle method-title">didFinnishReceivingDataInConnectionSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>Will notify you when the data IN stream is DONE receiving so that UI can be updated accordingly
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didFinnishReceivingDataInConnectionSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>Will notify you when the data IN stream is DONE receiving so that UI can be updated accordingly
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/failedSendingStream:error:connectionSession:" title="failedSendingStream:error:connectionSession:"></a>
+	<h3 class="subsubtitle method-title">failedSendingStream:error:connectionSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Upon failing to send data</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)failedSendingStream:(NSInputStream *)<em>stream</em> error:(NSError *)<em>error</em> connectionSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Upon failing to send data</p>
 	</div>
 	
 	
@@ -542,6 +800,47 @@ Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be s
 	
 </div>
 						
+						<div class="section-method">
+	<a name="//api/name/yieldedData:discernedStream:inConnectionSession:" title="yieldedData:discernedStream:inConnectionSession:"></a>
+	<h3 class="subsubtitle method-title">yieldedData:discernedStream:inConnectionSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)yieldedData:(NSData *)<em>streamData</em> discernedStream:(swypDiscernedInputStream *)<em>discernedStream</em> inConnectionSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
 					</div>
 					
 					
@@ -555,7 +854,7 @@ Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be s
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-14)</span><br />
+						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-18)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
 						

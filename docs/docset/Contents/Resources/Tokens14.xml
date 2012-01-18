@@ -1,25 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/swypNetworkAccessMonitor.html">
+	<File path="Classes/swypConnectionSession.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/swypNetworkAccessMonitor</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>swypNetworkAccessMonitor.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/swypConnectionSession</TokenIdentifier>
+			<Abstract type="html">This class represents and manages the connection between this and one other device.</Abstract>
+			<DeclaredIn>swypConnectionSession.h</DeclaredIn>
 			
 			<NodeRef refid="14"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypNetworkAccessMonitor/beginCheckingForReachability</TokenIdentifier>
-			<Abstract type="html">** LESS RELEVANT:</Abstract>
-			<DeclaredIn>swypNetworkAccessMonitor.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionSession/initWithSwypCandidate:inputStream:outputStream:</TokenIdentifier>
+			<Abstract type="html">swypConnectionSessions are initialized with their candidate, and input and an output stream.</Abstract>
+			<DeclaredIn>swypConnectionSession.h</DeclaredIn>			
 			
-			<Declaration>- (void)beginCheckingForReachability</Declaration>
+			<Declaration>- (id)initWithSwypCandidate:(swypCandidate *)candidate inputStream:(NSInputStream *)inputStream outputStream:(NSOutputStream *)outputStream</Declaration>
 			
 			
-			<Anchor>//api/name/beginCheckingForReachability</Anchor>
+			<Anchor>//api/name/initWithSwypCandidate:inputStream:outputStream:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionSession/initiate</TokenIdentifier>
+			<Abstract type="html">Start connection; schedule in runloop</Abstract>
+			<DeclaredIn>swypConnectionSession.h</DeclaredIn>			
+			
+			<Declaration>- (void)initiate</Declaration>
+			
+			
+			<Anchor>//api/name/initiate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionSession/invalidate</TokenIdentifier>
+			<Abstract type="html">Destroy connection; remove from runloop</Abstract>
+			<DeclaredIn>swypConnectionSession.h</DeclaredIn>			
+			
+			<Declaration>- (void)invalidate</Declaration>
+			
+			
+			<Anchor>//api/name/invalidate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionSession/beginSendingFileStreamWithTag:type:dataStreamForSend:length:</TokenIdentifier>
+			<Abstract type="html">the length of the 'stream' property
+		if length is specified as 0, the stream will be written without a length specifier, to allow devs to do fun stuff
+		be aware, some malicious endpoints will try to overload the length of a stream to cause buffer overruns 
+			1) Don't rely on length parameter for buffer sizes without validity checks 2) Don't execute recieved data!
+	if there is already a stream sending, this stream will be queued</Abstract>
+			<DeclaredIn>swypConnectionSession.h</DeclaredIn>			
+			
+			<Declaration>- (swypConcatenatedInputStream *)beginSendingFileStreamWithTag:(NSString *)tag type:(NSString *)fileType dataStreamForSend:(NSInputStream *)stream length:(NSUInteger)streamLength</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>length</Name>
+					<Abstract type="html">the length of the 'stream' property
+		if length is specified as 0, the stream will be written without a length specifier, to allow devs to do fun stuff
+		be aware, some malicious endpoints will try to overload the length of a stream to cause buffer overruns 
+			1) Don't rely on length parameter for buffer sizes without validity checks 2) Don't execute recieved data!
+	if there is already a stream sending, this stream will be queued</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/beginSendingFileStreamWithTag:type:dataStreamForSend:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionSession/dataBridgeYieldedData:fromInputStream:withInputToDataBridge:</TokenIdentifier>
+			<Abstract type="html">Data retrieved notification</Abstract>
+			<DeclaredIn>swypConnectionSession.m</DeclaredIn>			
+			
+			<Declaration>- (void)dataBridgeYieldedData:(NSData *)yieldedData fromInputStream:(NSInputStream *)inputStream withInputToDataBridge:(swypInputToDataBridge *)bridge</Declaration>
+			
+			
+			<Anchor>//api/name/dataBridgeYieldedData:fromInputStream:withInputToDataBridge:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionSession/dataBridgeFailedYieldingDataFromInputStream:withError:inInputToDataBridge:</TokenIdentifier>
+			<Abstract type="html">Data failed notfication... Sorry.</Abstract>
+			<DeclaredIn>swypConnectionSession.m</DeclaredIn>			
+			
+			<Declaration>- (void)dataBridgeFailedYieldingDataFromInputStream:(NSInputStream *)inputStream withError:(NSError *)error inInputToDataBridge:(swypInputToDataBridge *)bridge</Declaration>
+			
+			
+			<Anchor>//api/name/dataBridgeFailedYieldingDataFromInputStream:withError:inInputToDataBridge:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionSession/encounteredErrorInInputStream:withInputToOutputConnector:</TokenIdentifier>
+			<Abstract type="html">error in the input</Abstract>
+			<DeclaredIn>swypConnectionSession.m</DeclaredIn>			
+			
+			<Declaration>- (void)encounteredErrorInInputStream:(NSInputStream *)stream withInputToOutputConnector:(swypInputToOutputStreamConnector *)connector</Declaration>
+			
+			
+			<Anchor>//api/name/encounteredErrorInInputStream:withInputToOutputConnector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionSession/encounteredErrorInOutputStream:withInputToOutputConnector:</TokenIdentifier>
+			<Abstract type="html">error in the output</Abstract>
+			<DeclaredIn>swypConnectionSession.m</DeclaredIn>			
+			
+			<Declaration>- (void)encounteredErrorInOutputStream:(NSOutputStream *)stream withInputToOutputConnector:(swypInputToOutputStreamConnector *)connector</Declaration>
+			
+			
+			<Anchor>//api/name/encounteredErrorInOutputStream:withInputToOutputConnector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionSession/completedInputStream:forOutputStream:withInputToOutputConnector:</TokenIdentifier>
+			<Abstract type="html">we're done</Abstract>
+			<DeclaredIn>swypConnectionSession.m</DeclaredIn>			
+			
+			<Declaration>- (void)completedInputStream:(NSInputStream *)stream forOutputStream:(NSOutputStream *)outputStream withInputToOutputConnector:(swypInputToOutputStreamConnector *)connector</Declaration>
+			
+			
+			<Anchor>//api/name/completedInputStream:forOutputStream:withInputToOutputConnector:</Anchor>
 		</Token>
 		
 	</File>

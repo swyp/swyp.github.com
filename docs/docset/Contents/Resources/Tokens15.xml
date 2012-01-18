@@ -1,97 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/swypPendingConnectionManager.html">
+	<File path="Classes/swypContentInteractionManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/swypPendingConnectionManager</TokenIdentifier>
-			<Abstract type="html">This class is key in managing the prioritization of connection accross multiple interfaces.</Abstract>
-			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/swypContentInteractionManager</TokenIdentifier>
+			<Abstract type="html">This class is responsible for unifying modal and controller, and displaying them upon the workspace.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>
 			
 			<NodeRef refid="15"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionManager/initWithDelegate:</TokenIdentifier>
-			<Abstract type="html">swypPendingConnectionManager is initialized with probably swypConnectionManager as delegate</Abstract>
-			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/setContentDataSource:</TokenIdentifier>
+			<Abstract type="html">This property is the datasource that the content in contentDisplayController is sourced from per the swypContentDataSourceProtocol protocol.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithDelegate:(id&lt;swypPendingConnectionManagerDelegate&gt;)delegate</Declaration>
+			<Declaration>@property (nonatomic, retain) NSObject&lt;swypContentDataSourceProtocol,swypConnectionSessionDataDelegate&gt; *contentDataSource</Declaration>
 			
 			
-			<Anchor>//api/name/initWithDelegate:</Anchor>
+			<Anchor>//api/name/contentDataSource</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionManager/setSwypOutPending:forConnectionMethods:</TokenIdentifier>
-			<Abstract type="html">After swypConnnectionManager posts swypInfoRef to an interface, it sets it as pending here</Abstract>
-			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/swypContentInteractionManager/contentDataSource</TokenIdentifier>
+			<Abstract type="html">This property is the datasource that the content in contentDisplayController is sourced from per the swypContentDataSourceProtocol protocol.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
 			
-			<Declaration>- (void)setSwypOutPending:(swypInfoRef *)swypRef forConnectionMethods:(NSArray *)methods</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>methods</Name>
-					<Abstract type="html">NSArray of swypConnectionMethod in NSNumber objects as ints</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, retain) NSObject&lt;swypContentDataSourceProtocol,swypConnectionSessionDataDelegate&gt; *contentDataSource</Declaration>
 			
-			<Anchor>//api/name/setSwypOutPending:forConnectionMethods:</Anchor>
+			
+			<Anchor>//api/name/contentDataSource</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionManager/connectionMethodTimedOut:forSwypRef:</TokenIdentifier>
-			<Abstract type="html">This tells the manager that an interface method will no longer send new candidates
-This allows the manager to clear out deadspace and proceed to call swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:</Abstract>
-			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/setShowContentBeforeConnection:</TokenIdentifier>
+			<Abstract type="html">if set to TRUE, then content is displayed before swyp connection is made, and if content is swyped, then connection + content transfer is made
+this value is assigned at init by workspace manager</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
 			
-			<Declaration>- (void)connectionMethodTimedOut:(swypConnectionMethod)method forSwypRef:(swypInfoRef *)swypRef</Declaration>
+			<Declaration>@property (nonatomic, readonly) BOOL showContentBeforeConnection</Declaration>
 			
 			
-			<Anchor>//api/name/connectionMethodTimedOut:forSwypRef:</Anchor>
+			<Anchor>//api/name/showContentBeforeConnection</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionManager/clearAllPendingConnectionsForSwypRef:</TokenIdentifier>
-			<Abstract type="html">After swypConnnectionManager has found its match for a swypCandidate, it acts responsibly by calling this method</Abstract>
-			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/swypContentInteractionManager/showContentBeforeConnection</TokenIdentifier>
+			<Abstract type="html">if set to TRUE, then content is displayed before swyp connection is made, and if content is swyped, then connection + content transfer is made
+this value is assigned at init by workspace manager</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
 			
-			<Declaration>- (void)clearAllPendingConnectionsForSwypRef:(swypInfoRef *)ref</Declaration>
+			<Declaration>@property (nonatomic, readonly) BOOL showContentBeforeConnection</Declaration>
 			
 			
-			<Anchor>//api/name/clearAllPendingConnectionsForSwypRef:</Anchor>
+			<Anchor>//api/name/showContentBeforeConnection</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionManager/addSwypClientCandidateConnectionSession:forSwypRef:forConnectionMethod:</TokenIdentifier>
-			<Abstract type="html">After a swypConnectionMethod has returned a swypCandidate to swypConnnectionManager, swypConnnectionManager calls this method to add it to the queue for a specific swypInfoRef.</Abstract>
-			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/setContentDisplayController:</TokenIdentifier>
+			<Abstract type="html">This property is the view controller that contentDataSource content is displayed from.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
 			
-			<Declaration>- (void)addSwypClientCandidateConnectionSession:(swypConnectionSession *)connectionSession forSwypRef:(swypInfoRef *)ref forConnectionMethod:(swypConnectionMethod)method</Declaration>
+			<Declaration>@property (nonatomic, retain) UIViewController&lt;swypContentDisplayViewController&gt; *contentDisplayController</Declaration>
 			
 			
-			<Anchor>//api/name/addSwypClientCandidateConnectionSession:forSwypRef:forConnectionMethod:</Anchor>
+			<Anchor>//api/name/contentDisplayController</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionManager/nextConnectionSessionToAttemptHandshakeForSwypRef:</TokenIdentifier>
-			<Abstract type="html">This method is called by swypConnnectionManager after the delegate protocol swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp: is called</Abstract>
-			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/swypContentInteractionManager/contentDisplayController</TokenIdentifier>
+			<Abstract type="html">This property is the view controller that contentDataSource content is displayed from.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
 			
-			<Declaration>- (swypConnectionSession *)nextConnectionSessionToAttemptHandshakeForSwypRef:(swypInfoRef *)ref</Declaration>
+			<Declaration>@property (nonatomic, retain) UIViewController&lt;swypContentDisplayViewController&gt; *contentDisplayController</Declaration>
 			
 			
-			<Anchor>//api/name/nextConnectionSessionToAttemptHandshakeForSwypRef:</Anchor>
+			<Anchor>//api/name/contentDisplayController</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionManager/prioritizedInterfaceMethodsArray</TokenIdentifier>
-			<Abstract type="html">A nice array for iterating over all the interfaceMethods defined in swypConnectionMethod</Abstract>
-			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/initWithMainWorkspaceView:</TokenIdentifier>
+			<Abstract type="html">The main init function.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
 			
-			<Declaration>- (NSArray *)prioritizedInterfaceMethodsArray</Declaration>
+			<Declaration>- (id)initWithMainWorkspaceView:(UIView *)workspaceView</Declaration>
 			
-			<ReturnValue><Abstract type="html">returns NSArray of NSNumber objects init'd w/ int of swypConnectionMethod</Abstract></ReturnValue>
-			<Anchor>//api/name/prioritizedInterfaceMethodsArray</Anchor>
+			
+			<Anchor>//api/name/initWithMainWorkspaceView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/initWithMainWorkspaceView:showingContentBeforeConnection:</TokenIdentifier>
+			<Abstract type="html">Don't init this way.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMainWorkspaceView:(UIView *)workspaceView showingContentBeforeConnection:(BOOL)showContent</Declaration>
+			
+			
+			<Anchor>//api/name/initWithMainWorkspaceView:showingContentBeforeConnection:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/swypContentInteractionManager/supportedReceiptFileTypes</TokenIdentifier>
+			<Abstract type="html">Supported swyp receipt file types; in order of greatest preference, where index 0=most preferant</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)supportedReceiptFileTypes</Declaration>
+			
+			
+			<Anchor>//api/name/supportedReceiptFileTypes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/didBeginReceivingDataInConnectionSession:</TokenIdentifier>
+			<Abstract type="html">	Will notify you when the data IN stream is receiving so that UI can be updated accordingly</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)didBeginReceivingDataInConnectionSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/didBeginReceivingDataInConnectionSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/didFinnishReceivingDataInConnectionSession:</TokenIdentifier>
+			<Abstract type="html">	Will notify you when the data IN stream is DONE receiving so that UI can be updated accordingly</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)didFinnishReceivingDataInConnectionSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/didFinnishReceivingDataInConnectionSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</TokenIdentifier>
+			<Abstract type="html">See whether delegate will handle data stream.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (BOOL)delegateWillHandleDiscernedStream:(swypDiscernedInputStream *)discernedStream wantsAsData:(BOOL *)wantsProvidedAsNSData inConnectionSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/yieldedData:discernedStream:inConnectionSession:</TokenIdentifier>
+			<Abstract type="html">	The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)yieldedData:(NSData *)streamData discernedStream:(swypDiscernedInputStream *)discernedStream inConnectionSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/yieldedData:discernedStream:inConnectionSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/failedSendingStream:error:connectionSession:</TokenIdentifier>
+			<Abstract type="html">Upon failing to send data</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)failedSendingStream:(NSInputStream *)stream error:(NSError *)error connectionSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/failedSendingStream:error:connectionSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/completedSendingStream:connectionSession:</TokenIdentifier>
+			<Abstract type="html">Upon happily sending data</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)completedSendingStream:(NSInputStream *)stream connectionSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/completedSendingStream:connectionSession:</Anchor>
 		</Token>
 		
 	</File>

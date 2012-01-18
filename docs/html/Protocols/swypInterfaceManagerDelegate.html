@@ -44,11 +44,11 @@
 	
 	<option value="//api/name/interfaceManager:isDoneAdvertisingSwypOutAsPending:forConnectionMethod:">&nbsp;&nbsp;&nbsp;&nbsp;- interfaceManager:isDoneAdvertisingSwypOutAsPending:forConnectionMethod:</option>
 	
-	<option value="//api/name/interfaceManager:isDoneSearchForSwypOutServerCandidatesForRef:forConnectionMethod:">&nbsp;&nbsp;&nbsp;&nbsp;- interfaceManager:isDoneSearchForSwypOutServerCandidatesForRef:forConnectionMethod:</option>
+	<option value="//api/name/interfaceManager:isDoneSearchForSwypInServerCandidatesForRef:forConnectionMethod:">&nbsp;&nbsp;&nbsp;&nbsp;- interfaceManager:isDoneSearchForSwypInServerCandidatesForRef:forConnectionMethod:</option>
 	
 	<option value="//api/name/interfaceManager:madeUninitializedSwypServerCandidateConnectionSession:forRef:withConnectionMethod:">&nbsp;&nbsp;&nbsp;&nbsp;- interfaceManager:madeUninitializedSwypServerCandidateConnectionSession:forRef:withConnectionMethod:</option>
 	
-	<option value="//api/name/interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:forRef:withConnectionMethod:">&nbsp;&nbsp;&nbsp;&nbsp;- interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:forRef:withConnectionMethod:</option>
+	<option value="//api/name/interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:withConnectionMethod:">&nbsp;&nbsp;&nbsp;&nbsp;- interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:withConnectionMethod:</option>
 	
 	
 	
@@ -78,11 +78,11 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interfaceManager:isDoneAdvertisingSwypOutAsPending:forConnectionMethod:">interfaceManager:isDoneAdvertisingSwypOutAsPending:forConnectionMethod:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interfaceManager:isDoneSearchForSwypOutServerCandidatesForRef:forConnectionMethod:">interfaceManager:isDoneSearchForSwypOutServerCandidatesForRef:forConnectionMethod:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interfaceManager:isDoneSearchForSwypInServerCandidatesForRef:forConnectionMethod:">interfaceManager:isDoneSearchForSwypInServerCandidatesForRef:forConnectionMethod:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interfaceManager:madeUninitializedSwypServerCandidateConnectionSession:forRef:withConnectionMethod:">interfaceManager:madeUninitializedSwypServerCandidateConnectionSession:forRef:withConnectionMethod:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:forRef:withConnectionMethod:">interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:forRef:withConnectionMethod:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:withConnectionMethod:">interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:withConnectionMethod:</a></span></li>
 	
 </ul></li>
 
@@ -138,7 +138,7 @@
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/interfaceManager:isDoneSearchForSwypOutServerCandidatesForRef:forConnectionMethod:">&ndash;&nbsp;interfaceManager:isDoneSearchForSwypOutServerCandidatesForRef:forConnectionMethod:</a></code>
+		<code><a href="#//api/name/interfaceManager:isDoneSearchForSwypInServerCandidatesForRef:forConnectionMethod:">&ndash;&nbsp;interfaceManager:isDoneSearchForSwypInServerCandidatesForRef:forConnectionMethod:</a></code>
 		<span class="tooltip"><p>This method let&rsquo;s the <a href="../Classes/swypConnectionManager.html">swypConnectionManager</a> know that this interface is no longer searching for candidates, and that it can proceed through to the lower priorities in <a href="../Classes/swypPendingConnectionQueue.html">swypPendingConnectionQueue</a></p></span>
 	</span>
 	
@@ -152,7 +152,7 @@
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:forRef:withConnectionMethod:">&ndash;&nbsp;interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:forRef:withConnectionMethod:</a></code>
+		<code><a href="#//api/name/interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:withConnectionMethod:">&ndash;&nbsp;interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:withConnectionMethod:</a></code>
 		<span class="tooltip"><p>This method triggers when the interface has received a client candidate connection and has made session out of it w/ out intitializing it.</p></span>
 	</span>
 	
@@ -214,8 +214,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/interfaceManager:isDoneSearchForSwypOutServerCandidatesForRef:forConnectionMethod:" title="interfaceManager:isDoneSearchForSwypOutServerCandidatesForRef:forConnectionMethod:"></a>
-	<h3 class="subsubtitle method-title">interfaceManager:isDoneSearchForSwypOutServerCandidatesForRef:forConnectionMethod:</h3>
+	<a name="//api/name/interfaceManager:isDoneSearchForSwypInServerCandidatesForRef:forConnectionMethod:" title="interfaceManager:isDoneSearchForSwypInServerCandidatesForRef:forConnectionMethod:"></a>
+	<h3 class="subsubtitle method-title">interfaceManager:isDoneSearchForSwypInServerCandidatesForRef:forConnectionMethod:</h3>
 	
 	
 	
@@ -224,7 +224,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)interfaceManager:(id&lt;swypInterfaceManager&gt;)<em>manager</em> isDoneSearchForSwypOutServerCandidatesForRef:(swypInfoRef *)<em>ref</em> forConnectionMethod:(swypConnectionMethod)<em>method</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)interfaceManager:(id&lt;swypInterfaceManager&gt;)<em>manager</em> isDoneSearchForSwypInServerCandidatesForRef:(swypInfoRef *)<em>ref</em> forConnectionMethod:(swypConnectionMethod)<em>method</em></code></div>
 	
 	
 	
@@ -266,6 +266,16 @@
 	<div class="method-subsection method-declaration"><code>- (void)interfaceManager:(id&lt;swypInterfaceManager&gt;)<em>manager</em> madeUninitializedSwypServerCandidateConnectionSession:(swypConnectionSession *)<em>connectionSession</em> forRef:(swypInfoRef *)<em>ref</em> withConnectionMethod:(swypConnectionMethod)<em>method</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ref</em></dt>
+			<dd><p>This value is mandatory, as a client candidate must be the first to pitch its swyp info to a server.</p></dd>
+		</dl>
+		
+	</div>
+	
 	
 	
 	
@@ -276,7 +286,7 @@
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>This method triggers when the interface has found a server candidate and made a connection session out of it.</p>
 
-<pre><code>These sessions will go to the swypPendingConnectionQueue to be pulled one-by-one by the swypConnectionManager. 
+<pre><code>These sessions will go to the swypPendingConnectionManager to be pulled one-by-one by the swypConnectionManager. 
 </code></pre>
 	</div>
 	
@@ -295,8 +305,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:forRef:withConnectionMethod:" title="interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:forRef:withConnectionMethod:"></a>
-	<h3 class="subsubtitle method-title">interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:forRef:withConnectionMethod:</h3>
+	<a name="//api/name/interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:withConnectionMethod:" title="interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:withConnectionMethod:"></a>
+	<h3 class="subsubtitle method-title">interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:withConnectionMethod:</h3>
 	
 	
 	
@@ -305,8 +315,18 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)interfaceManager:(id&lt;swypInterfaceManager&gt;)<em>manager</em> receivedUninitializedSwypClientCandidateConnectionSession:(swypConnectionSession *)<em>connectionSession</em> forRef:(swypInfoRef *)<em>ref</em> withConnectionMethod:(swypConnectionMethod)<em>method</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)interfaceManager:(id&lt;swypInterfaceManager&gt;)<em>manager</em> receivedUninitializedSwypClientCandidateConnectionSession:(swypConnectionSession *)<em>connectionSession</em> withConnectionMethod:(swypConnectionMethod)<em>method</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>connectionSession</em></dt>
+			<dd><p>the candidate within the session can contain a matchable swyp when percise.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -348,7 +368,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-14)</span><br />
+						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-18)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
 						

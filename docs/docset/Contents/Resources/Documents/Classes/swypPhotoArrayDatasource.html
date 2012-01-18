@@ -44,6 +44,10 @@
 	
 	<option value="//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</option>
 	
+	<option value="//api/name/supportedFileTypesForReceipt">&nbsp;&nbsp;&nbsp;&nbsp;- supportedFileTypesForReceipt</option>
+	
+	<option value="//api/name/yieldedData:discernedStream:inConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- yieldedData:discernedStream:inConnectionSession:</option>
+	
 	
 	
 </select>
@@ -71,6 +75,10 @@
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/supportedFileTypesForReceipt">supportedFileTypesForReceipt</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/yieldedData:discernedStream:inConnectionSession:">yieldedData:discernedStream:inConnectionSession:</a></span></li>
 	
 </ul></li>
 
@@ -117,13 +125,47 @@
 						
 						
 						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/supportedFileTypesForReceipt">&ndash;&nbsp;supportedFileTypesForReceipt</a></code>
+		<span class="tooltip"><p>swypFileTypeStrings in order of preference where 0 = most preferent</p>
+
+<pre><code>Use this on your datasource set in swypContentInteractionManager to choose what files your app accepts.
+</code></pre></span>
+	</span>
+	
+	
+</li>
+						</ul>
 						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">&ndash;&nbsp;delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</a></code>
 		<span class="tooltip"><p>See whether delegate will handle data stream.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/yieldedData:discernedStream:inConnectionSession:">&ndash;&nbsp;yieldedData:discernedStream:inConnectionSession:</a></code>
+		<span class="tooltip"><pre><code>The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.
+</code></pre></span>
 	</span>
 	
 	
@@ -191,6 +233,92 @@ Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be s
 	
 </div>
 						
+						<div class="section-method">
+	<a name="//api/name/supportedFileTypesForReceipt" title="supportedFileTypesForReceipt"></a>
+	<h3 class="subsubtitle method-title">supportedFileTypesForReceipt</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>swypFileTypeStrings in order of preference where 0 = most preferent</p>
+
+<pre><code>Use this on your datasource set in swypContentInteractionManager to choose what files your app accepts.
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)supportedFileTypesForReceipt</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>swypFileTypeStrings in order of preference where 0 = most preferent</p>
+
+<pre><code>Use this on your datasource set in swypContentInteractionManager to choose what files your app accepts.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/yieldedData:discernedStream:inConnectionSession:" title="yieldedData:discernedStream:inConnectionSession:"></a>
+	<h3 class="subsubtitle method-title">yieldedData:discernedStream:inConnectionSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)yieldedData:(NSData *)<em>streamData</em> discernedStream:(swypDiscernedInputStream *)<em>discernedStream</em> inConnectionSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
 					</div>
 					
 					
@@ -204,7 +332,7 @@ Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be s
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-14)</span><br />
+						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-18)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
 						

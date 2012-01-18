@@ -1,49 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/swypConnectionManager.html">
+	<File path="Classes/swypBonjourPairManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/swypConnectionManager</TokenIdentifier>
-			<Abstract type="html">This guy does orchistrates the whole gig to get connections between devices established.</Abstract>
-			<DeclaredIn>swypConnectionManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/swypBonjourPairManager</TokenIdentifier>
+			<Abstract type="html">This class manages the resolution of bonjour candidates to pass them off to the swypConnectionManager as swypConnectionSessions.</Abstract>
+			<DeclaredIn>swypBonjourPairManager.h</DeclaredIn>
 			
 			<NodeRef refid="8"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/startServices</TokenIdentifier>
-			<Abstract type="html">	Begin listening, allow new connections, etc. </Abstract>
-			<DeclaredIn>swypConnectionManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)startServices</Declaration>
-			
-			
-			<Anchor>//api/name/startServices</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/stopServices</TokenIdentifier>
-			<Abstract type="html">	Stop listening, disallow new connections, terminate existing swypConnectionSessions, etc. 
-	Probably the swyp workspace, or the app has been closed.</Abstract>
-			<DeclaredIn>swypConnectionManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)stopServices</Declaration>
-			
-			
-			<Anchor>//api/name/stopServices</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</TokenIdentifier>
-			<Abstract type="html">See whether delegate will handle data stream.</Abstract>
-			<DeclaredIn>swypConnectionManager.m</DeclaredIn>			
-			
-			<Declaration>- (BOOL)delegateWillHandleDiscernedStream:(swypDiscernedInputStream *)discernedStream wantsAsData:(BOOL *)wantsProvidedAsNSData inConnectionSession:(swypConnectionSession *)session</Declaration>
-			
-			
-			<Anchor>//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

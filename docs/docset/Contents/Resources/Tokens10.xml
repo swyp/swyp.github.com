@@ -1,127 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/swypContentInteractionManager.html">
+	<File path="Classes/swypCloudNetService.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/swypContentInteractionManager</TokenIdentifier>
-			<Abstract type="html">This class is responsible for unifying modal and controller, and displaying them upon the workspace.</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/swypCloudNetService</TokenIdentifier>
+			<Abstract type="html">this class basically receives and creates connections to peers matched by cloudmanager</Abstract>
+			<DeclaredIn>swypCloudNetService.h</DeclaredIn>
 			
 			<NodeRef refid="10"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/setContentDataSource:</TokenIdentifier>
-			<Abstract type="html">This property is the datasource that the content in contentDisplayController is sourced from per the swypContentDataSourceProtocol protocol.</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSObject&lt;swypContentDataSourceProtocol,swypConnectionSessionDataDelegate&gt; *contentDataSource</Declaration>
-			
-			
-			<Anchor>//api/name/contentDataSource</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/swypContentInteractionManager/contentDataSource</TokenIdentifier>
-			<Abstract type="html">This property is the datasource that the content in contentDisplayController is sourced from per the swypContentDataSourceProtocol protocol.</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSObject&lt;swypContentDataSourceProtocol,swypConnectionSessionDataDelegate&gt; *contentDataSource</Declaration>
-			
-			
-			<Anchor>//api/name/contentDataSource</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/setShowContentBeforeConnection:</TokenIdentifier>
-			<Abstract type="html">if set to TRUE, then content is displayed before swyp connection is made, and if content is swyped, then connection + content transfer is made
-this value is assigned at init by workspace manager</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL showContentBeforeConnection</Declaration>
-			
-			
-			<Anchor>//api/name/showContentBeforeConnection</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/swypContentInteractionManager/showContentBeforeConnection</TokenIdentifier>
-			<Abstract type="html">if set to TRUE, then content is displayed before swyp connection is made, and if content is swyped, then connection + content transfer is made
-this value is assigned at init by workspace manager</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL showContentBeforeConnection</Declaration>
-			
-			
-			<Anchor>//api/name/showContentBeforeConnection</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/setContentDisplayController:</TokenIdentifier>
-			<Abstract type="html">This property is the view controller that contentDataSource content is displayed from.</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UIViewController&lt;swypContentDisplayViewController&gt; *contentDisplayController</Declaration>
-			
-			
-			<Anchor>//api/name/contentDisplayController</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/swypContentInteractionManager/contentDisplayController</TokenIdentifier>
-			<Abstract type="html">This property is the view controller that contentDataSource content is displayed from.</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UIViewController&lt;swypContentDisplayViewController&gt; *contentDisplayController</Declaration>
-			
-			
-			<Anchor>//api/name/contentDisplayController</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/initWithMainWorkspaceView:</TokenIdentifier>
-			<Abstract type="html">The main init function.</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithMainWorkspaceView:(UIView *)workspaceView</Declaration>
-			
-			
-			<Anchor>//api/name/initWithMainWorkspaceView:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/initWithMainWorkspaceView:showingContentBeforeConnection:</TokenIdentifier>
-			<Abstract type="html">Don't init this way.</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithMainWorkspaceView:(UIView *)workspaceView showingContentBeforeConnection:(BOOL)showContent</Declaration>
-			
-			
-			<Anchor>//api/name/initWithMainWorkspaceView:showingContentBeforeConnection:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/swypContentInteractionManager/supportedFileTypes</TokenIdentifier>
-			<Abstract type="html">swyp in order of preference where index 0=most preferant</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
-			
-			<Declaration>+ (NSArray *)supportedFileTypes</Declaration>
-			
-			
-			<Anchor>//api/name/supportedFileTypes</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</TokenIdentifier>
-			<Abstract type="html">See whether delegate will handle data stream.</Abstract>
-			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
-			
-			<Declaration>- (BOOL)delegateWillHandleDiscernedStream:(swypDiscernedInputStream *)discernedStream wantsAsData:(BOOL *)wantsProvidedAsNSData inConnectionSession:(swypConnectionSession *)session</Declaration>
-			
-			
-			<Anchor>//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

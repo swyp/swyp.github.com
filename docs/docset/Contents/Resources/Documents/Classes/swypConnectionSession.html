@@ -46,6 +46,18 @@
 	
 	<option value="//api/name/beginSendingFileStreamWithTag:type:dataStreamForSend:length:">&nbsp;&nbsp;&nbsp;&nbsp;- beginSendingFileStreamWithTag:type:dataStreamForSend:length:</option>
 	
+	<option value="//api/name/completedInputStream:forOutputStream:withInputToOutputConnector:">&nbsp;&nbsp;&nbsp;&nbsp;- completedInputStream:forOutputStream:withInputToOutputConnector:</option>
+	
+	<option value="//api/name/dataBridgeFailedYieldingDataFromInputStream:withError:inInputToDataBridge:">&nbsp;&nbsp;&nbsp;&nbsp;- dataBridgeFailedYieldingDataFromInputStream:withError:inInputToDataBridge:</option>
+	
+	<option value="//api/name/dataBridgeYieldedData:fromInputStream:withInputToDataBridge:">&nbsp;&nbsp;&nbsp;&nbsp;- dataBridgeYieldedData:fromInputStream:withInputToDataBridge:</option>
+	
+	<option value="//api/name/encounteredErrorInInputStream:withInputToOutputConnector:">&nbsp;&nbsp;&nbsp;&nbsp;- encounteredErrorInInputStream:withInputToOutputConnector:</option>
+	
+	<option value="//api/name/encounteredErrorInOutputStream:withInputToOutputConnector:">&nbsp;&nbsp;&nbsp;&nbsp;- encounteredErrorInOutputStream:withInputToOutputConnector:</option>
+	
+	<option value="//api/name/initWithSwypCandidate:inputStream:outputStream:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithSwypCandidate:inputStream:outputStream:</option>
+	
 	<option value="//api/name/initiate">&nbsp;&nbsp;&nbsp;&nbsp;- initiate</option>
 	
 	<option value="//api/name/invalidate">&nbsp;&nbsp;&nbsp;&nbsp;- invalidate</option>
@@ -82,6 +94,18 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginSendingFileStreamWithTag:type:dataStreamForSend:length:">beginSendingFileStreamWithTag:type:dataStreamForSend:length:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/completedInputStream:forOutputStream:withInputToOutputConnector:">completedInputStream:forOutputStream:withInputToOutputConnector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataBridgeFailedYieldingDataFromInputStream:withError:inInputToDataBridge:">dataBridgeFailedYieldingDataFromInputStream:withError:inInputToDataBridge:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataBridgeYieldedData:fromInputStream:withInputToDataBridge:">dataBridgeYieldedData:fromInputStream:withInputToDataBridge:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/encounteredErrorInInputStream:withInputToOutputConnector:">encounteredErrorInInputStream:withInputToOutputConnector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/encounteredErrorInOutputStream:withInputToOutputConnector:">encounteredErrorInOutputStream:withInputToOutputConnector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithSwypCandidate:inputStream:outputStream:">initWithSwypCandidate:inputStream:outputStream:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initiate">initiate</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/invalidate">invalidate</a></span></li>
@@ -113,7 +137,7 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Conforms to</td>
-	<td class="specification-value">NSStreamDelegate<br />swypConcatenatedInputStreamDelegate<br />swypInputStreamDiscernerDelegate<br />swypInputToDataBridgeDelegate<br />swypInputToOutputStreamConnectorDelegate</td>
+	<td class="specification-value">NSStreamDelegate<br />swypConcatenatedInputStreamDelegate<br />swypInputStreamDiscernerDelegate<br /><a href="../Protocols/swypInputToDataBridgeDelegate.html">swypInputToDataBridgeDelegate</a><br /><a href="../Protocols/swypInputToOutputStreamConnectorDelegate.html">swypInputToOutputStreamConnectorDelegate</a></td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
 	<td class="specification-value">swypConnectionSession.h<br />swypConnectionSession.m</td>
@@ -146,6 +170,13 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
+		<code><a href="#//api/name/initWithSwypCandidate:inputStream:outputStream:">&ndash;&nbsp;initWithSwypCandidate:inputStream:outputStream:</a></code>
+		<span class="tooltip"><p>swypConnectionSessions are initialized with their candidate, and input and an output stream.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/initiate">&ndash;&nbsp;initiate</a></code>
 		<span class="tooltip"><p>Start connection; schedule in runloop</p></span>
 	</span>
@@ -176,6 +207,81 @@
         1) Don't rely on length parameter for buffer sizes without validity checks 2) Don't execute recieved data!
 if there is already a stream sending, this stream will be queued
 </code></pre></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataBridgeYieldedData:fromInputStream:withInputToDataBridge:">&ndash;&nbsp;dataBridgeYieldedData:fromInputStream:withInputToDataBridge:</a></code>
+		<span class="tooltip"><p>Data retrieved notification</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataBridgeFailedYieldingDataFromInputStream:withError:inInputToDataBridge:">&ndash;&nbsp;dataBridgeFailedYieldingDataFromInputStream:withError:inInputToDataBridge:</a></code>
+		<span class="tooltip"><p>Data failed notfication&hellip; Sorry.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/encounteredErrorInInputStream:withInputToOutputConnector:">&ndash;&nbsp;encounteredErrorInInputStream:withInputToOutputConnector:</a></code>
+		<span class="tooltip"><p>error in the input</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/encounteredErrorInOutputStream:withInputToOutputConnector:">&ndash;&nbsp;encounteredErrorInOutputStream:withInputToOutputConnector:</a></code>
+		<span class="tooltip"><p>error in the output</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/completedInputStream:forOutputStream:withInputToOutputConnector:">&ndash;&nbsp;completedInputStream:forOutputStream:withInputToOutputConnector:</a></code>
+		<span class="tooltip"><p>we&rsquo;re done</p></span>
 	</span>
 	
 	
@@ -237,6 +343,242 @@ if there is already a stream sending, this stream will be queued
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/completedInputStream:forOutputStream:withInputToOutputConnector:" title="completedInputStream:forOutputStream:withInputToOutputConnector:"></a>
+	<h3 class="subsubtitle method-title">completedInputStream:forOutputStream:withInputToOutputConnector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>we&rsquo;re done</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)completedInputStream:(NSInputStream *)<em>stream</em> forOutputStream:(NSOutputStream *)<em>outputStream</em> withInputToOutputConnector:(swypInputToOutputStreamConnector *)<em>connector</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>we&rsquo;re done</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypInputToOutputStreamConnector.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataBridgeFailedYieldingDataFromInputStream:withError:inInputToDataBridge:" title="dataBridgeFailedYieldingDataFromInputStream:withError:inInputToDataBridge:"></a>
+	<h3 class="subsubtitle method-title">dataBridgeFailedYieldingDataFromInputStream:withError:inInputToDataBridge:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Data failed notfication&hellip; Sorry.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)dataBridgeFailedYieldingDataFromInputStream:(NSInputStream *)<em>inputStream</em> withError:(NSError *)<em>error</em> inInputToDataBridge:(swypInputToDataBridge *)<em>bridge</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Data failed notfication&hellip; Sorry.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypInputToDataBridge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataBridgeYieldedData:fromInputStream:withInputToDataBridge:" title="dataBridgeYieldedData:fromInputStream:withInputToDataBridge:"></a>
+	<h3 class="subsubtitle method-title">dataBridgeYieldedData:fromInputStream:withInputToDataBridge:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Data retrieved notification</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)dataBridgeYieldedData:(NSData *)<em>yieldedData</em> fromInputStream:(NSInputStream *)<em>inputStream</em> withInputToDataBridge:(swypInputToDataBridge *)<em>bridge</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Data retrieved notification</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypInputToDataBridge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/encounteredErrorInInputStream:withInputToOutputConnector:" title="encounteredErrorInInputStream:withInputToOutputConnector:"></a>
+	<h3 class="subsubtitle method-title">encounteredErrorInInputStream:withInputToOutputConnector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>error in the input</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)encounteredErrorInInputStream:(NSInputStream *)<em>stream</em> withInputToOutputConnector:(swypInputToOutputStreamConnector *)<em>connector</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>error in the input</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypInputToOutputStreamConnector.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/encounteredErrorInOutputStream:withInputToOutputConnector:" title="encounteredErrorInOutputStream:withInputToOutputConnector:"></a>
+	<h3 class="subsubtitle method-title">encounteredErrorInOutputStream:withInputToOutputConnector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>error in the output</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)encounteredErrorInOutputStream:(NSOutputStream *)<em>stream</em> withInputToOutputConnector:(swypInputToOutputStreamConnector *)<em>connector</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>error in the output</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypInputToOutputStreamConnector.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithSwypCandidate:inputStream:outputStream:" title="initWithSwypCandidate:inputStream:outputStream:"></a>
+	<h3 class="subsubtitle method-title">initWithSwypCandidate:inputStream:outputStream:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>swypConnectionSessions are initialized with their candidate, and input and an output stream.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithSwypCandidate:(swypCandidate *)<em>candidate</em> inputStream:(NSInputStream *)<em>inputStream</em> outputStream:(NSOutputStream *)<em>outputStream</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>swypConnectionSessions are initialized with their candidate, and input and an output stream.</p>
+
+<p>Connections are opened with the &lsquo;inititate&rsquo; function.</p>
+	</div>
 	
 	
 	
@@ -343,7 +685,7 @@ if there is already a stream sending, this stream will be queued
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-14)</span><br />
+						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-18)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
 						

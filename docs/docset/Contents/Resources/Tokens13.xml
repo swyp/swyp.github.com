@@ -1,59 +1,302 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/swypInfoRef.html">
+	<File path="Classes/swypConnectionManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/swypInfoRef</TokenIdentifier>
-			<Abstract type="html">This class encapsulates the logical components of the gestures found in swypGestureRecognizer.
-	The swypInfoRef is the tracking method for all connections based on gestures. </Abstract>
-			<DeclaredIn>swypInfoRef.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/swypConnectionManager</TokenIdentifier>
+			<Abstract type="html">This class orchistrates the establishment of connections between devices.</Abstract>
+			<DeclaredIn>swypConnectionManager.h</DeclaredIn>
 			
 			<NodeRef refid="13"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypInfoRef/setStartPoint:</TokenIdentifier>
-			<Abstract type="html">in mm/second</Abstract>
-			<DeclaredIn>swypInfoRef.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/setSupportedConnectionMethods:</TokenIdentifier>
+			<Abstract type="html">device supported</Abstract>
+			<DeclaredIn>swypConnectionManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) CGPoint startPoint</Declaration>
+			<Declaration>@property (nonatomic, readonly) swypConnectionMethod supportedConnectionMethods</Declaration>
 			
 			
-			<Anchor>//api/name/startPoint</Anchor>
+			<Anchor>//api/name/supportedConnectionMethods</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/swypInfoRef/startPoint</TokenIdentifier>
-			<Abstract type="html">in mm/second</Abstract>
-			<DeclaredIn>swypInfoRef.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/swypConnectionManager/supportedConnectionMethods</TokenIdentifier>
+			<Abstract type="html">device supported</Abstract>
+			<DeclaredIn>swypConnectionManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) CGPoint startPoint</Declaration>
+			<Declaration>@property (nonatomic, readonly) swypConnectionMethod supportedConnectionMethods</Declaration>
 			
 			
-			<Anchor>//api/name/startPoint</Anchor>
+			<Anchor>//api/name/supportedConnectionMethods</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypInfoRef/setSwypBeginningContentView:</TokenIdentifier>
-			<Abstract type="html">property is filled when swyp out occurs on top of displayed content, not filled when swyp begins on workspace</Abstract>
-			<DeclaredIn>swypInfoRef.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/setAvailableConnectionMethods:</TokenIdentifier>
+			<Abstract type="html">currently usable per reachability</Abstract>
+			<DeclaredIn>swypConnectionManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIView *swypBeginningContentView</Declaration>
+			<Declaration>@property (nonatomic, readonly) swypConnectionMethod availableConnectionMethods</Declaration>
 			
 			
-			<Anchor>//api/name/swypBeginningContentView</Anchor>
+			<Anchor>//api/name/availableConnectionMethods</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/swypInfoRef/swypBeginningContentView</TokenIdentifier>
-			<Abstract type="html">property is filled when swyp out occurs on top of displayed content, not filled when swyp begins on workspace</Abstract>
-			<DeclaredIn>swypInfoRef.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/swypConnectionManager/availableConnectionMethods</TokenIdentifier>
+			<Abstract type="html">currently usable per reachability</Abstract>
+			<DeclaredIn>swypConnectionManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIView *swypBeginningContentView</Declaration>
+			<Declaration>@property (nonatomic, readonly) swypConnectionMethod availableConnectionMethods</Declaration>
 			
 			
-			<Anchor>//api/name/swypBeginningContentView</Anchor>
+			<Anchor>//api/name/availableConnectionMethods</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/setEnabledConnectionMethods:</TokenIdentifier>
+			<Abstract type="html">user or implicitly authorized methods through activeConnectionClass</Abstract>
+			<DeclaredIn>swypConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) swypConnectionMethod enabledConnectionMethods</Declaration>
+			
+			
+			<Anchor>//api/name/enabledConnectionMethods</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypConnectionManager/enabledConnectionMethods</TokenIdentifier>
+			<Abstract type="html">user or implicitly authorized methods through activeConnectionClass</Abstract>
+			<DeclaredIn>swypConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) swypConnectionMethod enabledConnectionMethods</Declaration>
+			
+			
+			<Anchor>//api/name/enabledConnectionMethods</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/setActiveConnectionMethods:</TokenIdentifier>
+			<Abstract type="html">intersect of enabled and available</Abstract>
+			<DeclaredIn>swypConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) swypConnectionMethod activeConnectionMethods</Declaration>
+			
+			
+			<Anchor>//api/name/activeConnectionMethods</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypConnectionManager/activeConnectionMethods</TokenIdentifier>
+			<Abstract type="html">intersect of enabled and available</Abstract>
+			<DeclaredIn>swypConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) swypConnectionMethod activeConnectionMethods</Declaration>
+			
+			
+			<Anchor>//api/name/activeConnectionMethods</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/setUserPreferedConnectionClass:</TokenIdentifier>
+			<Abstract type="html">the preferred class that the UI reflects</Abstract>
+			<DeclaredIn>swypConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) swypConnectionClass userPreferedConnectionClass</Declaration>
+			
+			
+			<Anchor>//api/name/userPreferedConnectionClass</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypConnectionManager/userPreferedConnectionClass</TokenIdentifier>
+			<Abstract type="html">the preferred class that the UI reflects</Abstract>
+			<DeclaredIn>swypConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) swypConnectionClass userPreferedConnectionClass</Declaration>
+			
+			
+			<Anchor>//api/name/userPreferedConnectionClass</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/setActiveConnectionClass:</TokenIdentifier>
+			<Abstract type="html">on-the-fly generated connection class based on user pref &amp; availability</Abstract>
+			<DeclaredIn>swypConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) swypConnectionClass activeConnectionClass</Declaration>
+			
+			
+			<Anchor>//api/name/activeConnectionClass</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypConnectionManager/activeConnectionClass</TokenIdentifier>
+			<Abstract type="html">on-the-fly generated connection class based on user pref &amp; availability</Abstract>
+			<DeclaredIn>swypConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) swypConnectionClass activeConnectionClass</Declaration>
+			
+			
+			<Anchor>//api/name/activeConnectionClass</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/startServices</TokenIdentifier>
+			<Abstract type="html">	Begin listening, allow new connections, etc. </Abstract>
+			<DeclaredIn>swypConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)startServices</Declaration>
+			
+			
+			<Anchor>//api/name/startServices</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/stopServices</TokenIdentifier>
+			<Abstract type="html">	Stop listening, disallow new connections, terminate existing swypConnectionSessions, etc. 
+	Probably the swyp workspace, or the app has been closed.</Abstract>
+			<DeclaredIn>swypConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopServices</Declaration>
+			
+			
+			<Anchor>//api/name/stopServices</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/interfaceManager:isDoneAdvertisingSwypOutAsPending:forConnectionMethod:</TokenIdentifier>
+			<Abstract type="html">This method decrements a given swyp in the swypHandShakeManger's dereferenceSwypOutAsPending</Abstract>
+			<DeclaredIn>swypConnectionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)interfaceManager:(id&lt;swypInterfaceManager&gt;)manager isDoneAdvertisingSwypOutAsPending:(swypInfoRef *)ref forConnectionMethod:(swypConnectionMethod)method</Declaration>
+			
+			
+			<Anchor>//api/name/interfaceManager:isDoneAdvertisingSwypOutAsPending:forConnectionMethod:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/interfaceManager:isDoneSearchForSwypInServerCandidatesForRef:forConnectionMethod:</TokenIdentifier>
+			<Abstract type="html">This method let's the swypConnectionManager know that this interface is no longer searching for candidates, and that it can proceed through to the lower priorities in swypPendingConnectionQueue</Abstract>
+			<DeclaredIn>swypConnectionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)interfaceManager:(id&lt;swypInterfaceManager&gt;)manager isDoneSearchForSwypInServerCandidatesForRef:(swypInfoRef *)ref forConnectionMethod:(swypConnectionMethod)method</Declaration>
+			
+			
+			<Anchor>//api/name/interfaceManager:isDoneSearchForSwypInServerCandidatesForRef:forConnectionMethod:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/interfaceManager:madeUninitializedSwypServerCandidateConnectionSession:forRef:withConnectionMethod:</TokenIdentifier>
+			<Abstract type="html">This method triggers when the interface has found a server candidate and made a connection session out of it.</Abstract>
+			<DeclaredIn>swypConnectionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)interfaceManager:(id&lt;swypInterfaceManager&gt;)manager madeUninitializedSwypServerCandidateConnectionSession:(swypConnectionSession *)connectionSession forRef:(swypInfoRef *)ref withConnectionMethod:(swypConnectionMethod)method</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>ref</Name>
+					<Abstract type="html">This value is mandatory, as a client candidate must be the first to pitch its swyp info to a server.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/interfaceManager:madeUninitializedSwypServerCandidateConnectionSession:forRef:withConnectionMethod:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:withConnectionMethod:</TokenIdentifier>
+			<Abstract type="html">This method triggers when the interface has received a client candidate connection and has made session out of it w/ out intitializing it.</Abstract>
+			<DeclaredIn>swypConnectionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)interfaceManager:(id&lt;swypInterfaceManager&gt;)manager receivedUninitializedSwypClientCandidateConnectionSession:(swypConnectionSession *)connectionSession withConnectionMethod:(swypConnectionMethod)method</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connectionSession</Name>
+					<Abstract type="html">the candidate within the session can contain a matchable swyp when percise.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:withConnectionMethod:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/swypPendingConnectionManager:hasAvailableHandshakeableConnectionSessionsForSwyp:</TokenIdentifier>
+			<Abstract type="html">	
+	Callback is called to indicate swypConnectionSession are available for use by connection manager. 
+	Callback is called only after a connectionMethodTimedOut: or addSwypServerCandidate:forSwypRef:forConnectionMethod:.
+	</Abstract>
+			<DeclaredIn>swypConnectionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)swypPendingConnectionManager:(swypPendingConnectionManager *)manager hasAvailableHandshakeableConnectionSessionsForSwyp:(swypInfoRef *)ref</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>ref</Name>
+					<Abstract type="html">a swypInfoRef that's been added by the swypConnectionManager</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/swypPendingConnectionManager:hasAvailableHandshakeableConnectionSessionsForSwyp:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/swypPendingConnectionManager:finishedForSwyp:</TokenIdentifier>
+			<Abstract type="html">Called when swypInforef is no longer needed; including clearAllPendingConnectionsForSwypRef</Abstract>
+			<DeclaredIn>swypConnectionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)swypPendingConnectionManager:(swypPendingConnectionManager *)manager finishedForSwyp:(swypInfoRef *)ref</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>ref</Name>
+					<Abstract type="html">a swypInfoRef that's no longer needed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/swypPendingConnectionManager:finishedForSwyp:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/dataBridgeYieldedData:fromInputStream:withInputToDataBridge:</TokenIdentifier>
+			<Abstract type="html">Data retrieved notification</Abstract>
+			<DeclaredIn>swypConnectionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)dataBridgeYieldedData:(NSData *)yieldedData fromInputStream:(NSInputStream *)inputStream withInputToDataBridge:(swypInputToDataBridge *)bridge</Declaration>
+			
+			
+			<Anchor>//api/name/dataBridgeYieldedData:fromInputStream:withInputToDataBridge:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/dataBridgeFailedYieldingDataFromInputStream:withError:inInputToDataBridge:</TokenIdentifier>
+			<Abstract type="html">Data failed notfication... Sorry.</Abstract>
+			<DeclaredIn>swypConnectionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)dataBridgeFailedYieldingDataFromInputStream:(NSInputStream *)inputStream withError:(NSError *)error inInputToDataBridge:(swypInputToDataBridge *)bridge</Declaration>
+			
+			
+			<Anchor>//api/name/dataBridgeFailedYieldingDataFromInputStream:withError:inInputToDataBridge:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</TokenIdentifier>
+			<Abstract type="html">See whether delegate will handle data stream.</Abstract>
+			<DeclaredIn>swypConnectionManager.m</DeclaredIn>			
+			
+			<Declaration>- (BOOL)delegateWillHandleDiscernedStream:(swypDiscernedInputStream *)discernedStream wantsAsData:(BOOL *)wantsProvidedAsNSData inConnectionSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConnectionManager/yieldedData:discernedStream:inConnectionSession:</TokenIdentifier>
+			<Abstract type="html">	The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.</Abstract>
+			<DeclaredIn>swypConnectionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)yieldedData:(NSData *)streamData discernedStream:(swypDiscernedInputStream *)discernedStream inConnectionSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/yieldedData:discernedStream:inConnectionSession:</Anchor>
 		</Token>
 		
 	</File>

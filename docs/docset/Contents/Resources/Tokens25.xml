@@ -1,49 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/swypPendingConnectionManagerDelegate.html">
+	<File path="Classes/swypOutputToDataStream.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/swypPendingConnectionManagerDelegate</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/swypOutputToDataStream</TokenIdentifier>
+			<Abstract type="html">This class basically just acts an NSOutputStream that takes any written bytes, shoves them in an NSData shell, the tells then tosses them at the dataDelegate</Abstract>
+			<DeclaredIn>swypOutputToDataStream.h</DeclaredIn>
 			
 			<NodeRef refid="25"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypPendingConnectionManagerDelegate/swypPendingConnectionManager:hasAvailableHandshakeableConnectionSessionsForSwyp:</TokenIdentifier>
-			<Abstract type="html">	
-	Callback is called to indicate swypConnectionSession are available for use by connection manager. 
-	Callback is called only after a connectionMethodTimedOut: or addSwypClientCandidate:forSwypRef:forConnectionMethod:.
-	</Abstract>
-			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypOutputToDataStream/initWithDataDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate is of critical importance- otherwise use something else.</Abstract>
+			<DeclaredIn>swypOutputToDataStream.h</DeclaredIn>			
 			
-			<Declaration>- (void)swypPendingConnectionManager:(swypPendingConnectionManager *)manager hasAvailableHandshakeableConnectionSessionsForSwyp:(swypInfoRef *)ref</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>ref</Name>
-					<Abstract type="html">a swypInfoRef that's been added by the swypConnectionManager</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (id)initWithDataDelegate:(id&lt;swypOutputToDataStreamDataDelegate&gt;)delegate</Declaration>
 			
-			<Anchor>//api/name/swypPendingConnectionManager:hasAvailableHandshakeableConnectionSessionsForSwyp:</Anchor>
+			
+			<Anchor>//api/name/initWithDataDelegate:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypPendingConnectionManagerDelegate/swypPendingConnectioManager:finishedForSwyp:</TokenIdentifier>
-			<Abstract type="html">Called when swypInforef is no longer needed; including clearAllPendingConnectionsForSwypRef</Abstract>
-			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypOutputToDataStream/invalidateByError</TokenIdentifier>
+			<Abstract type="html">this is the invalidate command to push errors up from the GKSession</Abstract>
+			<DeclaredIn>swypOutputToDataStream.h</DeclaredIn>			
 			
-			<Declaration>- (void)swypPendingConnectioManager:(swypPendingConnectionManager *)manager finishedForSwyp:(swypInfoRef *)ref</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>ref</Name>
-					<Abstract type="html">a swypInfoRef that's no longer needed</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)invalidateByError</Declaration>
 			
-			<Anchor>//api/name/swypPendingConnectioManager:finishedForSwyp:</Anchor>
+			
+			<Anchor>//api/name/invalidateByError</Anchor>
 		</Token>
 		
 	</File>

@@ -1,58 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/swypInterfaceManagerDelegate.html">
+	<File path="Classes/swypNetworkAccessMonitor.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/swypInterfaceManagerDelegate</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/swypNetworkAccessMonitor</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>
+			<DeclaredIn>swypNetworkAccessMonitor.h</DeclaredIn>
 			
 			<NodeRef refid="24"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManagerDelegate/interfaceManager:isDoneAdvertisingSwypOutAsPending:forConnectionMethod:</TokenIdentifier>
-			<Abstract type="html">This method decrements a given swyp in the swypHandShakeManger's dereferenceSwypOutAsPending</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypNetworkAccessMonitor/beginCheckingForReachability</TokenIdentifier>
+			<Abstract type="html">** LESS RELEVANT:</Abstract>
+			<DeclaredIn>swypNetworkAccessMonitor.h</DeclaredIn>			
 			
-			<Declaration>- (void)interfaceManager:(id&lt;swypInterfaceManager&gt;)manager isDoneAdvertisingSwypOutAsPending:(swypInfoRef *)ref forConnectionMethod:(swypConnectionMethod)method</Declaration>
-			
-			
-			<Anchor>//api/name/interfaceManager:isDoneAdvertisingSwypOutAsPending:forConnectionMethod:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManagerDelegate/interfaceManager:isDoneSearchForSwypOutServerCandidatesForRef:forConnectionMethod:</TokenIdentifier>
-			<Abstract type="html">This method let's the swypConnectionManager know that this interface is no longer searching for candidates, and that it can proceed through to the lower priorities in swypPendingConnectionQueue</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)interfaceManager:(id&lt;swypInterfaceManager&gt;)manager isDoneSearchForSwypOutServerCandidatesForRef:(swypInfoRef *)ref forConnectionMethod:(swypConnectionMethod)method</Declaration>
+			<Declaration>- (void)beginCheckingForReachability</Declaration>
 			
 			
-			<Anchor>//api/name/interfaceManager:isDoneSearchForSwypOutServerCandidatesForRef:forConnectionMethod:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManagerDelegate/interfaceManager:madeUninitializedSwypServerCandidateConnectionSession:forRef:withConnectionMethod:</TokenIdentifier>
-			<Abstract type="html">This method triggers when the interface has found a server candidate and made a connection session out of it.</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)interfaceManager:(id&lt;swypInterfaceManager&gt;)manager madeUninitializedSwypServerCandidateConnectionSession:(swypConnectionSession *)connectionSession forRef:(swypInfoRef *)ref withConnectionMethod:(swypConnectionMethod)method</Declaration>
-			
-			
-			<Anchor>//api/name/interfaceManager:madeUninitializedSwypServerCandidateConnectionSession:forRef:withConnectionMethod:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManagerDelegate/interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:forRef:withConnectionMethod:</TokenIdentifier>
-			<Abstract type="html">This method triggers when the interface has received a client candidate connection and has made session out of it w/ out intitializing it.</Abstract>
-			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)interfaceManager:(id&lt;swypInterfaceManager&gt;)manager receivedUninitializedSwypClientCandidateConnectionSession:(swypConnectionSession *)connectionSession forRef:(swypInfoRef *)ref withConnectionMethod:(swypConnectionMethod)method</Declaration>
-			
-			
-			<Anchor>//api/name/interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:forRef:withConnectionMethod:</Anchor>
+			<Anchor>//api/name/beginCheckingForReachability</Anchor>
 		</Token>
 		
 	</File>

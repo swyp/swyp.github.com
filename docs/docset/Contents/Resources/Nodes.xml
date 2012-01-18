@@ -28,6 +28,18 @@
 						<NodeRef refid="16"/>
 						<NodeRef refid="17"/>
 						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						<NodeRef refid="28"/>
+						<NodeRef refid="29"/>
+						<NodeRef refid="30"/>
 						
 					</Subnodes>
 				</Node>
@@ -37,7 +49,7 @@
 					<Name>Categories</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="19"/>
+						<NodeRef refid="31"/>
 						
 					</Subnodes>
 				</Node>
@@ -47,12 +59,19 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="20"/>
-						<NodeRef refid="21"/>
-						<NodeRef refid="22"/>
-						<NodeRef refid="23"/>
-						<NodeRef refid="24"/>
-						<NodeRef refid="25"/>
+						<NodeRef refid="32"/>
+						<NodeRef refid="33"/>
+						<NodeRef refid="34"/>
+						<NodeRef refid="35"/>
+						<NodeRef refid="36"/>
+						<NodeRef refid="37"/>
+						<NodeRef refid="38"/>
+						<NodeRef refid="39"/>
+						<NodeRef refid="40"/>
+						<NodeRef refid="41"/>
+						<NodeRef refid="42"/>
+						<NodeRef refid="43"/>
+						<NodeRef refid="44"/>
 						
 					</Subnodes>
 				</Node>
@@ -86,80 +105,156 @@
 			<Path>Classes/swypBidirectionalMutableDictionary.html</Path>
 		</Node>
 		<Node id="7">
+			<Name>swypBluetoothPairManager</Name>
+			<Path>Classes/swypBluetoothPairManager.html</Path>
+		</Node>
+		<Node id="8">
 			<Name>swypBonjourPairManager</Name>
 			<Path>Classes/swypBonjourPairManager.html</Path>
 		</Node>
-		<Node id="8">
+		<Node id="9">
+			<Name>swypCandidate</Name>
+			<Path>Classes/swypCandidate.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>swypCloudNetService</Name>
+			<Path>Classes/swypCloudNetService.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>swypCloudPairManager</Name>
+			<Path>Classes/swypCloudPairManager.html</Path>
+		</Node>
+		<Node id="12">
+			<Name>swypConcatenatedInputStream</Name>
+			<Path>Classes/swypConcatenatedInputStream.html</Path>
+		</Node>
+		<Node id="13">
 			<Name>swypConnectionManager</Name>
 			<Path>Classes/swypConnectionManager.html</Path>
 		</Node>
-		<Node id="9">
+		<Node id="14">
 			<Name>swypConnectionSession</Name>
 			<Path>Classes/swypConnectionSession.html</Path>
 		</Node>
-		<Node id="10">
+		<Node id="15">
 			<Name>swypContentInteractionManager</Name>
 			<Path>Classes/swypContentInteractionManager.html</Path>
 		</Node>
-		<Node id="11">
+		<Node id="16">
+			<Name>swypDiscernedInputStream</Name>
+			<Path>Classes/swypDiscernedInputStream.html</Path>
+		</Node>
+		<Node id="17">
+			<Name>swypGKPeerAbstractedStreamSet</Name>
+			<Path>Classes/swypGKPeerAbstractedStreamSet.html</Path>
+		</Node>
+		<Node id="18">
 			<Name>swypGestureRecognizer</Name>
 			<Path>Classes/swypGestureRecognizer.html</Path>
 		</Node>
-		<Node id="12">
+		<Node id="19">
 			<Name>swypHandshakeManager</Name>
 			<Path>Classes/swypHandshakeManager.html</Path>
 		</Node>
-		<Node id="13">
+		<Node id="20">
 			<Name>swypInfoRef</Name>
 			<Path>Classes/swypInfoRef.html</Path>
 		</Node>
-		<Node id="14">
+		<Node id="21">
+			<Name>swypInputStreamDiscerner</Name>
+			<Path>Classes/swypInputStreamDiscerner.html</Path>
+		</Node>
+		<Node id="22">
+			<Name>swypInputToDataBridge</Name>
+			<Path>Classes/swypInputToDataBridge.html</Path>
+		</Node>
+		<Node id="23">
+			<Name>swypInputToOutputStreamConnector</Name>
+			<Path>Classes/swypInputToOutputStreamConnector.html</Path>
+		</Node>
+		<Node id="24">
 			<Name>swypNetworkAccessMonitor</Name>
 			<Path>Classes/swypNetworkAccessMonitor.html</Path>
 		</Node>
-		<Node id="15">
+		<Node id="25">
+			<Name>swypOutputToDataStream</Name>
+			<Path>Classes/swypOutputToDataStream.html</Path>
+		</Node>
+		<Node id="26">
 			<Name>swypPendingConnectionManager</Name>
 			<Path>Classes/swypPendingConnectionManager.html</Path>
 		</Node>
-		<Node id="16">
+		<Node id="27">
 			<Name>swypPendingConnectionQueue</Name>
 			<Path>Classes/swypPendingConnectionQueue.html</Path>
 		</Node>
-		<Node id="17">
+		<Node id="28">
 			<Name>swypPhotoArrayDatasource</Name>
 			<Path>Classes/swypPhotoArrayDatasource.html</Path>
 		</Node>
-		<Node id="18">
+		<Node id="29">
+			<Name>swypTransformInputStream</Name>
+			<Path>Classes/swypTransformInputStream.html</Path>
+		</Node>
+		<Node id="30">
 			<Name>swypWorkspaceViewController</Name>
 			<Path>Classes/swypWorkspaceViewController.html</Path>
 		</Node>
 		
-		<Node id="19">
+		<Node id="31">
 			<Name>NSString(swypFileTypeNSStringAdditions)</Name>
 			<Path>Categories/NSString+swypFileTypeNSStringAdditions.html</Path>
 		</Node>
 		
-		<Node id="20">
+		<Node id="32">
 			<Name>AFHTTPClientOperation</Name>
 			<Path>Protocols/AFHTTPClientOperation.html</Path>
 		</Node>
-		<Node id="21">
+		<Node id="33">
 			<Name>AFMultipartFormData</Name>
 			<Path>Protocols/AFMultipartFormData.html</Path>
 		</Node>
-		<Node id="22">
+		<Node id="34">
+			<Name>swypCloudNetServiceDelegate</Name>
+			<Path>Protocols/swypCloudNetServiceDelegate.html</Path>
+		</Node>
+		<Node id="35">
+			<Name>swypConnectionManagerDelegate</Name>
+			<Path>Protocols/swypConnectionManagerDelegate.html</Path>
+		</Node>
+		<Node id="36">
 			<Name>swypConnectionSessionDataDelegate</Name>
 			<Path>Protocols/swypConnectionSessionDataDelegate.html</Path>
 		</Node>
-		<Node id="23">
+		<Node id="37">
+			<Name>swypDiscernedInputStreamDataSource</Name>
+			<Path>Protocols/swypDiscernedInputStreamDataSource.html</Path>
+		</Node>
+		<Node id="38">
+			<Name>swypGKPeerAbstractedStreamSetDelegate</Name>
+			<Path>Protocols/swypGKPeerAbstractedStreamSetDelegate.html</Path>
+		</Node>
+		<Node id="39">
+			<Name>swypInputToDataBridgeDelegate</Name>
+			<Path>Protocols/swypInputToDataBridgeDelegate.html</Path>
+		</Node>
+		<Node id="40">
+			<Name>swypInputToOutputStreamConnectorDelegate</Name>
+			<Path>Protocols/swypInputToOutputStreamConnectorDelegate.html</Path>
+		</Node>
+		<Node id="41">
 			<Name>swypInterfaceManager</Name>
 			<Path>Protocols/swypInterfaceManager.html</Path>
 		</Node>
-		<Node id="24">
+		<Node id="42">
 			<Name>swypInterfaceManagerDelegate</Name>
 			<Path>Protocols/swypInterfaceManagerDelegate.html</Path>
 		</Node>
-		<Node id="25">
+		<Node id="43">
+			<Name>swypOutputToDataStreamDataDelegate</Name>
+			<Path>Protocols/swypOutputToDataStreamDataDelegate.html</Path>
+		</Node>
+		<Node id="44">
 			<Name>swypPendingConnectionManagerDelegate</Name>
 			<Path>Protocols/swypPendingConnectionManagerDelegate.html</Path>
 		</Node>

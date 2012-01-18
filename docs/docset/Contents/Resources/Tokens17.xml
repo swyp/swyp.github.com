@@ -1,25 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/swypPhotoArrayDatasource.html">
+	<File path="Classes/swypGKPeerAbstractedStreamSet.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/swypPhotoArrayDatasource</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>swypPhotoArrayDatasource.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/swypGKPeerAbstractedStreamSet</TokenIdentifier>
+			<Abstract type="html">The purpose of this class is to encapsulate an input and output stream for a gamekit peer while forwarding all data through one delegate.</Abstract>
+			<DeclaredIn>swypGKPeerAbstractedStreamSet.h</DeclaredIn>
 			
 			<NodeRef refid="17"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</TokenIdentifier>
-			<Abstract type="html">See whether delegate will handle data stream.</Abstract>
-			<DeclaredIn>swypPhotoArrayDatasource.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypGKPeerAbstractedStreamSet/initWithPeerName:streamSetDelegate:</TokenIdentifier>
+			<Abstract type="html">Main init function.
+After init, both peerReadStream and peerWriteStream will be available for use.</Abstract>
+			<DeclaredIn>swypGKPeerAbstractedStreamSet.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)delegateWillHandleDiscernedStream:(swypDiscernedInputStream *)discernedStream wantsAsData:(BOOL *)wantsProvidedAsNSData inConnectionSession:(swypConnectionSession *)session</Declaration>
+			<Declaration>- (id)initWithPeerName:(NSString *)peerName streamSetDelegate:(id&lt;swypGKPeerAbstractedStreamSetDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>peerName</Name>
+					<Abstract type="html">is unique from GKSession</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">is manditory swypGKPeerAbstractedStreamSetDelegate</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithPeerName:streamSetDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypGKPeerAbstractedStreamSet/addDataToPeerReadStream:</TokenIdentifier>
+			<Abstract type="html">Add data to peerReadStream as acquired from GKSession</Abstract>
+			<DeclaredIn>swypGKPeerAbstractedStreamSet.h</DeclaredIn>			
+			
+			<Declaration>- (void)addDataToPeerReadStream:(NSData *)addedData</Declaration>
 			
 			
-			<Anchor>//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</Anchor>
+			<Anchor>//api/name/addDataToPeerReadStream:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypGKPeerAbstractedStreamSet/invalidateStreamSet</TokenIdentifier>
+			<Abstract type="html">Invalidates both streams, notifies delegate with peerAbstractedStreamSetDidClose:withPeerNamed:</Abstract>
+			<DeclaredIn>swypGKPeerAbstractedStreamSet.h</DeclaredIn>			
+			
+			<Declaration>- (void)invalidateStreamSet</Declaration>
+			
+			
+			<Anchor>//api/name/invalidateStreamSet</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypGKPeerAbstractedStreamSet/invalidateFromManager</TokenIdentifier>
+			<Abstract type="html">Invalidates both streams, without notifying delegate;</Abstract>
+			<DeclaredIn>swypGKPeerAbstractedStreamSet.h</DeclaredIn>			
+			
+			<Declaration>- (void)invalidateFromManager</Declaration>
+			
+			
+			<Anchor>//api/name/invalidateFromManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypGKPeerAbstractedStreamSet/outputToDataStream:wantsProvideData:</TokenIdentifier>
+			<Abstract type="html">The method that provides data-- data must be accepted otherwise it's permanently lost</Abstract>
+			<DeclaredIn>swypGKPeerAbstractedStreamSet.m</DeclaredIn>			
+			
+			<Declaration>- (void)outputToDataStream:(swypOutputToDataStream *)stream wantsProvideData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/outputToDataStream:wantsProvideData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypGKPeerAbstractedStreamSet/outputToDataStreamWasClosed:</TokenIdentifier>
+			<Abstract type="html">Notifies of the closure (was open) of stream.</Abstract>
+			<DeclaredIn>swypGKPeerAbstractedStreamSet.m</DeclaredIn>			
+			
+			<Declaration>- (void)outputToDataStreamWasClosed:(swypOutputToDataStream *)stream</Declaration>
+			
+			
+			<Anchor>//api/name/outputToDataStreamWasClosed:</Anchor>
 		</Token>
 		
 	</File>

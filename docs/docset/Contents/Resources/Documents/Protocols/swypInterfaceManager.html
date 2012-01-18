@@ -48,6 +48,10 @@
 	
 	<option value="//api/name/advertiseSwypOutAsPending:">&nbsp;&nbsp;&nbsp;&nbsp;- advertiseSwypOutAsPending:</option>
 	
+	<option value="//api/name/initWithInterfaceManagerDelegate:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithInterfaceManagerDelegate:</option>
+	
+	<option value="//api/name/isAdvertisingSwypOut:">&nbsp;&nbsp;&nbsp;&nbsp;- isAdvertisingSwypOut:</option>
+	
 	<option value="//api/name/resumeNetworkActivity">&nbsp;&nbsp;&nbsp;&nbsp;- resumeNetworkActivity</option>
 	
 	<option value="//api/name/startFindingSwypInServerCandidatesForRef:">&nbsp;&nbsp;&nbsp;&nbsp;- startFindingSwypInServerCandidatesForRef:</option>
@@ -95,6 +99,10 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/advertiseSwypOutAsCompleted:">advertiseSwypOutAsCompleted:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/advertiseSwypOutAsPending:">advertiseSwypOutAsPending:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithInterfaceManagerDelegate:">initWithInterfaceManagerDelegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isAdvertisingSwypOut:">isAdvertisingSwypOut:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resumeNetworkActivity">resumeNetworkActivity</a></span></li>
 	
@@ -202,6 +210,20 @@
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isAdvertisingSwypOut:">&ndash;&nbsp;isAdvertisingSwypOut:</a></code>
+		<span class="tooltip"><p>Tells whether actually being advertised</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithInterfaceManagerDelegate:">&ndash;&nbsp;initWithInterfaceManagerDelegate:</a></code>
+		<span class="tooltip"><p>Standardized init function for interfaces</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
 </li>
 						</ul>
 						
@@ -222,7 +244,7 @@
 		<code><a href="#//api/name/stopFindingSwypInServerCandidatesForRef:">&ndash;&nbsp;stopFindingSwypInServerCandidatesForRef:</a></code>
 		<span class="tooltip"><p>No longer search for additional swypIn servers for this ref; remove from reference queue.</p>
 
-<pre><code>Do not send further delegate messages with this ref. 
+<pre><code>Do not send further delegate messages with this ref after notifying of the stoppage. 
 </code></pre></span>
 	</span>
 	
@@ -310,6 +332,84 @@
 		<p>Begin advertising a specifc swypOut. Don&rsquo;t accept any connections from it yet as it hasn&rsquo;t completed successfully.</p>
 
 <p>Set a timeout for advertisement; let <a href="../Protocols/swypInterfaceManagerDelegate.html">swypInterfaceManagerDelegate</a> know when expired.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypInterfaceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithInterfaceManagerDelegate:" title="initWithInterfaceManagerDelegate:"></a>
+	<h3 class="subsubtitle method-title">initWithInterfaceManagerDelegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Standardized init function for interfaces</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithInterfaceManagerDelegate:(id&lt;swypInterfaceManagerDelegate&gt;)<em>delegate</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Standardized init function for interfaces</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypInterfaceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isAdvertisingSwypOut:" title="isAdvertisingSwypOut:"></a>
+	<h3 class="subsubtitle method-title">isAdvertisingSwypOut:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells whether actually being advertised</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)isAdvertisingSwypOut:(swypInfoRef *)<em>ref</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Tells whether actually being advertised</p>
 	</div>
 	
 	
@@ -432,7 +532,7 @@
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>No longer advertise a swyp out; remove from reference queue. No longer accept a connection for it (if an interface is able to tell this).</p>
 
-<pre><code>Do not send further delegate messages with this ref.
+<pre><code>Do not send further delegate messages with this ref. Perhaps the swyp failed.
 </code></pre>
 	</div>
 	
@@ -459,7 +559,7 @@
 	<div class="method-subsection brief-description">
 		<p>No longer search for additional swypIn servers for this ref; remove from reference queue.</p>
 
-<pre><code>Do not send further delegate messages with this ref. 
+<pre><code>Do not send further delegate messages with this ref after notifying of the stoppage. 
 </code></pre>
 	</div>		
 	
@@ -477,7 +577,7 @@
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>No longer search for additional swypIn servers for this ref; remove from reference queue.</p>
 
-<pre><code>Do not send further delegate messages with this ref. 
+<pre><code>Do not send further delegate messages with this ref after notifying of the stoppage. 
 </code></pre>
 	</div>
 	
@@ -519,7 +619,7 @@
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>Pause network activity on this interface. Ususally app is going background.</p>
 
-<p>Stop advertising, stop finding, but call delegate callbacks about that.</p>
+<p>Stop advertising, stop finding, but call delegate callbacks to notify about the stop of each swyp.</p>
 	</div>
 	
 	
@@ -549,7 +649,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-14)</span><br />
+						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-18)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
 						
