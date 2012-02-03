@@ -6,4 +6,4 @@ appledoc -o ./docs \
 --company-id com.swyp  \
 --no-install-docset \
 --keep-intermediate-files \
-../libSwyp/libSwyp
+../swyp/libSwyp
