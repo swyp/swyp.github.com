@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/swypTiledContentViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/swypTiledContentViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>swypTiledContentViewController.h</DeclaredIn>
+			
+			<NodeRef refid="36"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypTiledContentViewController/setDisplayedTileViews:</TokenIdentifier>
+			<Abstract type="html">All the currently displayed tile views;</Abstract>
+			<DeclaredIn>swypTiledContentViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSSet *displayedTileViews</Declaration>
+			
+			
+			<Anchor>//api/name/displayedTileViews</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypTiledContentViewController/displayedTileViews</TokenIdentifier>
+			<Abstract type="html">All the currently displayed tile views;</Abstract>
+			<DeclaredIn>swypTiledContentViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSSet *displayedTileViews</Declaration>
+			
+			
+			<Anchor>//api/name/displayedTileViews</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypTiledContentViewController/setTileDisplayFrame:</TokenIdentifier>
+			<Abstract type="html">for setting margins &amp; overall size</Abstract>
+			<DeclaredIn>swypTiledContentViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGRect tileDisplayFrame</Declaration>
+			
+			
+			<Anchor>//api/name/tileDisplayFrame</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypTiledContentViewController/tileDisplayFrame</TokenIdentifier>
+			<Abstract type="html">for setting margins &amp; overall size</Abstract>
+			<DeclaredIn>swypTiledContentViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGRect tileDisplayFrame</Declaration>
+			
+			
+			<Anchor>//api/name/tileDisplayFrame</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypTiledContentViewController/frameForTileNumber:</TokenIdentifier>
+			<Abstract type="html">Just gets a frame for a tile, as if it were at the given index</Abstract>
+			<DeclaredIn>swypTiledContentViewController.h</DeclaredIn>			
+			
+			<Declaration>- (CGRect)frameForTileNumber:(NSInteger)tileNumber</Declaration>
+			
+			
+			<Anchor>//api/name/frameForTileNumber:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypTiledContentViewController/reloadTileObjectData</TokenIdentifier>
+			<Abstract type="html">This delegate method allTileViewsForTiledContentController to be called, and all tiles to be layed-out</Abstract>
+			<DeclaredIn>swypTiledContentViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)reloadTileObjectData</Declaration>
+			
+			
+			<Anchor>//api/name/reloadTileObjectData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypTiledContentViewController/addTile:animated:</TokenIdentifier>
+			<Abstract type="html">add a tile to display; it will be place at frameForTileNumber:[[self displayedTileViews] count]</Abstract>
+			<DeclaredIn>swypTiledContentViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)addTile:(UIView *)tile animated:(BOOL)animate</Declaration>
+			
+			
+			<Anchor>//api/name/addTile:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypTiledContentViewController/removeTile:animated:</TokenIdentifier>
+			<Abstract type="html">remove the tile from view</Abstract>
+			<DeclaredIn>swypTiledContentViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeTile:(UIView *)tile animated:(BOOL)animate</Declaration>
+			
+			
+			<Anchor>//api/name/removeTile:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypTiledContentViewController/initWithDisplayFrame:tileContentControllerDelegate:withCenteredTilesSized:andMargins:</TokenIdentifier>
+			<Abstract type="html">This one is great for setting cell size and their margins; use this init function</Abstract>
+			<DeclaredIn>swypTiledContentViewController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDisplayFrame:(CGRect)tileDisplayFrame tileContentControllerDelegate:(id&lt;swypTiledContentViewControllerContentDelegate&gt;)delegate withCenteredTilesSized:(CGSize)tileSize andMargins:(CGSize)tileMargins</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDisplayFrame:tileContentControllerDelegate:withCenteredTilesSized:andMargins:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

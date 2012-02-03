@@ -1,0 +1,901 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>swypConcatenatedInputStream Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 752)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">libSwÿp </a></h1>
+				<a id="developerHome" href="../index.html">Swÿp</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">swypConcatenatedInputStream Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/closeStreamAtQueueEnd">&nbsp;&nbsp;&nbsp;&nbsp;closeStreamAtQueueEnd</option>
+	
+	<option value="//api/name/completedStreams">&nbsp;&nbsp;&nbsp;&nbsp;completedStreams</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/holdCompletedStreams">&nbsp;&nbsp;&nbsp;&nbsp;holdCompletedStreams</option>
+	
+	<option value="//api/name/infoDelegate">&nbsp;&nbsp;&nbsp;&nbsp;infoDelegate</option>
+	
+	<option value="//api/name/queuedStreams">&nbsp;&nbsp;&nbsp;&nbsp;queuedStreams</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addInputStreamToQueue:">&nbsp;&nbsp;&nbsp;&nbsp;- addInputStreamToQueue:</option>
+	
+	<option value="//api/name/addInputStreamsToQueue:">&nbsp;&nbsp;&nbsp;&nbsp;- addInputStreamsToQueue:</option>
+	
+	<option value="//api/name/initWithInputStreamArray:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithInputStreamArray:</option>
+	
+	<option value="//api/name/remainingByteCountForQueuedStream:withTotalLength:">&nbsp;&nbsp;&nbsp;&nbsp;- remainingByteCountForQueuedStream:withTotalLength:</option>
+	
+	<option value="//api/name/removeAllQueuedStreamsAfterCurrent">&nbsp;&nbsp;&nbsp;&nbsp;- removeAllQueuedStreamsAfterCurrent</option>
+	
+	<option value="//api/name/setLengthToTrack:forQueuedStream:">&nbsp;&nbsp;&nbsp;&nbsp;- setLengthToTrack:forQueuedStream:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/closeStreamAtQueueEnd">closeStreamAtQueueEnd</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/completedStreams">completedStreams</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/holdCompletedStreams">holdCompletedStreams</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/infoDelegate">infoDelegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/queuedStreams">queuedStreams</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addInputStreamToQueue:">addInputStreamToQueue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addInputStreamsToQueue:">addInputStreamsToQueue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithInputStreamArray:">initWithInputStreamArray:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/remainingByteCountForQueuedStream:withTotalLength:">remainingByteCountForQueuedStream:withTotalLength:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAllQueuedStreamsAfterCurrent">removeAllQueuedStreamsAfterCurrent</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLengthToTrack:forQueuedStream:">setLengthToTrack:forQueuedStream:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="swypConcatenatedInputStream Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">swypConcatenatedInputStream Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSInputStream</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSStreamDelegate</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">swypConcatenatedInputStream.h<br />swypConcatenatedInputStream.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Provides one input stream from collection of input streams, immediately switching at end of each stream</p>
+
+<p>I can make one big stream out of a bunch of small ones now. Only encapsulating stream.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/queuedStreams">&nbsp;&nbsp;queuedStreams</a></code>
+		<span class="tooltip"><p>Provides array of all currently queud streams</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/closeStreamAtQueueEnd">&nbsp;&nbsp;closeStreamAtQueueEnd</a></code>
+		<span class="tooltip"><p>Defines behavior when all queued streams are finished being read.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/holdCompletedStreams">&nbsp;&nbsp;holdCompletedStreams</a></code>
+		<span class="tooltip"><p>Allow access through <a href="#//api/name/completedStreams">completedStreams</a> property to all streams past through <a href="#//api/name/completedStreams">completedStreams</a> property.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/completedStreams">&nbsp;&nbsp;completedStreams</a></code>
+		<span class="tooltip"><p>Only non-nil if <a href="#//api/name/holdCompletedStreams">holdCompletedStreams</a> is YES; otherwise streams are deleted</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/infoDelegate">&nbsp;&nbsp;infoDelegate</a></code>
+		<span class="tooltip"><p>the <a href="#//api/name/delegate">delegate</a> for non-NSStreamDelegate updates</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		<span class="tooltip"><p>the <a href="#//api/name/delegate">delegate</a> for NSStreamDelegate updates</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithInputStreamArray:">&ndash;&nbsp;initWithInputStreamArray:</a></code>
+		<span class="tooltip"><p>NSInputStream array</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addInputStreamToQueue:">&ndash;&nbsp;addInputStreamToQueue:</a></code>
+		<span class="tooltip"><p>add NSInputStream</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addInputStreamsToQueue:">&ndash;&nbsp;addInputStreamsToQueue:</a></code>
+		<span class="tooltip"><p>NSInputStream array</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeAllQueuedStreamsAfterCurrent">&ndash;&nbsp;removeAllQueuedStreamsAfterCurrent</a></code>
+		<span class="tooltip"><pre><code>Clears queue of any stream not running now.
+Streams don't give notifications
+Streams don't get added to completedStreams
+Eg. This should used when invalidating a stream --&gt; afterwards pass the goodbye packet to the session
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setLengthToTrack:forQueuedStream:">&ndash;&nbsp;setLengthToTrack:forQueuedStream:</a></code>
+		<span class="tooltip"><pre><code>if delegate is set, the following function will give an update each time bytes are read from the stream
+'queuedStream' is a stream already queued
+'lengthToTrack' is the length that a given stream has
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/remainingByteCountForQueuedStream:withTotalLength:">&ndash;&nbsp;remainingByteCountForQueuedStream:withTotalLength:</a></code>
+		<span class="tooltip"><pre><code>The following function returns 0 if queued stream is finished or if it is not queued
+Passing an NSUInteger by reference to 'refForTotalBytes' has the total placed into it.. 
+    Its value is non-zero if 'holdCompletedStreams' is YES, and length to track was set on it in the past
+</code></pre></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/closeStreamAtQueueEnd" title="closeStreamAtQueueEnd"></a>
+	<h3 class="subsubtitle method-title">closeStreamAtQueueEnd</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Defines behavior when all queued streams are finished being read.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL closeStreamAtQueueEnd</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Defines behavior when all queued streams are finished being read.</p>
+
+<p>When TRUE, triggers NSStreamStatusAtEnd
+when FALSE, the stream conveys that no data is available currently, but that the stream is still <a href="#//api/name/open">open</a></p><div class="warning"><p>default is YES;</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConcatenatedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/completedStreams" title="completedStreams"></a>
+	<h3 class="subsubtitle method-title">completedStreams</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Only non-nil if <a href="#//api/name/holdCompletedStreams">holdCompletedStreams</a> is YES; otherwise streams are deleted</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *completedStreams</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Only non-nil if <a href="#//api/name/holdCompletedStreams">holdCompletedStreams</a> is YES; otherwise streams are deleted</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConcatenatedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>the <a href="#//api/name/delegate">delegate</a> for NSStreamDelegate updates</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;NSStreamDelegate&gt; delegate</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>the <a href="#//api/name/delegate">delegate</a> for NSStreamDelegate updates</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConcatenatedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/holdCompletedStreams" title="holdCompletedStreams"></a>
+	<h3 class="subsubtitle method-title">holdCompletedStreams</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allow access through <a href="#//api/name/completedStreams">completedStreams</a> property to all streams past through <a href="#//api/name/completedStreams">completedStreams</a> property.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL holdCompletedStreams</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Allow access through <a href="#//api/name/completedStreams">completedStreams</a> property to all streams past through <a href="#//api/name/completedStreams">completedStreams</a> property.</p><div class="warning"><p>the default value is NO;</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConcatenatedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/infoDelegate" title="infoDelegate"></a>
+	<h3 class="subsubtitle method-title">infoDelegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>the <a href="#//api/name/delegate">delegate</a> for non-NSStreamDelegate updates</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;swypConcatenatedInputStreamDelegate&gt; infoDelegate</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>the <a href="#//api/name/delegate">delegate</a> for non-NSStreamDelegate updates</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConcatenatedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/queuedStreams" title="queuedStreams"></a>
+	<h3 class="subsubtitle method-title">queuedStreams</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Provides array of all currently queud streams</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *queuedStreams</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Provides array of all currently queud streams</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConcatenatedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addInputStreamToQueue:" title="addInputStreamToQueue:"></a>
+	<h3 class="subsubtitle method-title">addInputStreamToQueue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>add NSInputStream</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)addInputStreamToQueue:(NSInputStream *)<em>input</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>add NSInputStream</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConcatenatedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addInputStreamsToQueue:" title="addInputStreamsToQueue:"></a>
+	<h3 class="subsubtitle method-title">addInputStreamsToQueue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>NSInputStream array</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)addInputStreamsToQueue:(NSArray *)<em>inputStreams</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>NSInputStream array</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConcatenatedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithInputStreamArray:" title="initWithInputStreamArray:"></a>
+	<h3 class="subsubtitle method-title">initWithInputStreamArray:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>NSInputStream array</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithInputStreamArray:(NSArray *)<em>inputStreams</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>NSInputStream array</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConcatenatedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/remainingByteCountForQueuedStream:withTotalLength:" title="remainingByteCountForQueuedStream:withTotalLength:"></a>
+	<h3 class="subsubtitle method-title">remainingByteCountForQueuedStream:withTotalLength:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>The following function returns 0 if queued stream is finished or if it is not queued
+Passing an NSUInteger by reference to 'refForTotalBytes' has the total placed into it.. 
+    Its value is non-zero if 'holdCompletedStreams' is YES, and length to track was set on it in the past
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)remainingByteCountForQueuedStream:(NSInputStream *)<em>queuedStream</em> withTotalLength:(NSUInteger *)<em>refForTotalBytes</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>The following function returns 0 if queued stream is finished or if it is not queued
+Passing an NSUInteger by reference to 'refForTotalBytes' has the total placed into it.. 
+    Its value is non-zero if 'holdCompletedStreams' is YES, and length to track was set on it in the past
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConcatenatedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeAllQueuedStreamsAfterCurrent" title="removeAllQueuedStreamsAfterCurrent"></a>
+	<h3 class="subsubtitle method-title">removeAllQueuedStreamsAfterCurrent</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>Clears queue of any stream not running now.
+Streams don't give notifications
+Streams don't get added to completedStreams
+Eg. This should used when invalidating a stream --&gt; afterwards pass the goodbye packet to the session
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removeAllQueuedStreamsAfterCurrent</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>Clears queue of any stream not running now.
+Streams don't give notifications
+Streams don't get added to completedStreams
+Eg. This should used when invalidating a stream --&gt; afterwards pass the goodbye packet to the session
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConcatenatedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setLengthToTrack:forQueuedStream:" title="setLengthToTrack:forQueuedStream:"></a>
+	<h3 class="subsubtitle method-title">setLengthToTrack:forQueuedStream:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>if delegate is set, the following function will give an update each time bytes are read from the stream
+'queuedStream' is a stream already queued
+'lengthToTrack' is the length that a given stream has
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setLengthToTrack:(NSUInteger)<em>lengthToTrack</em> forQueuedStream:(NSInputStream *)<em>queuedStream</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>if delegate is set, the following function will give an update each time bytes are read from the stream
+'queuedStream' is a stream already queued
+'lengthToTrack' is the length that a given stream has
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConcatenatedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-02-03)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

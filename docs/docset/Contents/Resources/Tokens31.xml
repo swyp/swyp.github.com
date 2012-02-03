@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/swypPhotoArrayDatasource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/swypPhotoArrayDatasource</TokenIdentifier>
+			<Abstract type="html">	This class allows its owners to add photo data, and serves as a datasource in the swypContentInteractionManager. </Abstract>
+			<DeclaredIn>swypPhotoArrayDatasource.h</DeclaredIn>
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/initWithImageDataArray:</TokenIdentifier>
+			<Abstract type="html">Initialize the datasource backed by an array of png data.</Abstract>
+			<DeclaredIn>swypPhotoArrayDatasource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithImageDataArray:(NSArray *)arrayOfPhotoData</Declaration>
+			
+			
+			<Anchor>//api/name/initWithImageDataArray:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/removePhotoAtIndex:</TokenIdentifier>
+			<Abstract type="html">remove a specific image from the model</Abstract>
+			<DeclaredIn>swypPhotoArrayDatasource.h</DeclaredIn>			
+			
+			<Declaration>- (void)removePhotoAtIndex:(NSUInteger)removeIndex</Declaration>
+			
+			
+			<Anchor>//api/name/removePhotoAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/removeAllPhotos</TokenIdentifier>
+			<Abstract type="html">add all images from the model</Abstract>
+			<DeclaredIn>swypPhotoArrayDatasource.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllPhotos</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllPhotos</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/addUIImage:atIndex:</TokenIdentifier>
+			<Abstract type="html">add a UIImage to the model</Abstract>
+			<DeclaredIn>swypPhotoArrayDatasource.h</DeclaredIn>			
+			
+			<Declaration>- (void)addUIImage:(UIImage *)addImage atIndex:(NSUInteger)insertIndex</Declaration>
+			
+			
+			<Anchor>//api/name/addUIImage:atIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/addUIImageArray:</TokenIdentifier>
+			<Abstract type="html">add a UIImage array to the model</Abstract>
+			<DeclaredIn>swypPhotoArrayDatasource.h</DeclaredIn>			
+			
+			<Declaration>- (void)addUIImageArray:(NSArray *)imageArray</Declaration>
+			
+			
+			<Anchor>//api/name/addUIImageArray:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/addPhotoData:atIndex:</TokenIdentifier>
+			<Abstract type="html">add PNG data to dataSource</Abstract>
+			<DeclaredIn>swypPhotoArrayDatasource.h</DeclaredIn>			
+			
+			<Declaration>- (void)addPhotoData:(NSData *)photoData atIndex:(NSUInteger)insertIndex</Declaration>
+			
+			
+			<Anchor>//api/name/addPhotoData:atIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/addPhotoDataArray:</TokenIdentifier>
+			<Abstract type="html">Add a NSData of PNG array to dataSource</Abstract>
+			<DeclaredIn>swypPhotoArrayDatasource.h</DeclaredIn>			
+			
+			<Declaration>- (void)addPhotoDataArray:(NSArray *)arrayOfPhotoData</Declaration>
+			
+			
+			<Anchor>//api/name/addPhotoDataArray:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/idsForAllContent</TokenIdentifier>
+			<Abstract type="html">Returns list of all unique IDs for each piece of content to displayed to swyp workspace.</Abstract>
+			<DeclaredIn>swypPhotoArrayDatasource.m</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)idsForAllContent</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSArray choc full of NSStrings.
+			Can be as simple as [[NSNumber numberWithInt:index] stringValue];
+			Most methods must be implemented if the Array is not empty or nil.
+
+  Content can be ordered, or not, in returning the 'idsForAllContent' array.</Abstract></ReturnValue>
+			<Anchor>//api/name/idsForAllContent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/iconImageForContentWithID:ofMaxSize:</TokenIdentifier>
+			<Abstract type="html">Returns a UIImage representing content, which has dimensions no greater than maxIconSize.
+	This image is displayed by the swypContentViewController.</Abstract>
+			<DeclaredIn>swypPhotoArrayDatasource.m</DeclaredIn>			
+			
+			<Declaration>- (UIImage *)iconImageForContentWithID:(NSString *)contentID ofMaxSize:(CGSize)maxIconSize</Declaration>
+			
+			
+			<Anchor>//api/name/iconImageForContentWithID:ofMaxSize:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/supportedFileTypesForContentWithID:</TokenIdentifier>
+			<Abstract type="html">Returns swypFileTypeString array that a specifc contentID supports</Abstract>
+			<DeclaredIn>swypPhotoArrayDatasource.m</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)supportedFileTypesForContentWithID:(NSString *)contentID</Declaration>
+			
+			
+			<Anchor>//api/name/supportedFileTypesForContentWithID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/dataForContentWithID:fileType:</TokenIdentifier>
+			<Abstract type="html">Returns the data for the specified file type.</Abstract>
+			<DeclaredIn>swypPhotoArrayDatasource.m</DeclaredIn>			
+			
+			<Declaration>- (NSData *)dataForContentWithID:(NSString *)contentID fileType:(swypFileTypeString *)type</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSData must contain the complete file of a given format. Returning nil causes no data to be sent.</Abstract></ReturnValue>
+			<Anchor>//api/name/dataForContentWithID:fileType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/setDatasourceDelegate:</TokenIdentifier>
+			<Abstract type="html">Sets the swypContentDataSourceDelegate for the dataSource</Abstract>
+			<DeclaredIn>swypPhotoArrayDatasource.m</DeclaredIn>			
+			
+			<Declaration>- (void)setDatasourceDelegate:(id&lt;swypContentDataSourceDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/setDatasourceDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/datasourceDelegate</TokenIdentifier>
+			<Abstract type="html">Retrieves the delegate</Abstract>
+			<DeclaredIn>swypPhotoArrayDatasource.m</DeclaredIn>			
+			
+			<Declaration>- (id&lt;swypContentDataSourceDelegate&gt;)datasourceDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/datasourceDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/supportedFileTypesForReceipt</TokenIdentifier>
+			<Abstract type="html">swypFileTypeStrings in order of preference where 0 = most preferent
+	Use this on your datasource set in swypContentInteractionManager to choose what files your app accepts.</Abstract>
+			<DeclaredIn>swypPhotoArrayDatasource.m</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)supportedFileTypesForReceipt</Declaration>
+			
+			
+			<Anchor>//api/name/supportedFileTypesForReceipt</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:</TokenIdentifier>
+			<Abstract type="html">A convenience method for delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:. Return true to accept the enclosed discernedStream as NSData through yieldedData:discernedStream:inConnectionSession: when it's done being received.</Abstract>
+			<DeclaredIn>swypPhotoArrayDatasource.m</DeclaredIn>			
+			
+			<Declaration>- (BOOL)delegateWillReceiveDataFromDiscernedStream:(swypDiscernedInputStream *)discernedStream ofType:(NSString *)streamType inConnectionSession:(swypConnectionSession *)session</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>streamType</Name>
+					<Abstract type="html">is a shortcut for discernedStream.streamType
+
+Though there are several data delegates, only one delegate should handle and return TRUE, all else returning false
+Delegates should see if they're interested through discerned stream's properities like 'streamType' and 'streamTag'
+If no one handles, an exception is thrown</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">true or false depending on interest in stream.</Abstract></ReturnValue>
+			<Anchor>//api/name/delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoArrayDatasource/yieldedData:discernedStream:inConnectionSession:</TokenIdentifier>
+			<Abstract type="html">	The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.
+	</Abstract>
+			<DeclaredIn>swypPhotoArrayDatasource.m</DeclaredIn>			
+			
+			<Declaration>- (void)yieldedData:(NSData *)streamData discernedStream:(swypDiscernedInputStream *)discernedStream inConnectionSession:(swypConnectionSession *)session</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>discernedStream</Name>
+					<Abstract type="html">the stream containing properties like streamType, and streamTag.</Abstract>
+				</Parameter><Parameter>
+					<Name>streamData</Name>
+					<Abstract type="html">Data from the discernedStream.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/yieldedData:discernedStream:inConnectionSession:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

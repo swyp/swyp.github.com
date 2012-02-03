@@ -52,6 +52,10 @@
 	
 	<option value="//api/name/referenceSwypOutAsPending:">&nbsp;&nbsp;&nbsp;&nbsp;- referenceSwypOutAsPending:</option>
 	
+	<option value="//api/name/sessionDied:withError:">&nbsp;&nbsp;&nbsp;&nbsp;- sessionDied:withError:</option>
+	
+	<option value="//api/name/sessionStatusChanged:inSession:">&nbsp;&nbsp;&nbsp;&nbsp;- sessionStatusChanged:inSession:</option>
+	
 	<option value="//api/name/yieldedData:discernedStream:inConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- yieldedData:discernedStream:inConnectionSession:</option>
 	
 	
@@ -90,6 +94,10 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/referenceSwypOutAsPending:">referenceSwypOutAsPending:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sessionDied:withError:">sessionDied:withError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sessionStatusChanged:inSession:">sessionStatusChanged:inSession:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/yieldedData:discernedStream:inConnectionSession:">yieldedData:discernedStream:inConnectionSession:</a></span></li>
 	
 </ul></li>
@@ -119,7 +127,7 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Conforms to</td>
-	<td class="specification-value">NSNetServiceDelegate<br /><a href="../Protocols/swypConnectionSessionDataDelegate.html">swypConnectionSessionDataDelegate</a><br />swypConnectionSessionInfoDelegate</td>
+	<td class="specification-value">NSNetServiceDelegate<br /><a href="../Protocols/swypConnectionSessionDataDelegate.html">swypConnectionSessionDataDelegate</a><br /><a href="../Protocols/swypConnectionSessionInfoDelegate.html">swypConnectionSessionInfoDelegate</a></td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
 	<td class="specification-value">swypHandshakeManager.h<br />swypHandshakeManager.m</td>
@@ -166,6 +174,36 @@
 	<span class="tooltip">
 		<code><a href="#//api/name/beginHandshakeProcessWithConnectionSession:">&ndash;&nbsp;beginHandshakeProcessWithConnectionSession:</a></code>
 		<span class="tooltip"><p>The method for attaching swypConnectionSessions which have already been paired through NSInputStreams and NSOutputStreams, and supposedly work.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sessionStatusChanged:inSession:">&ndash;&nbsp;sessionStatusChanged:inSession:</a></code>
+		<span class="tooltip"><p>Alerts that the status of the connection session changed. Perhaps it&rsquo;s swypConnectionSessionStatusReady</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sessionDied:withError:">&ndash;&nbsp;sessionDied:withError:</a></code>
+		<span class="tooltip"><p>Alerts that the session is over. Error is commonly nil because we r lazy.</p></span>
 	</span>
 	
 	
@@ -286,8 +324,10 @@
     Delegates should see if they're interested through discerned stream's properities like 'streamType' and 'streamTag'
     If no one handles, an exception is thrown
 
+All delegates will be notified using this method, but only one should return TRUE.
+
 discernedStream can be read as an input stream, and attached to output streams using SwypInputToOutput, for example
-Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be set to true, *wantsProvidedAsNSData = TRUE;, to have data provided in a method bellow
+Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be set to true, '*wantsProvidedAsNSData = TRUE;', to have data provided by yieldedData:discernedStream:inConnectionSession:
 </code></pre>
 	</div>
 	
@@ -389,6 +429,84 @@ Swyp outs that have reference count are used for matching client candidates in h
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/sessionDied:withError:" title="sessionDied:withError:"></a>
+	<h3 class="subsubtitle method-title">sessionDied:withError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Alerts that the session is over. Error is commonly nil because we r lazy.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)sessionDied:(swypConnectionSession *)<em>session</em> withError:(NSError *)<em>error</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Alerts that the session is over. Error is commonly nil because we r lazy.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sessionStatusChanged:inSession:" title="sessionStatusChanged:inSession:"></a>
+	<h3 class="subsubtitle method-title">sessionStatusChanged:inSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Alerts that the status of the connection session changed. Perhaps it&rsquo;s swypConnectionSessionStatusReady</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)sessionStatusChanged:(swypConnectionSessionStatus)<em>status</em> inSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Alerts that the status of the connection session changed. Perhaps it&rsquo;s swypConnectionSessionStatusReady</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/yieldedData:discernedStream:inConnectionSession:" title="yieldedData:discernedStream:inConnectionSession:"></a>
 	<h3 class="subsubtitle method-title">yieldedData:discernedStream:inConnectionSession:</h3>
 	
@@ -402,6 +520,21 @@ Swyp outs that have reference count are used for matching client candidates in h
 	
 	<div class="method-subsection method-declaration"><code>- (void)yieldedData:(NSData *)<em>streamData</em> discernedStream:(swypDiscernedInputStream *)<em>discernedStream</em> inConnectionSession:(swypConnectionSession *)<em>session</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>discernedStream</em></dt>
+			<dd><p>the stream containing properties like streamType, and streamTag.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>streamData</em></dt>
+			<dd><p>Data from the discernedStream.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -442,7 +575,7 @@ Swyp outs that have reference count are used for matching client candidates in h
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-18)</span><br />
+						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-02-03)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
 						

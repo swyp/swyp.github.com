@@ -44,8 +44,6 @@
 	
 	<option value="//api/name/contentDisplayController">&nbsp;&nbsp;&nbsp;&nbsp;contentDisplayController</option>
 	
-	<option value="//api/name/showContentBeforeConnection">&nbsp;&nbsp;&nbsp;&nbsp;showContentBeforeConnection</option>
-	
 	
 	
 	
@@ -58,7 +56,17 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/allIDsForContentInController:">&nbsp;&nbsp;&nbsp;&nbsp;- allIDsForContentInController:</option>
+	
 	<option value="//api/name/completedSendingStream:connectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- completedSendingStream:connectionSession:</option>
+	
+	<option value="//api/name/contentWithIDUnderwentSwypOut:inController:">&nbsp;&nbsp;&nbsp;&nbsp;- contentWithIDUnderwentSwypOut:inController:</option>
+	
+	<option value="//api/name/datasourceInsertedContentWithID:withDatasource:">&nbsp;&nbsp;&nbsp;&nbsp;- datasourceInsertedContentWithID:withDatasource:</option>
+	
+	<option value="//api/name/datasourceRemovedContentWithID:withDatasource:">&nbsp;&nbsp;&nbsp;&nbsp;- datasourceRemovedContentWithID:withDatasource:</option>
+	
+	<option value="//api/name/datasourceSignificantlyModifiedContent:">&nbsp;&nbsp;&nbsp;&nbsp;- datasourceSignificantlyModifiedContent:</option>
 	
 	<option value="//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</option>
 	
@@ -66,11 +74,29 @@
 	
 	<option value="//api/name/didFinnishReceivingDataInConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- didFinnishReceivingDataInConnectionSession:</option>
 	
+	<option value="//api/name/discernedInputStreamCompletedReceivingData:">&nbsp;&nbsp;&nbsp;&nbsp;- discernedInputStreamCompletedReceivingData:</option>
+	
+	<option value="//api/name/discernedInputStreamFailedReceivingData:">&nbsp;&nbsp;&nbsp;&nbsp;- discernedInputStreamFailedReceivingData:</option>
+	
 	<option value="//api/name/failedSendingStream:error:connectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- failedSendingStream:error:connectionSession:</option>
+	
+	<option value="//api/name/handleContentSwypOfContentWithID:withContentImage:toRect:">&nbsp;&nbsp;&nbsp;&nbsp;- handleContentSwypOfContentWithID:withContentImage:toRect:</option>
 	
 	<option value="//api/name/initWithMainWorkspaceView:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithMainWorkspaceView:</option>
 	
-	<option value="//api/name/initWithMainWorkspaceView:showingContentBeforeConnection:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithMainWorkspaceView:showingContentBeforeConnection:</option>
+	<option value="//api/name/maintainSwypSessionViewController:">&nbsp;&nbsp;&nbsp;&nbsp;- maintainSwypSessionViewController:</option>
+	
+	<option value="//api/name/maintainedSwypSessionViewControllerForSession:">&nbsp;&nbsp;&nbsp;&nbsp;- maintainedSwypSessionViewControllerForSession:</option>
+	
+	<option value="//api/name/sessionDied:withError:">&nbsp;&nbsp;&nbsp;&nbsp;- sessionDied:withError:</option>
+	
+	<option value="//api/name/stopMaintainingAllSessionViewControllers">&nbsp;&nbsp;&nbsp;&nbsp;- stopMaintainingAllSessionViewControllers</option>
+	
+	<option value="//api/name/stopMaintainingViewControllerForSwypSession:">&nbsp;&nbsp;&nbsp;&nbsp;- stopMaintainingViewControllerForSwypSession:</option>
+	
+	<option value="//api/name/updatedProgressToPercentage:withDiscernedInputStream:">&nbsp;&nbsp;&nbsp;&nbsp;- updatedProgressToPercentage:withDiscernedInputStream:</option>
+	
+	<option value="//api/name/viewForContentWithID:ofMaxSize:inController:">&nbsp;&nbsp;&nbsp;&nbsp;- viewForContentWithID:ofMaxSize:inController:</option>
 	
 	<option value="//api/name/yieldedData:discernedStream:inConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- yieldedData:discernedStream:inConnectionSession:</option>
 	
@@ -102,8 +128,6 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentDisplayController">contentDisplayController</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showContentBeforeConnection">showContentBeforeConnection</a></span></li>
-	
 </ul></li>
 
 
@@ -118,7 +142,17 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allIDsForContentInController:">allIDsForContentInController:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/completedSendingStream:connectionSession:">completedSendingStream:connectionSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentWithIDUnderwentSwypOut:inController:">contentWithIDUnderwentSwypOut:inController:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/datasourceInsertedContentWithID:withDatasource:">datasourceInsertedContentWithID:withDatasource:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/datasourceRemovedContentWithID:withDatasource:">datasourceRemovedContentWithID:withDatasource:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/datasourceSignificantlyModifiedContent:">datasourceSignificantlyModifiedContent:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</a></span></li>
 	
@@ -126,11 +160,29 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didFinnishReceivingDataInConnectionSession:">didFinnishReceivingDataInConnectionSession:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/discernedInputStreamCompletedReceivingData:">discernedInputStreamCompletedReceivingData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/discernedInputStreamFailedReceivingData:">discernedInputStreamFailedReceivingData:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/failedSendingStream:error:connectionSession:">failedSendingStream:error:connectionSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleContentSwypOfContentWithID:withContentImage:toRect:">handleContentSwypOfContentWithID:withContentImage:toRect:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithMainWorkspaceView:">initWithMainWorkspaceView:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithMainWorkspaceView:showingContentBeforeConnection:">initWithMainWorkspaceView:showingContentBeforeConnection:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maintainSwypSessionViewController:">maintainSwypSessionViewController:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maintainedSwypSessionViewControllerForSession:">maintainedSwypSessionViewControllerForSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sessionDied:withError:">sessionDied:withError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopMaintainingAllSessionViewControllers">stopMaintainingAllSessionViewControllers</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopMaintainingViewControllerForSwypSession:">stopMaintainingViewControllerForSwypSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updatedProgressToPercentage:withDiscernedInputStream:">updatedProgressToPercentage:withDiscernedInputStream:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewForContentWithID:ofMaxSize:inController:">viewForContentWithID:ofMaxSize:inController:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/yieldedData:discernedStream:inConnectionSession:">yieldedData:discernedStream:inConnectionSession:</a></span></li>
 	
@@ -161,7 +213,7 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Conforms to</td>
-	<td class="specification-value"><a href="../Protocols/swypConnectionSessionDataDelegate.html">swypConnectionSessionDataDelegate</a><br />swypConnectionSessionInfoDelegate<br />swypContentDataSourceDelegate<br />swypContentDisplayViewControllerDelegate</td>
+	<td class="specification-value"><a href="../Protocols/swypConnectionSessionDataDelegate.html">swypConnectionSessionDataDelegate</a><br /><a href="../Protocols/swypConnectionSessionInfoDelegate.html">swypConnectionSessionInfoDelegate</a><br /><a href="../Protocols/swypContentDataSourceDelegate.html">swypContentDataSourceDelegate</a><br /><a href="../Protocols/swypContentDisplayViewControllerDelegate.html">swypContentDisplayViewControllerDelegate</a><br /><a href="../Protocols/swypDiscernedInputStreamStatusDelegate.html">swypDiscernedInputStreamStatusDelegate</a></td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
 	<td class="specification-value">swypContentInteractionManager.h<br />swypContentInteractionManager.m</td>
@@ -175,6 +227,9 @@
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
 						<p>This class is responsible for unifying modal and controller, and displaying them upon the workspace.</p>
+
+<pre><code>This class also caches UIImageViews for display by swypContentDisplayViewController, with image content from the contentDataSource.
+</code></pre>
 					</div>
 					
 					
@@ -199,14 +254,6 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/showContentBeforeConnection">&nbsp;&nbsp;showContentBeforeConnection</a></code>
-		<span class="tooltip"><p>if set to TRUE, then content is displayed before swyp connection is made, and if content is swyped, then connection + content transfer is made
-this value is assigned at <a href="#//api/name/init">init</a> by workspace manager</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/contentDisplayController">&nbsp;&nbsp;contentDisplayController</a></code>
 		<span class="tooltip"><p>This property is the view controller that <a href="#//api/name/contentDataSource">contentDataSource</a> content is displayed from.</p></span>
 	</span>
@@ -221,15 +268,88 @@ this value is assigned at <a href="#//api/name/init">init</a> by workspace manag
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initWithMainWorkspaceView:showingContentBeforeConnection:">&ndash;&nbsp;initWithMainWorkspaceView:showingContentBeforeConnection:</a></code>
-		<span class="tooltip"><p>Don&rsquo;t <a href="#//api/name/init">init</a> this way.</p></span>
+		<code><a href="#//api/name/supportedReceiptFileTypes">+&nbsp;supportedReceiptFileTypes</a></code>
+		<span class="tooltip"><p>Supported swyp receipt file types; in order of greatest preference, where index 0=most preferant</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/supportedReceiptFileTypes">+&nbsp;supportedReceiptFileTypes</a></code>
-		<span class="tooltip"><p>Supported swyp receipt file types; in order of greatest preference, where index 0=most preferant</p></span>
+		<code><a href="#//api/name/maintainSwypSessionViewController:">&ndash;&nbsp;maintainSwypSessionViewController:</a></code>
+		<span class="tooltip"><p>Causes a sessionViewController to be displayed on workspace, and for it to be tracked locally</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopMaintainingViewControllerForSwypSession:">&ndash;&nbsp;stopMaintainingViewControllerForSwypSession:</a></code>
+		<span class="tooltip"><p>Removes from display, releases</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maintainedSwypSessionViewControllerForSession:">&ndash;&nbsp;maintainedSwypSessionViewControllerForSession:</a></code>
+		<span class="tooltip"><p>Gets the viewController for an associated session</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopMaintainingAllSessionViewControllers">&ndash;&nbsp;stopMaintainingAllSessionViewControllers</a></code>
+		<span class="tooltip"><p>Removes all, typically for app exit</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleContentSwypOfContentWithID:withContentImage:toRect:">&ndash;&nbsp;handleContentSwypOfContentWithID:withContentImage:toRect:</a></code>
+		<span class="tooltip"><p>Used by swypWorkspaceManager to indicate <a href="../Classes/swypSwypableContentSuperview.html">swypSwypableContentSuperview</a> content addition.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updatedProgressToPercentage:withDiscernedInputStream:">&ndash;&nbsp;updatedProgressToPercentage:withDiscernedInputStream:</a></code>
+		<span class="tooltip"><p>From 0 to 1, passes the % completion for a specifc stream.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/discernedInputStreamCompletedReceivingData:">&ndash;&nbsp;discernedInputStreamCompletedReceivingData:</a></code>
+		<span class="tooltip"><p>Indicates that a stream has &lsquo;ended,&rsquo; and is just about to call its <a href="../Protocols/swypDiscernedInputStreamDataSource.html">swypDiscernedInputStreamDataSource</a> callback.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/discernedInputStreamFailedReceivingData:">&ndash;&nbsp;discernedInputStreamFailedReceivingData:</a></code>
+		<span class="tooltip"><p>Indicates that a stream has just failed somehow&hellip; For anything other than completion.</p></span>
 	</span>
 	
 	
@@ -329,6 +449,111 @@ this value is assigned at <a href="#//api/name/init">init</a> by workspace manag
 </li>
 						</ul>
 						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sessionDied:withError:">&ndash;&nbsp;sessionDied:withError:</a></code>
+		<span class="tooltip"><p>Alerts that the session is over. Error is commonly nil because we r lazy.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentWithIDUnderwentSwypOut:inController:">&ndash;&nbsp;contentWithIDUnderwentSwypOut:inController:</a></code>
+		<span class="tooltip"><p>Signals that a view was swyped-out ontop of a certain content with the enclosed contentID.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewForContentWithID:ofMaxSize:inController:">&ndash;&nbsp;viewForContentWithID:ofMaxSize:inController:</a></code>
+		<span class="tooltip"><p>the returned UIView will be as close as possible to and no larger than maxIconSize, while in proper-perspective and not distorted</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allIDsForContentInController:">&ndash;&nbsp;allIDsForContentInController:</a></code>
+		<span class="tooltip"><p>All ids in NSString that the delegate can provide UIViews for</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/datasourceInsertedContentWithID:withDatasource:">&ndash;&nbsp;datasourceInsertedContentWithID:withDatasource:</a></code>
+		<span class="tooltip"><p>This indicates that the datasourceInsertedContentWithID, and that the views should update accordingly.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/datasourceRemovedContentWithID:withDatasource:">&ndash;&nbsp;datasourceRemovedContentWithID:withDatasource:</a></code>
+		<span class="tooltip"><p>This indicates that the datasourceRemovedContentWithID, and that the views should update accordingly.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/datasourceSignificantlyModifiedContent:">&ndash;&nbsp;datasourceSignificantlyModifiedContent:</a></code>
+		<span class="tooltip"><p>This indicates that the datasourceSignificantlyModifiedContent, and that the views should update accordingly by reloading all content.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
 					</div>
 					
 					
@@ -402,48 +627,7 @@ this value is assigned at <a href="#//api/name/init">init</a> by workspace manag
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>This property is the view controller that <a href="#//api/name/contentDataSource">contentDataSource</a> content is displayed from.</p><div class="warning"><p>if not set, the standard will be assigned. That is swypPhotoPlayground currently.</p></div><div class="warning"><p>this class must obey the <a href="../Protocols/swypContentDisplayViewController.html">swypContentDisplayViewController</a> protocol.</p></div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">swypContentInteractionManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/showContentBeforeConnection" title="showContentBeforeConnection"></a>
-	<h3 class="subsubtitle method-title">showContentBeforeConnection</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>if set to TRUE, then content is displayed before swyp connection is made, and if content is swyped, then connection + content transfer is made
-this value is assigned at <a href="#//api/name/init">init</a> by workspace manager</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL showContentBeforeConnection</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>if set to TRUE, then content is displayed before swyp connection is made, and if content is swyped, then connection + content transfer is made
-this value is assigned at <a href="#//api/name/init">init</a> by workspace manager</p><div class="warning"><p>this is a deprecated method</p></div>
+		<p>This property is the view controller that <a href="#//api/name/contentDataSource">contentDataSource</a> content is displayed from.</p><div class="warning"><p>if not set, the standard will be assigned. That is <a href="../Classes/swypPhotoPlayground.html">swypPhotoPlayground</a> currently.</p></div><div class="warning"><p>this class must obey the <a href="../Protocols/swypContentDisplayViewController.html">swypContentDisplayViewController</a> protocol.</p></div>
 	</div>
 	
 	
@@ -516,6 +700,45 @@ this value is assigned at <a href="#//api/name/init">init</a> by workspace manag
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/allIDsForContentInController:" title="allIDsForContentInController:"></a>
+	<h3 class="subsubtitle method-title">allIDsForContentInController:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>All ids in NSString that the delegate can provide UIViews for</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)allIDsForContentInController:(UIViewController&lt;swypContentDisplayViewController&gt; *)<em>contentDisplayController</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>All ids in NSString that the delegate can provide UIViews for</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDisplayViewControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/completedSendingStream:connectionSession:" title="completedSendingStream:connectionSession:"></a>
 	<h3 class="subsubtitle method-title">completedSendingStream:connectionSession:</h3>
 	
@@ -555,6 +778,165 @@ this value is assigned at <a href="#//api/name/init">init</a> by workspace manag
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/contentWithIDUnderwentSwypOut:inController:" title="contentWithIDUnderwentSwypOut:inController:"></a>
+	<h3 class="subsubtitle method-title">contentWithIDUnderwentSwypOut:inController:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Signals that a view was swyped-out ontop of a certain content with the enclosed contentID.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)contentWithIDUnderwentSwypOut:(NSString *)<em>contentID</em> inController:(UIViewController&lt;swypContentDisplayViewController&gt; *)<em>contentDisplayController</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Signals that a view was swyped-out ontop of a certain content with the enclosed contentID.</p>
+
+<pre><code>If there is no tray in the location swyped-out to, the swypContentInteractionManager should notify the workspace.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDisplayViewControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/datasourceInsertedContentWithID:withDatasource:" title="datasourceInsertedContentWithID:withDatasource:"></a>
+	<h3 class="subsubtitle method-title">datasourceInsertedContentWithID:withDatasource:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This indicates that the datasourceInsertedContentWithID, and that the views should update accordingly.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)datasourceInsertedContentWithID:(NSString *)<em>insertID</em> withDatasource:(id&lt;swypContentDataSourceProtocol&gt;)<em>datasource</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This indicates that the datasourceInsertedContentWithID, and that the views should update accordingly.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDataSourceProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/datasourceRemovedContentWithID:withDatasource:" title="datasourceRemovedContentWithID:withDatasource:"></a>
+	<h3 class="subsubtitle method-title">datasourceRemovedContentWithID:withDatasource:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This indicates that the datasourceRemovedContentWithID, and that the views should update accordingly.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)datasourceRemovedContentWithID:(NSString *)<em>removeID</em> withDatasource:(id&lt;swypContentDataSourceProtocol&gt;)<em>datasource</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This indicates that the datasourceRemovedContentWithID, and that the views should update accordingly.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDataSourceProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/datasourceSignificantlyModifiedContent:" title="datasourceSignificantlyModifiedContent:"></a>
+	<h3 class="subsubtitle method-title">datasourceSignificantlyModifiedContent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This indicates that the datasourceSignificantlyModifiedContent, and that the views should update accordingly by reloading all content.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)datasourceSignificantlyModifiedContent:(id&lt;swypContentDataSourceProtocol&gt;)<em>datasource</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This indicates that the datasourceSignificantlyModifiedContent, and that the views should update accordingly by reloading all content.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDataSourceProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:" title="delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:"></a>
 	<h3 class="subsubtitle method-title">delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</h3>
 	
@@ -582,8 +964,10 @@ this value is assigned at <a href="#//api/name/init">init</a> by workspace manag
     Delegates should see if they're interested through discerned stream's properities like 'streamType' and 'streamTag'
     If no one handles, an exception is thrown
 
+All delegates will be notified using this method, but only one should return TRUE.
+
 discernedStream can be read as an input stream, and attached to output streams using SwypInputToOutput, for example
-Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be set to true, *wantsProvidedAsNSData = TRUE;, to have data provided in a method bellow
+Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be set to true, '*wantsProvidedAsNSData = TRUE;', to have data provided by yieldedData:discernedStream:inConnectionSession:
 </code></pre>
 	</div>
 	
@@ -684,6 +1068,84 @@ Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be s
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/discernedInputStreamCompletedReceivingData:" title="discernedInputStreamCompletedReceivingData:"></a>
+	<h3 class="subsubtitle method-title">discernedInputStreamCompletedReceivingData:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Indicates that a stream has &lsquo;ended,&rsquo; and is just about to call its <a href="../Protocols/swypDiscernedInputStreamDataSource.html">swypDiscernedInputStreamDataSource</a> callback.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)discernedInputStreamCompletedReceivingData:(swypDiscernedInputStream *)<em>discernedStream</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Indicates that a stream has &lsquo;ended,&rsquo; and is just about to call its <a href="../Protocols/swypDiscernedInputStreamDataSource.html">swypDiscernedInputStreamDataSource</a> callback.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypDiscernedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/discernedInputStreamFailedReceivingData:" title="discernedInputStreamFailedReceivingData:"></a>
+	<h3 class="subsubtitle method-title">discernedInputStreamFailedReceivingData:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Indicates that a stream has just failed somehow&hellip; For anything other than completion.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)discernedInputStreamFailedReceivingData:(swypDiscernedInputStream *)<em>discernedStream</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Indicates that a stream has just failed somehow&hellip; For anything other than completion.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypDiscernedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/failedSendingStream:error:connectionSession:" title="failedSendingStream:error:connectionSession:"></a>
 	<h3 class="subsubtitle method-title">failedSendingStream:error:connectionSession:</h3>
 	
@@ -717,6 +1179,47 @@ Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be s
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
 		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleContentSwypOfContentWithID:withContentImage:toRect:" title="handleContentSwypOfContentWithID:withContentImage:toRect:"></a>
+	<h3 class="subsubtitle method-title">handleContentSwypOfContentWithID:withContentImage:toRect:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Used by swypWorkspaceManager to indicate <a href="../Classes/swypSwypableContentSuperview.html">swypSwypableContentSuperview</a> content addition.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)handleContentSwypOfContentWithID:(NSString *)<em>contentID</em> withContentImage:(UIImage *)<em>contentImage</em> toRect:(CGRect)<em>destination</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Used by swypWorkspaceManager to indicate <a href="../Classes/swypSwypableContentSuperview.html">swypSwypableContentSuperview</a> content addition.</p>
+
+<p>Adds to cached tiles, and sets to display in contentDisplayViewController, then moves content to frame &lsquo;destination.&rsquo;</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentInteractionManager.h</code><br />
 	</div>				
 	
 	
@@ -762,17 +1265,17 @@ Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be s
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/initWithMainWorkspaceView:showingContentBeforeConnection:" title="initWithMainWorkspaceView:showingContentBeforeConnection:"></a>
-	<h3 class="subsubtitle method-title">initWithMainWorkspaceView:showingContentBeforeConnection:</h3>
+	<a name="//api/name/maintainSwypSessionViewController:" title="maintainSwypSessionViewController:"></a>
+	<h3 class="subsubtitle method-title">maintainSwypSessionViewController:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Don&rsquo;t <a href="#//api/name/init">init</a> this way.</p>
+		<p>Causes a sessionViewController to be displayed on workspace, and for it to be tracked locally</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (id)initWithMainWorkspaceView:(UIView *)<em>workspaceView</em> showingContentBeforeConnection:(BOOL)<em>showContent</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)maintainSwypSessionViewController:(swypSessionViewController *)<em>sessionViewController</em></code></div>
 	
 	
 	
@@ -783,7 +1286,7 @@ Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be s
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Don&rsquo;t <a href="#//api/name/init">init</a> this way.</p><div class="warning"><p>this is a deprecated method</p></div>
+		<p>Causes a sessionViewController to be displayed on workspace, and for it to be tracked locally</p>
 	</div>
 	
 	
@@ -795,6 +1298,240 @@ Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be s
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
 		<code class="declared-in-ref">swypContentInteractionManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maintainedSwypSessionViewControllerForSession:" title="maintainedSwypSessionViewControllerForSession:"></a>
+	<h3 class="subsubtitle method-title">maintainedSwypSessionViewControllerForSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the viewController for an associated session</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (swypSessionViewController *)maintainedSwypSessionViewControllerForSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Gets the viewController for an associated session</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentInteractionManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sessionDied:withError:" title="sessionDied:withError:"></a>
+	<h3 class="subsubtitle method-title">sessionDied:withError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Alerts that the session is over. Error is commonly nil because we r lazy.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)sessionDied:(swypConnectionSession *)<em>session</em> withError:(NSError *)<em>error</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Alerts that the session is over. Error is commonly nil because we r lazy.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopMaintainingAllSessionViewControllers" title="stopMaintainingAllSessionViewControllers"></a>
+	<h3 class="subsubtitle method-title">stopMaintainingAllSessionViewControllers</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes all, typically for app exit</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)stopMaintainingAllSessionViewControllers</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Removes all, typically for app exit</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentInteractionManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopMaintainingViewControllerForSwypSession:" title="stopMaintainingViewControllerForSwypSession:"></a>
+	<h3 class="subsubtitle method-title">stopMaintainingViewControllerForSwypSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes from display, releases</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)stopMaintainingViewControllerForSwypSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Removes from display, releases</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentInteractionManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updatedProgressToPercentage:withDiscernedInputStream:" title="updatedProgressToPercentage:withDiscernedInputStream:"></a>
+	<h3 class="subsubtitle method-title">updatedProgressToPercentage:withDiscernedInputStream:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>From 0 to 1, passes the % completion for a specifc stream.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)updatedProgressToPercentage:(double)<em>complete</em> withDiscernedInputStream:(swypDiscernedInputStream *)<em>discernedStream</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>From 0 to 1, passes the % completion for a specifc stream.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypDiscernedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewForContentWithID:ofMaxSize:inController:" title="viewForContentWithID:ofMaxSize:inController:"></a>
+	<h3 class="subsubtitle method-title">viewForContentWithID:ofMaxSize:inController:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>the returned UIView will be as close as possible to and no larger than maxIconSize, while in proper-perspective and not distorted</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (UIView *)viewForContentWithID:(NSString *)<em>contentID</em> ofMaxSize:(CGSize)<em>maxIconSize</em> inController:(UIViewController&lt;swypContentDisplayViewController&gt; *)<em>contentDisplayController</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>the returned UIView will be as close as possible to and no larger than maxIconSize, while in proper-perspective and not distorted</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDisplayViewControllerProtocol.h</code><br />
 	</div>				
 	
 	
@@ -814,6 +1551,21 @@ Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be s
 	
 	<div class="method-subsection method-declaration"><code>- (void)yieldedData:(NSData *)<em>streamData</em> discernedStream:(swypDiscernedInputStream *)<em>discernedStream</em> inConnectionSession:(swypConnectionSession *)<em>session</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>discernedStream</em></dt>
+			<dd><p>the stream containing properties like streamType, and streamTag.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>streamData</em></dt>
+			<dd><p>Data from the discernedStream.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -854,7 +1606,7 @@ Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be s
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-18)</span><br />
+						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-02-03)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
 						

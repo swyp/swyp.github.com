@@ -1,137 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/swypBluetoothPairManager.html">
+	<File path="Classes/SwypPromptImageView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/swypBluetoothPairManager</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>swypBluetoothPairManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SwypPromptImageView</TokenIdentifier>
+			<Abstract type="html">This is the view for the swyp icon in the center of the swyp Workspace</Abstract>
+			<DeclaredIn>SwypPromptImageView.h</DeclaredIn>
 			
 			<NodeRef refid="7"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypBluetoothPairManager/suspendNetworkActivity</TokenIdentifier>
-			<Abstract type="html">Pause network activity on this interface. Ususally app is going background.</Abstract>
-			<DeclaredIn>swypBluetoothPairManager.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SwypPromptImageView/showBluetoothLoadingPrompt:</TokenIdentifier>
+			<Abstract type="html">This performs a flip animation to/from the regular swyp icon once
+bluetooth is on and ready to accept connections.</Abstract>
+			<DeclaredIn>SwypPromptImageView.h</DeclaredIn>			
 			
-			<Declaration>- (void)suspendNetworkActivity</Declaration>
-			
-			
-			<Anchor>//api/name/suspendNetworkActivity</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypBluetoothPairManager/resumeNetworkActivity</TokenIdentifier>
-			<Abstract type="html">Allow network activity to resume on this interface. Ususally app is going foreground, or workspace is opening for first time.</Abstract>
-			<DeclaredIn>swypBluetoothPairManager.m</DeclaredIn>			
-			
-			<Declaration>- (void)resumeNetworkActivity</Declaration>
+			<Declaration>- (void)showBluetoothLoadingPrompt:(BOOL)show</Declaration>
 			
 			
-			<Anchor>//api/name/resumeNetworkActivity</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypBluetoothPairManager/advertiseSwypOutAsPending:</TokenIdentifier>
-			<Abstract type="html">Begin advertising a specifc swypOut. Don't accept any connections from it yet as it hasn't completed successfully.</Abstract>
-			<DeclaredIn>swypBluetoothPairManager.m</DeclaredIn>			
-			
-			<Declaration>- (void)advertiseSwypOutAsPending:(swypInfoRef *)ref</Declaration>
-			
-			
-			<Anchor>//api/name/advertiseSwypOutAsPending:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypBluetoothPairManager/advertiseSwypOutAsCompleted:</TokenIdentifier>
-			<Abstract type="html">Continue advertising specifc swypOut, perhaps updating with finalized swyp-info where necessary. Accept connections.</Abstract>
-			<DeclaredIn>swypBluetoothPairManager.m</DeclaredIn>			
-			
-			<Declaration>- (void)advertiseSwypOutAsCompleted:(swypInfoRef *)ref</Declaration>
-			
-			
-			<Anchor>//api/name/advertiseSwypOutAsCompleted:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypBluetoothPairManager/stopAdvertisingSwypOut:</TokenIdentifier>
-			<Abstract type="html">No longer advertise a swyp out; remove from reference queue. No longer accept a connection for it (if an interface is able to tell this).</Abstract>
-			<DeclaredIn>swypBluetoothPairManager.m</DeclaredIn>			
-			
-			<Declaration>- (void)stopAdvertisingSwypOut:(swypInfoRef *)ref</Declaration>
-			
-			
-			<Anchor>//api/name/stopAdvertisingSwypOut:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypBluetoothPairManager/isAdvertisingSwypOut:</TokenIdentifier>
-			<Abstract type="html">Tells whether actually being advertised</Abstract>
-			<DeclaredIn>swypBluetoothPairManager.m</DeclaredIn>			
-			
-			<Declaration>- (BOOL)isAdvertisingSwypOut:(swypInfoRef *)ref</Declaration>
-			
-			
-			<Anchor>//api/name/isAdvertisingSwypOut:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypBluetoothPairManager/startFindingSwypInServerCandidatesForRef:</TokenIdentifier>
-			<Abstract type="html">Start looking for and resolving for any networked candidates. Candidates are returned to swypInterfaceManagerDelegate.</Abstract>
-			<DeclaredIn>swypBluetoothPairManager.m</DeclaredIn>			
-			
-			<Declaration>- (void)startFindingSwypInServerCandidatesForRef:(swypInfoRef *)ref</Declaration>
-			
-			
-			<Anchor>//api/name/startFindingSwypInServerCandidatesForRef:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypBluetoothPairManager/stopFindingSwypInServerCandidatesForRef:</TokenIdentifier>
-			<Abstract type="html">No longer search for additional swypIn servers for this ref; remove from reference queue.
-	
-	Do not send further delegate messages with this ref after notifying of the stoppage. </Abstract>
-			<DeclaredIn>swypBluetoothPairManager.m</DeclaredIn>			
-			
-			<Declaration>- (void)stopFindingSwypInServerCandidatesForRef:(swypInfoRef *)ref</Declaration>
-			
-			
-			<Anchor>//api/name/stopFindingSwypInServerCandidatesForRef:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypBluetoothPairManager/initWithInterfaceManagerDelegate:</TokenIdentifier>
-			<Abstract type="html">Standardized init function for interfaces</Abstract>
-			<DeclaredIn>swypBluetoothPairManager.m</DeclaredIn>			
-			
-			<Declaration>- (id)initWithInterfaceManagerDelegate:(id&lt;swypInterfaceManagerDelegate&gt;)delegate</Declaration>
-			
-			
-			<Anchor>//api/name/initWithInterfaceManagerDelegate:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypBluetoothPairManager/peerAbstractedStreamSet:wantsDataSent:toPeerNamed:</TokenIdentifier>
-			<Abstract type="html">Gotta send data somehow.</Abstract>
-			<DeclaredIn>swypBluetoothPairManager.m</DeclaredIn>			
-			
-			<Declaration>- (void)peerAbstractedStreamSet:(swypGKPeerAbstractedStreamSet *)peerAbstraction wantsDataSent:(NSData *)sendData toPeerNamed:(NSString *)peerName</Declaration>
-			
-			
-			<Anchor>//api/name/peerAbstractedStreamSet:wantsDataSent:toPeerNamed:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypBluetoothPairManager/peerAbstractedStreamSetDidClose:withPeerNamed:</TokenIdentifier>
-			<Abstract type="html">Need to notify</Abstract>
-			<DeclaredIn>swypBluetoothPairManager.m</DeclaredIn>			
-			
-			<Declaration>- (void)peerAbstractedStreamSetDidClose:(swypGKPeerAbstractedStreamSet *)peerAbstraction withPeerNamed:(NSString *)peerName</Declaration>
-			
-			
-			<Anchor>//api/name/peerAbstractedStreamSetDidClose:withPeerNamed:</Anchor>
+			<Anchor>//api/name/showBluetoothLoadingPrompt:</Anchor>
 		</Token>
 		
 	</File>

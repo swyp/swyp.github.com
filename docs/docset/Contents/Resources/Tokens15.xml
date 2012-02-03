@@ -1,181 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/swypContentInteractionManager.html">
+	<File path="Classes/swypConcatenatedInputStream.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/swypContentInteractionManager</TokenIdentifier>
-			<Abstract type="html">This class is responsible for unifying modal and controller, and displaying them upon the workspace.</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/swypConcatenatedInputStream</TokenIdentifier>
+			<Abstract type="html">Provides one input stream from collection of input streams, immediately switching at end of each stream</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>
 			
 			<NodeRef refid="15"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/setContentDataSource:</TokenIdentifier>
-			<Abstract type="html">This property is the datasource that the content in contentDisplayController is sourced from per the swypContentDataSourceProtocol protocol.</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypConcatenatedInputStream/setQueuedStreams:</TokenIdentifier>
+			<Abstract type="html">Provides array of all currently queud streams</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSObject&lt;swypContentDataSourceProtocol,swypConnectionSessionDataDelegate&gt; *contentDataSource</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSArray *queuedStreams</Declaration>
 			
 			
-			<Anchor>//api/name/contentDataSource</Anchor>
+			<Anchor>//api/name/queuedStreams</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/swypContentInteractionManager/contentDataSource</TokenIdentifier>
-			<Abstract type="html">This property is the datasource that the content in contentDisplayController is sourced from per the swypContentDataSourceProtocol protocol.</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/swypConcatenatedInputStream/queuedStreams</TokenIdentifier>
+			<Abstract type="html">Provides array of all currently queud streams</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSObject&lt;swypContentDataSourceProtocol,swypConnectionSessionDataDelegate&gt; *contentDataSource</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSArray *queuedStreams</Declaration>
 			
 			
-			<Anchor>//api/name/contentDataSource</Anchor>
+			<Anchor>//api/name/queuedStreams</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/setShowContentBeforeConnection:</TokenIdentifier>
-			<Abstract type="html">if set to TRUE, then content is displayed before swyp connection is made, and if content is swyped, then connection + content transfer is made
-this value is assigned at init by workspace manager</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypConcatenatedInputStream/setCloseStreamAtQueueEnd:</TokenIdentifier>
+			<Abstract type="html">Defines behavior when all queued streams are finished being read.</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) BOOL showContentBeforeConnection</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL closeStreamAtQueueEnd</Declaration>
 			
 			
-			<Anchor>//api/name/showContentBeforeConnection</Anchor>
+			<Anchor>//api/name/closeStreamAtQueueEnd</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/swypContentInteractionManager/showContentBeforeConnection</TokenIdentifier>
-			<Abstract type="html">if set to TRUE, then content is displayed before swyp connection is made, and if content is swyped, then connection + content transfer is made
-this value is assigned at init by workspace manager</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/swypConcatenatedInputStream/closeStreamAtQueueEnd</TokenIdentifier>
+			<Abstract type="html">Defines behavior when all queued streams are finished being read.</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) BOOL showContentBeforeConnection</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL closeStreamAtQueueEnd</Declaration>
 			
 			
-			<Anchor>//api/name/showContentBeforeConnection</Anchor>
+			<Anchor>//api/name/closeStreamAtQueueEnd</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/setContentDisplayController:</TokenIdentifier>
-			<Abstract type="html">This property is the view controller that contentDataSource content is displayed from.</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypConcatenatedInputStream/setHoldCompletedStreams:</TokenIdentifier>
+			<Abstract type="html">Allow access through completedStreams property to all streams past through completedStreams property.</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIViewController&lt;swypContentDisplayViewController&gt; *contentDisplayController</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL holdCompletedStreams</Declaration>
 			
 			
-			<Anchor>//api/name/contentDisplayController</Anchor>
+			<Anchor>//api/name/holdCompletedStreams</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/swypContentInteractionManager/contentDisplayController</TokenIdentifier>
-			<Abstract type="html">This property is the view controller that contentDataSource content is displayed from.</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/swypConcatenatedInputStream/holdCompletedStreams</TokenIdentifier>
+			<Abstract type="html">Allow access through completedStreams property to all streams past through completedStreams property.</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIViewController&lt;swypContentDisplayViewController&gt; *contentDisplayController</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL holdCompletedStreams</Declaration>
 			
 			
-			<Anchor>//api/name/contentDisplayController</Anchor>
+			<Anchor>//api/name/holdCompletedStreams</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/initWithMainWorkspaceView:</TokenIdentifier>
-			<Abstract type="html">The main init function.</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypConcatenatedInputStream/setCompletedStreams:</TokenIdentifier>
+			<Abstract type="html">Only non-nil if holdCompletedStreams is YES; otherwise streams are deleted</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithMainWorkspaceView:(UIView *)workspaceView</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSArray *completedStreams</Declaration>
 			
 			
-			<Anchor>//api/name/initWithMainWorkspaceView:</Anchor>
+			<Anchor>//api/name/completedStreams</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/initWithMainWorkspaceView:showingContentBeforeConnection:</TokenIdentifier>
-			<Abstract type="html">Don't init this way.</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/swypConcatenatedInputStream/completedStreams</TokenIdentifier>
+			<Abstract type="html">Only non-nil if holdCompletedStreams is YES; otherwise streams are deleted</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithMainWorkspaceView:(UIView *)workspaceView showingContentBeforeConnection:(BOOL)showContent</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSArray *completedStreams</Declaration>
 			
 			
-			<Anchor>//api/name/initWithMainWorkspaceView:showingContentBeforeConnection:</Anchor>
+			<Anchor>//api/name/completedStreams</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/swypContentInteractionManager/supportedReceiptFileTypes</TokenIdentifier>
-			<Abstract type="html">Supported swyp receipt file types; in order of greatest preference, where index 0=most preferant</Abstract>
-			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypConcatenatedInputStream/setInfoDelegate:</TokenIdentifier>
+			<Abstract type="html">the delegate for non-NSStreamDelegate updates</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
 			
-			<Declaration>+ (NSArray *)supportedReceiptFileTypes</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;swypConcatenatedInputStreamDelegate&gt; infoDelegate</Declaration>
 			
 			
-			<Anchor>//api/name/supportedReceiptFileTypes</Anchor>
+			<Anchor>//api/name/infoDelegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/didBeginReceivingDataInConnectionSession:</TokenIdentifier>
-			<Abstract type="html">	Will notify you when the data IN stream is receiving so that UI can be updated accordingly</Abstract>
-			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/swypConcatenatedInputStream/infoDelegate</TokenIdentifier>
+			<Abstract type="html">the delegate for non-NSStreamDelegate updates</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
 			
-			<Declaration>- (void)didBeginReceivingDataInConnectionSession:(swypConnectionSession *)session</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;swypConcatenatedInputStreamDelegate&gt; infoDelegate</Declaration>
 			
 			
-			<Anchor>//api/name/didBeginReceivingDataInConnectionSession:</Anchor>
+			<Anchor>//api/name/infoDelegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/didFinnishReceivingDataInConnectionSession:</TokenIdentifier>
-			<Abstract type="html">	Will notify you when the data IN stream is DONE receiving so that UI can be updated accordingly</Abstract>
-			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypConcatenatedInputStream/setDelegate:</TokenIdentifier>
+			<Abstract type="html">the delegate for NSStreamDelegate updates</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
 			
-			<Declaration>- (void)didFinnishReceivingDataInConnectionSession:(swypConnectionSession *)session</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;NSStreamDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/didFinnishReceivingDataInConnectionSession:</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</TokenIdentifier>
-			<Abstract type="html">See whether delegate will handle data stream.</Abstract>
-			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/swypConcatenatedInputStream/delegate</TokenIdentifier>
+			<Abstract type="html">the delegate for NSStreamDelegate updates</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)delegateWillHandleDiscernedStream:(swypDiscernedInputStream *)discernedStream wantsAsData:(BOOL *)wantsProvidedAsNSData inConnectionSession:(swypConnectionSession *)session</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;NSStreamDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/yieldedData:discernedStream:inConnectionSession:</TokenIdentifier>
-			<Abstract type="html">	The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.</Abstract>
-			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypConcatenatedInputStream/initWithInputStreamArray:</TokenIdentifier>
+			<Abstract type="html">NSInputStream array</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
 			
-			<Declaration>- (void)yieldedData:(NSData *)streamData discernedStream:(swypDiscernedInputStream *)discernedStream inConnectionSession:(swypConnectionSession *)session</Declaration>
+			<Declaration>- (id)initWithInputStreamArray:(NSArray *)inputStreams</Declaration>
 			
 			
-			<Anchor>//api/name/yieldedData:discernedStream:inConnectionSession:</Anchor>
+			<Anchor>//api/name/initWithInputStreamArray:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/failedSendingStream:error:connectionSession:</TokenIdentifier>
-			<Abstract type="html">Upon failing to send data</Abstract>
-			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypConcatenatedInputStream/addInputStreamToQueue:</TokenIdentifier>
+			<Abstract type="html">add NSInputStream</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
 			
-			<Declaration>- (void)failedSendingStream:(NSInputStream *)stream error:(NSError *)error connectionSession:(swypConnectionSession *)session</Declaration>
+			<Declaration>- (void)addInputStreamToQueue:(NSInputStream *)input</Declaration>
 			
 			
-			<Anchor>//api/name/failedSendingStream:error:connectionSession:</Anchor>
+			<Anchor>//api/name/addInputStreamToQueue:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/completedSendingStream:connectionSession:</TokenIdentifier>
-			<Abstract type="html">Upon happily sending data</Abstract>
-			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypConcatenatedInputStream/addInputStreamsToQueue:</TokenIdentifier>
+			<Abstract type="html">NSInputStream array</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
 			
-			<Declaration>- (void)completedSendingStream:(NSInputStream *)stream connectionSession:(swypConnectionSession *)session</Declaration>
+			<Declaration>- (void)addInputStreamsToQueue:(NSArray *)inputStreams</Declaration>
 			
 			
-			<Anchor>//api/name/completedSendingStream:connectionSession:</Anchor>
+			<Anchor>//api/name/addInputStreamsToQueue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConcatenatedInputStream/removeAllQueuedStreamsAfterCurrent</TokenIdentifier>
+			<Abstract type="html">	Clears queue of any stream not running now.
+	Streams don't give notifications
+	Streams don't get added to completedStreams
+	Eg. This should used when invalidating a stream --> afterwards pass the goodbye packet to the session</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllQueuedStreamsAfterCurrent</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllQueuedStreamsAfterCurrent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConcatenatedInputStream/setLengthToTrack:forQueuedStream:</TokenIdentifier>
+			<Abstract type="html">	if delegate is set, the following function will give an update each time bytes are read from the stream
+	'queuedStream' is a stream already queued
+	'lengthToTrack' is the length that a given stream has</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
+			
+			<Declaration>- (void)setLengthToTrack:(NSUInteger)lengthToTrack forQueuedStream:(NSInputStream *)queuedStream</Declaration>
+			
+			
+			<Anchor>//api/name/setLengthToTrack:forQueuedStream:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypConcatenatedInputStream/remainingByteCountForQueuedStream:withTotalLength:</TokenIdentifier>
+			<Abstract type="html">	The following function returns 0 if queued stream is finished or if it is not queued
+	Passing an NSUInteger by reference to 'refForTotalBytes' has the total placed into it.. 
+		Its value is non-zero if 'holdCompletedStreams' is YES, and length to track was set on it in the past</Abstract>
+			<DeclaredIn>swypConcatenatedInputStream.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)remainingByteCountForQueuedStream:(NSInputStream *)queuedStream withTotalLength:(NSUInteger *)refForTotalBytes</Declaration>
+			
+			
+			<Anchor>//api/name/remainingByteCountForQueuedStream:withTotalLength:</Anchor>
 		</Token>
 		
 	</File>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/swypConnectionSessionInfoDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/swypConnectionSessionInfoDelegate</TokenIdentifier>
+			<Abstract type="html">The protocol for deleages of the swypConnectionSession, which wish to hear about connectivity updates from the session. See addInfoDelegate: of swypConnectionSession.</Abstract>
+			<DeclaredIn>swypConnectionSession.h</DeclaredIn>
+			
+			<NodeRef refid="46"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypConnectionSessionInfoDelegate/sessionDied:withError:</TokenIdentifier>
+			<Abstract type="html">Alerts that the session is over. Error is commonly nil because we r lazy.</Abstract>
+			<DeclaredIn>swypConnectionSession.h</DeclaredIn>			
+			
+			<Declaration>- (void)sessionDied:(swypConnectionSession *)session withError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/sessionDied:withError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypConnectionSessionInfoDelegate/sessionWillDie:</TokenIdentifier>
+			<Abstract type="html">Alerts that the session will be dying VERY soon. IE, even including this runlooop.</Abstract>
+			<DeclaredIn>swypConnectionSession.h</DeclaredIn>			
+			
+			<Declaration>- (void)sessionWillDie:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/sessionWillDie:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypConnectionSessionInfoDelegate/sessionStatusChanged:inSession:</TokenIdentifier>
+			<Abstract type="html">Alerts that the status of the connection session changed. Perhaps it's swypConnectionSessionStatusReady</Abstract>
+			<DeclaredIn>swypConnectionSession.h</DeclaredIn>			
+			
+			<Declaration>- (void)sessionStatusChanged:(swypConnectionSessionStatus)status inSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/sessionStatusChanged:inSession:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

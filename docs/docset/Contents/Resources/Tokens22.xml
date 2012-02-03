@@ -1,63 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/swypInputToDataBridge.html">
+	<File path="Classes/swypHandshakeManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/swypInputToDataBridge</TokenIdentifier>
-			<Abstract type="html">This class(y) class written by alex soaks an NSInputStream into NSData</Abstract>
-			<DeclaredIn>swypInputToDataBridge.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/swypHandshakeManager</TokenIdentifier>
+			<Abstract type="html">Handshake manager deals with</Abstract>
+			<DeclaredIn>swypHandshakeManager.h</DeclaredIn>
 			
 			<NodeRef refid="22"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypInputToDataBridge/initWithInputStream:dataBrdigeDelegate:</TokenIdentifier>
-			<Abstract type="html">Set NSInputStream and your delegate</Abstract>
-			<DeclaredIn>swypInputToDataBridge.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypHandshakeManager/referenceSwypOutAsPending:</TokenIdentifier>
+			<Abstract type="html">Increment reference count for a particular swyp out.</Abstract>
+			<DeclaredIn>swypHandshakeManager.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithInputStream:(NSInputStream *)inputStream dataBrdigeDelegate:(id&lt;swypInputToDataBridgeDelegate&gt;)delegate</Declaration>
+			<Declaration>- (void)referenceSwypOutAsPending:(swypInfoRef *)ref</Declaration>
+			
+			
+			<Anchor>//api/name/referenceSwypOutAsPending:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypHandshakeManager/dereferenceSwypOutAsPending:</TokenIdentifier>
+			<Abstract type="html">Decrement reference count for a particular swyp out.</Abstract>
+			<DeclaredIn>swypHandshakeManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)dereferenceSwypOutAsPending:(swypInfoRef *)ref</Declaration>
+			
+			
+			<Anchor>//api/name/dereferenceSwypOutAsPending:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypHandshakeManager/beginHandshakeProcessWithConnectionSession:</TokenIdentifier>
+			<Abstract type="html">The method for attaching swypConnectionSessions which have already been paired through NSInputStreams and NSOutputStreams, and supposedly work.</Abstract>
+			<DeclaredIn>swypHandshakeManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)beginHandshakeProcessWithConnectionSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/beginHandshakeProcessWithConnectionSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypHandshakeManager/sessionStatusChanged:inSession:</TokenIdentifier>
+			<Abstract type="html">Alerts that the status of the connection session changed. Perhaps it's swypConnectionSessionStatusReady</Abstract>
+			<DeclaredIn>swypHandshakeManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)sessionStatusChanged:(swypConnectionSessionStatus)status inSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/sessionStatusChanged:inSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypHandshakeManager/sessionDied:withError:</TokenIdentifier>
+			<Abstract type="html">Alerts that the session is over. Error is commonly nil because we r lazy.</Abstract>
+			<DeclaredIn>swypHandshakeManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)sessionDied:(swypConnectionSession *)session withError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/sessionDied:withError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypHandshakeManager/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</TokenIdentifier>
+			<Abstract type="html">See whether delegate will handle data stream.</Abstract>
+			<DeclaredIn>swypHandshakeManager.m</DeclaredIn>			
+			
+			<Declaration>- (BOOL)delegateWillHandleDiscernedStream:(swypDiscernedInputStream *)discernedStream wantsAsData:(BOOL *)wantsProvidedAsNSData inConnectionSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypHandshakeManager/yieldedData:discernedStream:inConnectionSession:</TokenIdentifier>
+			<Abstract type="html">	The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.
+	</Abstract>
+			<DeclaredIn>swypHandshakeManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)yieldedData:(NSData *)streamData discernedStream:(swypDiscernedInputStream *)discernedStream inConnectionSession:(swypConnectionSession *)session</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>inputStream</Name>
-					<Abstract type="html">Stream should not be yet opened or attached to any runloop.</Abstract>
+					<Name>discernedStream</Name>
+					<Abstract type="html">the stream containing properties like streamType, and streamTag.</Abstract>
+				</Parameter><Parameter>
+					<Name>streamData</Name>
+					<Abstract type="html">Data from the discernedStream.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/initWithInputStream:dataBrdigeDelegate:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypInputToDataBridge/encounteredErrorInInputStream:withInputToOutputConnector:</TokenIdentifier>
-			<Abstract type="html">error in the input</Abstract>
-			<DeclaredIn>swypInputToDataBridge.m</DeclaredIn>			
-			
-			<Declaration>- (void)encounteredErrorInInputStream:(NSInputStream *)stream withInputToOutputConnector:(swypInputToOutputStreamConnector *)connector</Declaration>
-			
-			
-			<Anchor>//api/name/encounteredErrorInInputStream:withInputToOutputConnector:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypInputToDataBridge/encounteredErrorInOutputStream:withInputToOutputConnector:</TokenIdentifier>
-			<Abstract type="html">error in the output</Abstract>
-			<DeclaredIn>swypInputToDataBridge.m</DeclaredIn>			
-			
-			<Declaration>- (void)encounteredErrorInOutputStream:(NSOutputStream *)stream withInputToOutputConnector:(swypInputToOutputStreamConnector *)connector</Declaration>
-			
-			
-			<Anchor>//api/name/encounteredErrorInOutputStream:withInputToOutputConnector:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypInputToDataBridge/completedInputStream:forOutputStream:withInputToOutputConnector:</TokenIdentifier>
-			<Abstract type="html">we're done</Abstract>
-			<DeclaredIn>swypInputToDataBridge.m</DeclaredIn>			
-			
-			<Declaration>- (void)completedInputStream:(NSInputStream *)stream forOutputStream:(NSOutputStream *)outputStream withInputToOutputConnector:(swypInputToOutputStreamConnector *)connector</Declaration>
-			
-			
-			<Anchor>//api/name/completedInputStream:forOutputStream:withInputToOutputConnector:</Anchor>
+			<Anchor>//api/name/yieldedData:discernedStream:inConnectionSession:</Anchor>
 		</Token>
 		
 	</File>

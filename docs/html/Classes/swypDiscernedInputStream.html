@@ -1,0 +1,941 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>swypDiscernedInputStream Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 752)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">libSwÿp </a></h1>
+				<a id="developerHome" href="../index.html">Swÿp</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">swypDiscernedInputStream Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/dataSource">&nbsp;&nbsp;&nbsp;&nbsp;dataSource</option>
+	
+	<option value="//api/name/isIndefinite">&nbsp;&nbsp;&nbsp;&nbsp;isIndefinite</option>
+	
+	<option value="//api/name/lastProvidedByteIndex">&nbsp;&nbsp;&nbsp;&nbsp;lastProvidedByteIndex</option>
+	
+	<option value="//api/name/sourceConnectionSession">&nbsp;&nbsp;&nbsp;&nbsp;sourceConnectionSession</option>
+	
+	<option value="//api/name/streamEndByteIndex">&nbsp;&nbsp;&nbsp;&nbsp;streamEndByteIndex</option>
+	
+	<option value="//api/name/streamLength">&nbsp;&nbsp;&nbsp;&nbsp;streamLength</option>
+	
+	<option value="//api/name/streamTag">&nbsp;&nbsp;&nbsp;&nbsp;streamTag</option>
+	
+	<option value="//api/name/streamType">&nbsp;&nbsp;&nbsp;&nbsp;streamType</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addStatusDelegate:">&nbsp;&nbsp;&nbsp;&nbsp;- addStatusDelegate:</option>
+	
+	<option value="//api/name/endIndefiniteStreamAtByteIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- endIndefiniteStreamAtByteIndex:</option>
+	
+	<option value="//api/name/initWithStreamDataSource:type:tag:length:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithStreamDataSource:type:tag:length:</option>
+	
+	<option value="//api/name/removeStatusDelegate:">&nbsp;&nbsp;&nbsp;&nbsp;- removeStatusDelegate:</option>
+	
+	<option value="//api/name/shouldPullData">&nbsp;&nbsp;&nbsp;&nbsp;- shouldPullData</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataSource">dataSource</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isIndefinite">isIndefinite</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lastProvidedByteIndex">lastProvidedByteIndex</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sourceConnectionSession">sourceConnectionSession</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/streamEndByteIndex">streamEndByteIndex</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/streamLength">streamLength</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/streamTag">streamTag</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/streamType">streamType</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addStatusDelegate:">addStatusDelegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endIndefiniteStreamAtByteIndex:">endIndefiniteStreamAtByteIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithStreamDataSource:type:tag:length:">initWithStreamDataSource:type:tag:length:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeStatusDelegate:">removeStatusDelegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldPullData">shouldPullData</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="swypDiscernedInputStream Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">swypDiscernedInputStream Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSInputStream</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSStreamDelegate</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">swypDiscernedInputStream.h<br />swypDiscernedInputStream.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class allows discrete files to be removed from a flowing NSInputStream.</p>
+
+<p>This class creates an input stream from an input <a href="#//api/name/dataSource">dataSource</a>, making the stream only have as much data as is authorized by the init function, and notifying the <a href="../Classes/swypInputStreamDiscerner.html">swypInputStreamDiscerner</a> when completed.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isIndefinite">&nbsp;&nbsp;isIndefinite</a></code>
+		<span class="tooltip"><pre><code>Indefinite streams occur when both endpoints support the same proprietary protocol, and set stream payload length to 0
+When the indefinite stream is to be ended, endIndefiniteStreamAtByteIndex: must be called referencing a byte that has either not yet been read, or has been read in the last read cycle.
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/streamLength">&nbsp;&nbsp;streamLength</a></code>
+		<span class="tooltip"><p>Length of stream, if known</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/streamTag">&nbsp;&nbsp;streamTag</a></code>
+		<span class="tooltip"><p>Tag for the stream</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/streamType">&nbsp;&nbsp;streamType</a></code>
+		<span class="tooltip"><p>The swypFileTypeString for the stream type</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lastProvidedByteIndex">&nbsp;&nbsp;lastProvidedByteIndex</a></code>
+		<span class="tooltip"><p>last read byte in stream&hellip; Ideal for key-value observing progress.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/streamEndByteIndex">&nbsp;&nbsp;streamEndByteIndex</a></code>
+		<span class="tooltip"><p>Last byte in stream <a href="#//api/name/streamEndByteIndex">streamEndByteIndex</a> &ndash; <a href="#//api/name/lastProvidedByteIndex">lastProvidedByteIndex</a> = remaining bytes.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sourceConnectionSession">&nbsp;&nbsp;sourceConnectionSession</a></code>
+		<span class="tooltip"><p>Refers to the <a href="../Classes/swypConnectionSession.html">swypConnectionSession</a> that this <a href="swypDiscernedInputStream.html">swypDiscernedInputStream</a> reers from&hellip;</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataSource">&nbsp;&nbsp;dataSource</a></code>
+		<span class="tooltip"><p>This is for <a href="../Classes/swypInputStreamDiscerner.html">swypInputStreamDiscerner</a>, which will notify you if you are a <a href="../Protocols/swypConnectionSessionDataDelegate.html">swypConnectionSessionDataDelegate</a>, don&rsquo;t worry about this.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addStatusDelegate:">&ndash;&nbsp;addStatusDelegate:</a></code>
+		<span class="tooltip"><p>adds delegate (no-retain, as usual) that adopts <a href="../Protocols/swypDiscernedInputStreamStatusDelegate.html">swypDiscernedInputStreamStatusDelegate</a> protocol; object must be removed subsequently</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeStatusDelegate:">&ndash;&nbsp;removeStatusDelegate:</a></code>
+		<span class="tooltip"><p>removes delegate (no-release as usual) that has been added via addStatusDelegate</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithStreamDataSource:type:tag:length:">&ndash;&nbsp;initWithStreamDataSource:type:tag:length:</a></code>
+		<span class="tooltip"><p>the primary <a href="#//api/name/init">init</a> function</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endIndefiniteStreamAtByteIndex:">&ndash;&nbsp;endIndefiniteStreamAtByteIndex:</a></code>
+		<span class="tooltip"><pre><code>This method enables the next input stream to be queued out of data already consumed by reading this object's NSStream
+byteIndex must exist within the most recent read, or in the future
+    eg, it can't be from two stream reads back
+Calling this method on a discernedInputStream makes it become definite
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldPullData">&ndash;&nbsp;shouldPullData</a></code>
+		<span class="tooltip"><p>this method tells the discernedInputStream that there is data available, and that it should pull it!</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/dataSource" title="dataSource"></a>
+	<h3 class="subsubtitle method-title">dataSource</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is for <a href="../Classes/swypInputStreamDiscerner.html">swypInputStreamDiscerner</a>, which will notify you if you are a <a href="../Protocols/swypConnectionSessionDataDelegate.html">swypConnectionSessionDataDelegate</a>, don&rsquo;t worry about this.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;swypDiscernedInputStreamDataSource&gt; dataSource</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is for <a href="../Classes/swypInputStreamDiscerner.html">swypInputStreamDiscerner</a>, which will notify you if you are a <a href="../Protocols/swypConnectionSessionDataDelegate.html">swypConnectionSessionDataDelegate</a>, don&rsquo;t worry about this.</p>
+
+<pre><code>Instead of directly manipulating delegation of this class, use a model in swypContentInteractionManager, or set yourself as swypConnectionSessionDataDelegate on swypConnectionSession.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypDiscernedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isIndefinite" title="isIndefinite"></a>
+	<h3 class="subsubtitle method-title">isIndefinite</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>Indefinite streams occur when both endpoints support the same proprietary protocol, and set stream payload length to 0
+When the indefinite stream is to be ended, endIndefiniteStreamAtByteIndex: must be called referencing a byte that has either not yet been read, or has been read in the last read cycle.
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isIndefinite</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>Indefinite streams occur when both endpoints support the same proprietary protocol, and set stream payload length to 0
+When the indefinite stream is to be ended, endIndefiniteStreamAtByteIndex: must be called referencing a byte that has either not yet been read, or has been read in the last read cycle.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypDiscernedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lastProvidedByteIndex" title="lastProvidedByteIndex"></a>
+	<h3 class="subsubtitle method-title">lastProvidedByteIndex</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>last read byte in stream&hellip; Ideal for key-value observing progress.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger lastProvidedByteIndex</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>last read byte in stream&hellip; Ideal for key-value observing progress.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypDiscernedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sourceConnectionSession" title="sourceConnectionSession"></a>
+	<h3 class="subsubtitle method-title">sourceConnectionSession</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Refers to the <a href="../Classes/swypConnectionSession.html">swypConnectionSession</a> that this <a href="swypDiscernedInputStream.html">swypDiscernedInputStream</a> reers from&hellip;</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id sourceConnectionSession</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Refers to the <a href="../Classes/swypConnectionSession.html">swypConnectionSession</a> that this <a href="swypDiscernedInputStream.html">swypDiscernedInputStream</a> reers from&hellip;</p><div class="warning"><p>The object here is not retained, and thus do not assume its validity and use the value for performing <em>any</em> NSObject or connectionSession operation.</p>
+
+<p>This value is set by the conneciton session itself when the discerner passes it.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypDiscernedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/streamEndByteIndex" title="streamEndByteIndex"></a>
+	<h3 class="subsubtitle method-title">streamEndByteIndex</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Last byte in stream <a href="#//api/name/streamEndByteIndex">streamEndByteIndex</a> &ndash; <a href="#//api/name/lastProvidedByteIndex">lastProvidedByteIndex</a> = remaining bytes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger streamEndByteIndex</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Last byte in stream <a href="#//api/name/streamEndByteIndex">streamEndByteIndex</a> &ndash; <a href="#//api/name/lastProvidedByteIndex">lastProvidedByteIndex</a> = remaining bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypDiscernedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/streamLength" title="streamLength"></a>
+	<h3 class="subsubtitle method-title">streamLength</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Length of stream, if known</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger streamLength</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Length of stream, if known</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypDiscernedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/streamTag" title="streamTag"></a>
+	<h3 class="subsubtitle method-title">streamTag</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tag for the stream</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *streamTag</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Tag for the stream</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypDiscernedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/streamType" title="streamType"></a>
+	<h3 class="subsubtitle method-title">streamType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The swypFileTypeString for the stream type</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *streamType</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The swypFileTypeString for the stream type</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypDiscernedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addStatusDelegate:" title="addStatusDelegate:"></a>
+	<h3 class="subsubtitle method-title">addStatusDelegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>adds delegate (no-retain, as usual) that adopts <a href="../Protocols/swypDiscernedInputStreamStatusDelegate.html">swypDiscernedInputStreamStatusDelegate</a> protocol; object must be removed subsequently</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)addStatusDelegate:(id&lt;swypDiscernedInputStreamStatusDelegate&gt;)<em>delegate</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>adds delegate (no-retain, as usual) that adopts <a href="../Protocols/swypDiscernedInputStreamStatusDelegate.html">swypDiscernedInputStreamStatusDelegate</a> protocol; object must be removed subsequently</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypDiscernedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endIndefiniteStreamAtByteIndex:" title="endIndefiniteStreamAtByteIndex:"></a>
+	<h3 class="subsubtitle method-title">endIndefiniteStreamAtByteIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>This method enables the next input stream to be queued out of data already consumed by reading this object's NSStream
+byteIndex must exist within the most recent read, or in the future
+    eg, it can't be from two stream reads back
+Calling this method on a discernedInputStream makes it become definite
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)endIndefiniteStreamAtByteIndex:(NSUInteger)<em>byteIndex</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>This method enables the next input stream to be queued out of data already consumed by reading this object's NSStream
+byteIndex must exist within the most recent read, or in the future
+    eg, it can't be from two stream reads back
+Calling this method on a discernedInputStream makes it become definite
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypDiscernedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithStreamDataSource:type:tag:length:" title="initWithStreamDataSource:type:tag:length:"></a>
+	<h3 class="subsubtitle method-title">initWithStreamDataSource:type:tag:length:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>the primary <a href="#//api/name/init">init</a> function</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithStreamDataSource:(id&lt;swypDiscernedInputStreamDataSource&gt;)<em>dataSource</em> type:(NSString *)<em>type</em> tag:(NSString *)<em>tag</em> length:(NSUInteger)<em>streamLength</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>the primary <a href="#//api/name/init">init</a> function</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypDiscernedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeStatusDelegate:" title="removeStatusDelegate:"></a>
+	<h3 class="subsubtitle method-title">removeStatusDelegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>removes delegate (no-release as usual) that has been added via addStatusDelegate</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removeStatusDelegate:(id&lt;swypDiscernedInputStreamStatusDelegate&gt;)<em>delegate</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>removes delegate (no-release as usual) that has been added via addStatusDelegate</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypDiscernedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldPullData" title="shouldPullData"></a>
+	<h3 class="subsubtitle method-title">shouldPullData</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>this method tells the discernedInputStream that there is data available, and that it should pull it!</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)shouldPullData</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>this method tells the discernedInputStream that there is data available, and that it should pull it!</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypDiscernedInputStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-02-03)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

@@ -1,59 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/swypInfoRef.html">
+	<File path="Classes/swypGKPeerAbstractedStreamSet.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/swypInfoRef</TokenIdentifier>
-			<Abstract type="html">This class encapsulates the logical components of the gestures found in swypGestureRecognizer.
-	The swypInfoRef is the tracking method for all connections based on gestures. </Abstract>
-			<DeclaredIn>swypInfoRef.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/swypGKPeerAbstractedStreamSet</TokenIdentifier>
+			<Abstract type="html">The purpose of this class is to encapsulate an input and output stream for a gamekit peer while forwarding all data through one delegate.</Abstract>
+			<DeclaredIn>swypGKPeerAbstractedStreamSet.h</DeclaredIn>
 			
 			<NodeRef refid="20"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypInfoRef/setVelocity:</TokenIdentifier>
-			<Abstract type="html">in mm/second</Abstract>
-			<DeclaredIn>swypInfoRef.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypGKPeerAbstractedStreamSet/initWithPeerName:streamSetDelegate:</TokenIdentifier>
+			<Abstract type="html">Main init function.
+After init, both peerReadStream and peerWriteStream will be available for use.</Abstract>
+			<DeclaredIn>swypGKPeerAbstractedStreamSet.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) double velocity</Declaration>
+			<Declaration>- (id)initWithPeerName:(NSString *)peerName streamSetDelegate:(id&lt;swypGKPeerAbstractedStreamSetDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>peerName</Name>
+					<Abstract type="html">is unique from GKSession</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">is manditory swypGKPeerAbstractedStreamSetDelegate</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/velocity</Anchor>
+			<Anchor>//api/name/initWithPeerName:streamSetDelegate:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/swypInfoRef/velocity</TokenIdentifier>
-			<Abstract type="html">in mm/second</Abstract>
-			<DeclaredIn>swypInfoRef.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypGKPeerAbstractedStreamSet/addDataToPeerReadStream:</TokenIdentifier>
+			<Abstract type="html">Add data to peerReadStream as acquired from GKSession</Abstract>
+			<DeclaredIn>swypGKPeerAbstractedStreamSet.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) double velocity</Declaration>
+			<Declaration>- (void)addDataToPeerReadStream:(NSData *)addedData</Declaration>
 			
 			
-			<Anchor>//api/name/velocity</Anchor>
+			<Anchor>//api/name/addDataToPeerReadStream:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/swypInfoRef/setSwypBeginningContentView:</TokenIdentifier>
-			<Abstract type="html">property is filled when swyp out occurs on top of displayed content, not filled when swyp begins on workspace</Abstract>
-			<DeclaredIn>swypInfoRef.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypGKPeerAbstractedStreamSet/invalidateStreamSet</TokenIdentifier>
+			<Abstract type="html">Invalidates both streams, notifies delegate with peerAbstractedStreamSetDidClose:withPeerNamed:</Abstract>
+			<DeclaredIn>swypGKPeerAbstractedStreamSet.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIView *swypBeginningContentView</Declaration>
+			<Declaration>- (void)invalidateStreamSet</Declaration>
 			
 			
-			<Anchor>//api/name/swypBeginningContentView</Anchor>
+			<Anchor>//api/name/invalidateStreamSet</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/swypInfoRef/swypBeginningContentView</TokenIdentifier>
-			<Abstract type="html">property is filled when swyp out occurs on top of displayed content, not filled when swyp begins on workspace</Abstract>
-			<DeclaredIn>swypInfoRef.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/swypGKPeerAbstractedStreamSet/invalidateFromManager</TokenIdentifier>
+			<Abstract type="html">Invalidates both streams, without notifying delegate;</Abstract>
+			<DeclaredIn>swypGKPeerAbstractedStreamSet.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIView *swypBeginningContentView</Declaration>
+			<Declaration>- (void)invalidateFromManager</Declaration>
 			
 			
-			<Anchor>//api/name/swypBeginningContentView</Anchor>
+			<Anchor>//api/name/invalidateFromManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypGKPeerAbstractedStreamSet/outputToDataStream:wantsProvideData:</TokenIdentifier>
+			<Abstract type="html">The method that provides data-- data must be accepted otherwise it's permanently lost</Abstract>
+			<DeclaredIn>swypGKPeerAbstractedStreamSet.m</DeclaredIn>			
+			
+			<Declaration>- (void)outputToDataStream:(swypOutputToDataStream *)stream wantsProvideData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/outputToDataStream:wantsProvideData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypGKPeerAbstractedStreamSet/outputToDataStreamWasClosed:</TokenIdentifier>
+			<Abstract type="html">Notifies of the closure (was open) of stream.</Abstract>
+			<DeclaredIn>swypGKPeerAbstractedStreamSet.m</DeclaredIn>			
+			
+			<Declaration>- (void)outputToDataStreamWasClosed:(swypOutputToDataStream *)stream</Declaration>
+			
+			
+			<Anchor>//api/name/outputToDataStreamWasClosed:</Anchor>
 		</Token>
 		
 	</File>

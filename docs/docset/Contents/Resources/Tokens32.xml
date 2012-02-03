@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/swypPhotoPlayground.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/swypPhotoPlayground</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>swypPhotoPlayground.h</DeclaredIn>
+			
+			<NodeRef refid="32"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoPlayground/initWithPhotoSize:</TokenIdentifier>
+			<Abstract type="html">Init'd with the max image size permissable in the contentDisplayCont</Abstract>
+			<DeclaredIn>swypPhotoPlayground.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithPhotoSize:(CGSize)imageSize</Declaration>
+			
+			
+			<Anchor>//api/name/initWithPhotoSize:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoPlayground/rectToKeepInPlaygroundWithIntendedRect:</TokenIdentifier>
+			<Abstract type="html">this just keeps the photo in bounds</Abstract>
+			<DeclaredIn>swypPhotoPlayground.h</DeclaredIn>			
+			
+			<Declaration>- (CGRect)rectToKeepInPlaygroundWithIntendedRect:(CGRect)intendedRect</Declaration>
+			
+			
+			<Anchor>//api/name/rectToKeepInPlaygroundWithIntendedRect:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoPlayground/removeContentFromDisplayWithID:animated:</TokenIdentifier>
+			<Abstract type="html">How model updates propigate removed content through swypContentInteractionManager</Abstract>
+			<DeclaredIn>swypPhotoPlayground.m</DeclaredIn>			
+			
+			<Declaration>- (void)removeContentFromDisplayWithID:(NSString *)removeID animated:(BOOL)animate</Declaration>
+			
+			
+			<Anchor>//api/name/removeContentFromDisplayWithID:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoPlayground/addContentToDisplayWithID:animated:</TokenIdentifier>
+			<Abstract type="html">How modal updates propigate added content through swypContentInteractionManager</Abstract>
+			<DeclaredIn>swypPhotoPlayground.m</DeclaredIn>			
+			
+			<Declaration>- (void)addContentToDisplayWithID:(NSString *)insertID animated:(BOOL)animate</Declaration>
+			
+			
+			<Anchor>//api/name/addContentToDisplayWithID:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoPlayground/allDisplayedObjectIDs</TokenIdentifier>
+			<Abstract type="html">Returns everything displayed on the VC</Abstract>
+			<DeclaredIn>swypPhotoPlayground.m</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)allDisplayedObjectIDs</Declaration>
+			
+			
+			<Anchor>//api/name/allDisplayedObjectIDs</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoPlayground/reloadAllData</TokenIdentifier>
+			<Abstract type="html">reloads all displayed content through swypContentDisplayViewControllerDelegate</Abstract>
+			<DeclaredIn>swypPhotoPlayground.m</DeclaredIn>			
+			
+			<Declaration>- (void)reloadAllData</Declaration>
+			
+			
+			<Anchor>//api/name/reloadAllData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoPlayground/choiceMaxSizeForContentDisplay</TokenIdentifier>
+			<Abstract type="html">	Returns max size of displayed content on workspace</Abstract>
+			<DeclaredIn>swypPhotoPlayground.m</DeclaredIn>			
+			
+			<Declaration>- (CGSize)choiceMaxSizeForContentDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/choiceMaxSizeForContentDisplay</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPhotoPlayground/moveContentWithID:toFrame:animated:</TokenIdentifier>
+			<Abstract type="html">Reposition content to frame location within view</Abstract>
+			<DeclaredIn>swypPhotoPlayground.m</DeclaredIn>			
+			
+			<Declaration>- (void)moveContentWithID:(NSString *)objectID toFrame:(CGRect)frame animated:(BOOL)animate</Declaration>
+			
+			
+			<Anchor>//api/name/moveContentWithID:toFrame:animated:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

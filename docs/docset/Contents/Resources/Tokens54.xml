@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/swypInputStreamDiscernerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/swypInputStreamDiscernerDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>swypInputStreamDiscerner.h</DeclaredIn>
+			
+			<NodeRef refid="54"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypInputStreamDiscernerDelegate/discernedStream:withDiscerner:</TokenIdentifier>
+			<Abstract type="html">Notifies that discerned stream is ready for consumption</Abstract>
+			<DeclaredIn>swypInputStreamDiscerner.h</DeclaredIn>			
+			
+			<Declaration>- (void)discernedStream:(swypDiscernedInputStream *)discernedStream withDiscerner:(swypInputStreamDiscerner *)discerner</Declaration>
+			
+			
+			<Anchor>//api/name/discernedStream:withDiscerner:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypInputStreamDiscernerDelegate/concludedDiscernedStream:withDiscerner:</TokenIdentifier>
+			<Abstract type="html">Notifies that discerned stream has concluded</Abstract>
+			<DeclaredIn>swypInputStreamDiscerner.h</DeclaredIn>			
+			
+			<Declaration>- (void)concludedDiscernedStream:(swypDiscernedInputStream *)discernedStream withDiscerner:(swypInputStreamDiscerner *)discerner</Declaration>
+			
+			
+			<Anchor>//api/name/concludedDiscernedStream:withDiscerner:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypInputStreamDiscernerDelegate/inputStreamDiscernerFinishedWithError:withDiscerner:</TokenIdentifier>
+			<Abstract type="html">Notifies that discerned stream has concluded with an error</Abstract>
+			<DeclaredIn>swypInputStreamDiscerner.h</DeclaredIn>			
+			
+			<Declaration>- (void)inputStreamDiscernerFinishedWithError:(NSError *)error withDiscerner:(swypInputStreamDiscerner *)discerner</Declaration>
+			
+			
+			<Anchor>//api/name/inputStreamDiscernerFinishedWithError:withDiscerner:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

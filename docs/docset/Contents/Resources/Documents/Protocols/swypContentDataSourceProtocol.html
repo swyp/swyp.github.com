@@ -1,0 +1,641 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>swypContentDataSourceProtocol Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 752)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">libSwÿp </a></h1>
+				<a id="developerHome" href="../index.html">Swÿp</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">swypContentDataSourceProtocol Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/dataForContentWithID:fileType:">&nbsp;&nbsp;&nbsp;&nbsp;- dataForContentWithID:fileType:</option>
+	
+	<option value="//api/name/datasourceDelegate">&nbsp;&nbsp;&nbsp;&nbsp;- datasourceDelegate</option>
+	
+	<option value="//api/name/iconImageForContentWithID:ofMaxSize:">&nbsp;&nbsp;&nbsp;&nbsp;- iconImageForContentWithID:ofMaxSize:</option>
+	
+	<option value="//api/name/idsForAllContent">&nbsp;&nbsp;&nbsp;&nbsp;- idsForAllContent</option>
+	
+	<option value="//api/name/inputStreamForContentWithID:fileType:length:">&nbsp;&nbsp;&nbsp;&nbsp;- inputStreamForContentWithID:fileType:length:</option>
+	
+	<option value="//api/name/setDatasourceDelegate:">&nbsp;&nbsp;&nbsp;&nbsp;- setDatasourceDelegate:</option>
+	
+	<option value="//api/name/supportedFileTypesForContentWithID:">&nbsp;&nbsp;&nbsp;&nbsp;- supportedFileTypesForContentWithID:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataForContentWithID:fileType:">dataForContentWithID:fileType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/datasourceDelegate">datasourceDelegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/iconImageForContentWithID:ofMaxSize:">iconImageForContentWithID:ofMaxSize:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/idsForAllContent">idsForAllContent</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inputStreamForContentWithID:fileType:length:">inputStreamForContentWithID:fileType:length:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDatasourceDelegate:">setDatasourceDelegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/supportedFileTypesForContentWithID:">supportedFileTypesForContentWithID:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="swypContentDataSourceProtocol Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">swypContentDataSourceProtocol Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">swypContentDataSourceProtocol.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This ID-based content identification protocol for swypContentDataSources has some central tennets.</p>
+
+<p>Content can be ordered, or not, in returning the &lsquo;idsForAllContent&rsquo; array.</p>
+
+<p>Content is represented on a contentViewController <a href="#//api/name/iconImageForContentWithID:ofMaxSize:">iconImageForContentWithID:ofMaxSize:</a>, then when that contentViewController detects a swyp-out of the content, the <a href="../Classes/swypContentInteractionManager.html">swypContentInteractionManager</a> requests <a href="#//api/name/inputStreamForContentWithID:fileType:length:">inputStreamForContentWithID:fileType:length:</a> for that content, which is then added to the output for a particular session.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/idsForAllContent">&ndash;&nbsp;idsForAllContent</a></code>
+		<span class="tooltip"><p>Returns list of all unique IDs for each piece of content to displayed to swyp workspace.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/iconImageForContentWithID:ofMaxSize:">&ndash;&nbsp;iconImageForContentWithID:ofMaxSize:</a></code>
+		<span class="tooltip"><p>Returns a UIImage representing content, which has dimensions no greater than maxIconSize.</p>
+
+<pre><code>This image is displayed by the swypContentViewController.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/supportedFileTypesForContentWithID:">&ndash;&nbsp;supportedFileTypesForContentWithID:</a></code>
+		<span class="tooltip"><p>Returns swypFileTypeString array that a specifc contentID supports</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDatasourceDelegate:">&ndash;&nbsp;setDatasourceDelegate:</a></code>
+		<span class="tooltip"><p>Sets the <a href="../Protocols/swypContentDataSourceDelegate.html">swypContentDataSourceDelegate</a> for the dataSource</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/datasourceDelegate">&ndash;&nbsp;datasourceDelegate</a></code>
+		<span class="tooltip"><p>Retrieves the delegate</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataForContentWithID:fileType:">&ndash;&nbsp;dataForContentWithID:fileType:</a></code>
+		<span class="tooltip"><p>Returns the data for the specified file type.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inputStreamForContentWithID:fileType:length:">&ndash;&nbsp;inputStreamForContentWithID:fileType:length:</a></code>
+		<span class="tooltip"><p>Gets an NSInputStream for a specific piece of content for sending over connectionSession</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/dataForContentWithID:fileType:" title="dataForContentWithID:fileType:"></a>
+	<h3 class="subsubtitle method-title">dataForContentWithID:fileType:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the data for the specified file type.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSData *)dataForContentWithID:(NSString *)<em>contentID</em> fileType:(swypFileTypeString *)<em>type</em></code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSData must contain the complete file of a given format. Returning nil causes no data to be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the data for the specified file type.</p>
+
+<p>This is a convenience method in leu of <a href="../Protocols/swypContentDataSourceProtocol.html#//api/name/inputStreamForContentWithID:fileType:length:">inputStreamForContentWithID:fileType:length:</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDataSourceProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/datasourceDelegate" title="datasourceDelegate"></a>
+	<h3 class="subsubtitle method-title">datasourceDelegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves the delegate</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id&lt;swypContentDataSourceDelegate&gt;)datasourceDelegate</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Retrieves the delegate</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDataSourceProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/iconImageForContentWithID:ofMaxSize:" title="iconImageForContentWithID:ofMaxSize:"></a>
+	<h3 class="subsubtitle method-title">iconImageForContentWithID:ofMaxSize:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a UIImage representing content, which has dimensions no greater than maxIconSize.</p>
+
+<pre><code>This image is displayed by the swypContentViewController.
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (UIImage *)iconImageForContentWithID:(NSString *)<em>contentID</em> ofMaxSize:(CGSize)<em>maxIconSize</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a UIImage representing content, which has dimensions no greater than maxIconSize.</p>
+
+<pre><code>This image is displayed by the swypContentViewController.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDataSourceProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/idsForAllContent" title="idsForAllContent"></a>
+	<h3 class="subsubtitle method-title">idsForAllContent</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns list of all unique IDs for each piece of content to displayed to swyp workspace.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)idsForAllContent</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSArray choc full of NSStrings.</p>
+
+<pre><code>        Can be as simple as [[NSNumber numberWithInt:index] stringValue];
+        Most methods must be implemented if the Array is not empty or nil.
+</code></pre>
+
+<p>  Content can be ordered, or not, in returning the &lsquo;idsForAllContent&rsquo; array.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns list of all unique IDs for each piece of content to displayed to swyp workspace.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDataSourceProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inputStreamForContentWithID:fileType:length:" title="inputStreamForContentWithID:fileType:length:"></a>
+	<h3 class="subsubtitle method-title">inputStreamForContentWithID:fileType:length:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets an NSInputStream for a specific piece of content for sending over connectionSession</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInputStream *)inputStreamForContentWithID:(NSString *)<em>contentID</em> fileType:(swypFileTypeString *)<em>type</em> length:(NSUInteger *)<em>contentLengthDestOrNULL</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>contentLengthDestOrNULL</em></dt>
+			<dd><p>is a pointer that after function call should contain length of inputStream, or not if indefinite or unknown.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Gets an NSInputStream for a specific piece of content for sending over connectionSession</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDataSourceProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDatasourceDelegate:" title="setDatasourceDelegate:"></a>
+	<h3 class="subsubtitle method-title">setDatasourceDelegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the <a href="../Protocols/swypContentDataSourceDelegate.html">swypContentDataSourceDelegate</a> for the dataSource</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setDatasourceDelegate:(id&lt;swypContentDataSourceDelegate&gt;)<em>delegate</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the <a href="../Protocols/swypContentDataSourceDelegate.html">swypContentDataSourceDelegate</a> for the dataSource</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDataSourceProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/supportedFileTypesForContentWithID:" title="supportedFileTypesForContentWithID:"></a>
+	<h3 class="subsubtitle method-title">supportedFileTypesForContentWithID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns swypFileTypeString array that a specifc contentID supports</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)supportedFileTypesForContentWithID:(NSString *)<em>contentID</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns swypFileTypeString array that a specifc contentID supports</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDataSourceProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-02-03)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

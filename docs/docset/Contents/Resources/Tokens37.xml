@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/swypTransformInputStream.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/swypTransformInputStream</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>swypTransformInputStream.h</DeclaredIn>
+			
+			<NodeRef refid="37"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypTransformInputStream/reset</TokenIdentifier>
+			<Abstract type="html">	Brings back to state before inputStream was set</Abstract>
+			<DeclaredIn>swypTransformInputStream.h</DeclaredIn>			
+			
+			<Declaration>- (void)reset</Declaration>
+			
+			
+			<Anchor>//api/name/reset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypTransformInputStream/inputStreamIsFinished</TokenIdentifier>
+			<Abstract type="html">	In subclassing, this method can be used to see whether the input stream did give the end event</Abstract>
+			<DeclaredIn>swypTransformInputStream.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)inputStreamIsFinished</Declaration>
+			
+			
+			<Anchor>//api/name/inputStreamIsFinished</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypTransformInputStream/transformData:inRange:</TokenIdentifier>
+			<Abstract type="html">	if waitsForAllInput == NO, data will be passed in quantities of transformationChunkSize, until inputStreamIsFinished == YES</Abstract>
+			<DeclaredIn>swypTransformInputStream.h</DeclaredIn>			
+			
+			<Declaration>- (void)transformData:(NSData *)sourceData inRange:(NSRange)range</Declaration>
+			
+			
+			<Anchor>//api/name/transformData:inRange:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypTransformInputStream/waitsForAllInput</TokenIdentifier>
+			<Abstract type="html">	If so, we wait until inputStream sends the end event before beginning transformations</Abstract>
+			<DeclaredIn>swypTransformInputStream.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)waitsForAllInput</Declaration>
+			
+			
+			<Anchor>//api/name/waitsForAllInput</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypTransformInputStream/transformationChunkSize</TokenIdentifier>
+			<Abstract type="html">	If non-zero, transformData:inRange: is called when available untransformedData's length exceeds this quantity
+		when inputStreamIsFinnished transformData:inRange: is called until no more untransformed data exists, regardless of chunkSize
+	If zero, chunk size is irrelevant and transformData is continuously run with full range of the remaining untransformedData</Abstract>
+			<DeclaredIn>swypTransformInputStream.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)transformationChunkSize</Declaration>
+			
+			
+			<Anchor>//api/name/transformationChunkSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypTransformInputStream/didYieldTransformedData:fromSource:withRange:</TokenIdentifier>
+			<Abstract type="html">	don't need to transform all data passed in transformData:inRange:
+	if bytes remaining >transformationChunkSize, or if inputStreamIsFinished == YES, transformData:: will be called until all bytes are transformed</Abstract>
+			<DeclaredIn>swypTransformInputStream.h</DeclaredIn>			
+			
+			<Declaration>- (void)didYieldTransformedData:(NSData *)transformedData fromSource:(NSData *)sourceData withRange:(NSRange)range</Declaration>
+			
+			
+			<Anchor>//api/name/didYieldTransformedData:fromSource:withRange:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

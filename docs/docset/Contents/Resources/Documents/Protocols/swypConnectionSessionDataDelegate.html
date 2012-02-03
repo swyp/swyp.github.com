@@ -27,6 +27,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -45,6 +47,8 @@
 	<option value="//api/name/completedSendingStream:connectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- completedSendingStream:connectionSession:</option>
 	
 	<option value="//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</option>
+	
+	<option value="//api/name/delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:</option>
 	
 	<option value="//api/name/didBeginReceivingDataInConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- didBeginReceivingDataInConnectionSession:</option>
 	
@@ -65,6 +69,8 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
@@ -85,6 +91,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/completedSendingStream:connectionSession:">completedSendingStream:connectionSession:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:">delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didBeginReceivingDataInConnectionSession:">didBeginReceivingDataInConnectionSession:</a></span></li>
 	
@@ -130,6 +138,14 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>How a <a href="../Classes/swypConnectionSession.html">swypConnectionSession</a> gives away its received data. See addDataDelegate: of <a href="../Classes/swypConnectionSession.html">swypConnectionSession</a>.</p>
+					</div>
+					
+					
+					
 					
 					
 					<div class="section section-tasks">
@@ -148,6 +164,13 @@
 
 <pre><code>Use this on your datasource set in swypContentInteractionManager to choose what files your app accepts.
 </code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:">&ndash;&nbsp;delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:</a></code>
+		<span class="tooltip"><p>A convenience method for <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</a>. Return true to accept the enclosed discernedStream as NSData through <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/yieldedData:discernedStream:inConnectionSession:">yieldedData:discernedStream:inConnectionSession:</a> when it&rsquo;s done being received.</p></span>
 	</span>
 	
 	
@@ -280,9 +303,69 @@
     Delegates should see if they're interested through discerned stream's properities like 'streamType' and 'streamTag'
     If no one handles, an exception is thrown
 
+All delegates will be notified using this method, but only one should return TRUE.
+
 discernedStream can be read as an input stream, and attached to output streams using SwypInputToOutput, for example
-Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be set to true, *wantsProvidedAsNSData = TRUE;, to have data provided in a method bellow
+Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be set to true, '*wantsProvidedAsNSData = TRUE;', to have data provided by yieldedData:discernedStream:inConnectionSession:
 </code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:" title="delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:"></a>
+	<h3 class="subsubtitle method-title">delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A convenience method for <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</a>. Return true to accept the enclosed discernedStream as NSData through <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/yieldedData:discernedStream:inConnectionSession:">yieldedData:discernedStream:inConnectionSession:</a> when it&rsquo;s done being received.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)delegateWillReceiveDataFromDiscernedStream:(swypDiscernedInputStream *)<em>discernedStream</em> ofType:(NSString *)<em>streamType</em> inConnectionSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>streamType</em></dt>
+			<dd><p>is a shortcut for discernedStream.streamType</p>
+
+<p>Though there are several data delegates, only one delegate should handle and return TRUE, all else returning false
+Delegates should see if they&rsquo;re interested through discerned stream&rsquo;s properities like &lsquo;streamType&rsquo; and &lsquo;streamTag&rsquo;
+If no one handles, an exception is thrown</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>true or false depending on interest in stream.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A convenience method for <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</a>. Return true to accept the enclosed discernedStream as NSData through <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/yieldedData:discernedStream:inConnectionSession:">yieldedData:discernedStream:inConnectionSession:</a> when it&rsquo;s done being received.</p><div class="warning"><p>if you want to do anything special with NSStream functionality, don&rsquo;t implement this method on your datasource.</p></div>
 	</div>
 	
 	
@@ -480,6 +563,21 @@ Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be s
 	<div class="method-subsection method-declaration"><code>- (void)yieldedData:(NSData *)<em>streamData</em> discernedStream:(swypDiscernedInputStream *)<em>discernedStream</em> inConnectionSession:(swypConnectionSession *)<em>session</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>discernedStream</em></dt>
+			<dd><p>the stream containing properties like streamType, and streamTag.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>streamData</em></dt>
+			<dd><p>Data from the discernedStream.</p></dd>
+		</dl>
+		
+	</div>
+	
 	
 	
 	
@@ -519,7 +617,7 @@ Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be s
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-18)</span><br />
+						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-02-03)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
 						

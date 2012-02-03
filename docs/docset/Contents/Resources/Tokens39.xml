@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSString+swypFileTypeNSStringAdditions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(swypFileTypeNSStringAdditions)</TokenIdentifier>
+			<Abstract type="html">Predefinied file types to use if needed
+	PNG is manditory if your app exports data.</Abstract>
+			<DeclaredIn>swypFileTypeString.h</DeclaredIn>
+			
+			<NodeRef refid="39"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(swypFileTypeNSStringAdditions)/isFileType:</TokenIdentifier>
+			<Abstract type="html">File type equality check</Abstract>
+			<DeclaredIn>swypFileTypeString.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isFileType:(NSString *)fileType</Declaration>
+			
+			
+			<Anchor>//api/name/isFileType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(swypFileTypeNSStringAdditions)/imagePNGFileType</TokenIdentifier>
+			<Abstract type="html">		PNG, the universally supported filetype.</Abstract>
+			<DeclaredIn>swypFileTypeString.h</DeclaredIn>			
+			
+			<Declaration>+ (id)imagePNGFileType</Declaration>
+			
+			
+			<Anchor>//api/name/imagePNGFileType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(swypFileTypeNSStringAdditions)/imageJPEGFileType</TokenIdentifier>
+			<Abstract type="html">	jpeg is a way smaller smaller file than PNG; perhaps it's a good thing to support too
+	
+	MIME: "image/jpeg"</Abstract>
+			<DeclaredIn>swypFileTypeString.h</DeclaredIn>			
+			
+			<Declaration>+ (id)imageJPEGFileType</Declaration>
+			
+			
+			<Anchor>//api/name/imageJPEGFileType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(swypFileTypeNSStringAdditions)/swypControlPacketFileType</TokenIdentifier>
+			<Abstract type="html">		Used in conjunction with specifc tags during connection negotiation.
+		Used to set things like session hue color.
+		Used to notify peer of changes in connection state, like intention to terminate.
+		MIME: "swyp/ControlPacket"</Abstract>
+			<DeclaredIn>swypFileTypeString.h</DeclaredIn>			
+			
+			<Declaration>+ (id)swypControlPacketFileType</Declaration>
+			
+			
+			<Anchor>//api/name/swypControlPacketFileType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(swypFileTypeNSStringAdditions)/swypWorkspaceThumbnailFileType</TokenIdentifier>
+			<Abstract type="html">Used by swyp workspace to show preview image of loading content.</Abstract>
+			<DeclaredIn>swypFileTypeString.h</DeclaredIn>			
+			
+			<Declaration>+ (id)swypWorkspaceThumbnailFileType</Declaration>
+			
+			
+			<Anchor>//api/name/swypWorkspaceThumbnailFileType</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

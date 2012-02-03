@@ -40,16 +40,37 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/showContentWithoutConnection">&nbsp;&nbsp;&nbsp;&nbsp;showContentWithoutConnection</option>
+	<option value="//api/name/contentDataSource">&nbsp;&nbsp;&nbsp;&nbsp;contentDataSource</option>
 	
 	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/sharedSwypWorkspace">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedSwypWorkspace</option>
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/initWithWorkspaceDelegate:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithWorkspaceDelegate:</option>
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	<option value="//api/name/presentContentSwypWorkspaceAtopViewController:withContentView:forContentOfID:atRect:">&nbsp;&nbsp;&nbsp;&nbsp;- presentContentSwypWorkspaceAtopViewController:withContentView:forContentOfID:atRect:</option>
+	
+	<option value="//api/name/presentContentSwypWorkspaceAtopViewController:withContentView:swypableContentImage:forContentOfID:atRect:">&nbsp;&nbsp;&nbsp;&nbsp;- presentContentSwypWorkspaceAtopViewController:withContentView:swypableContentImage:forContentOfID:atRect:</option>
+	
+	<option value="//api/name/presentContentWorkspaceAtopViewController:">&nbsp;&nbsp;&nbsp;&nbsp;- presentContentWorkspaceAtopViewController:</option>
+	
+	<option value="//api/name/swypConnectionMethod:setReadyStatus:withConnectionManager:">&nbsp;&nbsp;&nbsp;&nbsp;- swypConnectionMethod:setReadyStatus:withConnectionManager:</option>
+	
+	<option value="//api/name/swypConnectionMethodsUpdated:withConnectionManager:">&nbsp;&nbsp;&nbsp;&nbsp;- swypConnectionMethodsUpdated:withConnectionManager:</option>
+	
+	<option value="//api/name/swypConnectionSessionWasCreated:withConnectionManager:">&nbsp;&nbsp;&nbsp;&nbsp;- swypConnectionSessionWasCreated:withConnectionManager:</option>
+	
+	<option value="//api/name/swypConnectionSessionWasInvalidated:withConnectionManager:error:">&nbsp;&nbsp;&nbsp;&nbsp;- swypConnectionSessionWasInvalidated:withConnectionManager:error:</option>
+	
+	<option value="//api/name/workspaceView">&nbsp;&nbsp;&nbsp;&nbsp;- workspaceView</option>
 	
 	
 	
@@ -75,17 +96,39 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showContentWithoutConnection">showContentWithoutConnection</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentDataSource">contentDataSource</a></span></li>
 	
 </ul></li>
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedSwypWorkspace">sharedSwypWorkspace</a></span></li>
+	
+</ul></li>
+
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithWorkspaceDelegate:">initWithWorkspaceDelegate:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/presentContentSwypWorkspaceAtopViewController:withContentView:forContentOfID:atRect:">presentContentSwypWorkspaceAtopViewController:withContentView:forContentOfID:atRect:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/presentContentSwypWorkspaceAtopViewController:withContentView:swypableContentImage:forContentOfID:atRect:">presentContentSwypWorkspaceAtopViewController:withContentView:swypableContentImage:forContentOfID:atRect:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/presentContentWorkspaceAtopViewController:">presentContentWorkspaceAtopViewController:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/swypConnectionMethod:setReadyStatus:withConnectionManager:">swypConnectionMethod:setReadyStatus:withConnectionManager:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/swypConnectionMethodsUpdated:withConnectionManager:">swypConnectionMethodsUpdated:withConnectionManager:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/swypConnectionSessionWasCreated:withConnectionManager:">swypConnectionSessionWasCreated:withConnectionManager:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/swypConnectionSessionWasInvalidated:withConnectionManager:error:">swypConnectionSessionWasInvalidated:withConnectionManager:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/workspaceView">workspaceView</a></span></li>
 	
 </ul></li>
 
@@ -114,7 +157,7 @@
 	<td class="specification-value">UIViewController</td>
 </tr><tr>
 	<td class="specification-title">Conforms to</td>
-	<td class="specification-value">UIGestureRecognizerDelegate<br /><a href="../Protocols/swypConnectionManagerDelegate.html">swypConnectionManagerDelegate</a><br />swypContentInteractionManagerDelegate</td>
+	<td class="specification-value">UIGestureRecognizerDelegate<br /><a href="../Protocols/swypConnectionManagerDelegate.html">swypConnectionManagerDelegate</a><br /><a href="../Protocols/swypSwypableContentSuperviewWorkspaceDelegate.html">swypSwypableContentSuperviewWorkspaceDelegate</a></td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
 	<td class="specification-value">swypWorkspaceViewController.h<br />swypWorkspaceViewController.m</td>
@@ -129,8 +172,7 @@
 						<h2 class="subtitle subtitle-overview">Overview</h2>
 						<p>This class is the UIViewController displayed to the user.</p>
 
-<p>Set a datasource, display it to the user, and you&rsquo;re off!
-See <a href="../Classes/swypContentInteractionManager.html">swypContentInteractionManager</a> for methods for setting display view controller and data model.</p>
+<p>Set a datasource using [swypWorkspace <a href="#//api/name/contentDataSource">setContentDataSource:</a>(NSObject<a href="../Protocols/swypContentDataSourceProtocol.html">swypContentDataSourceProtocol</a>, <a href="../Protocols/swypConnectionSessionDataDelegate.html">swypConnectionSessionDataDelegate</a>*) contentDataSource], then display this swyp workspace as a modal view!</p>
 					</div>
 					
 					
@@ -143,20 +185,131 @@ See <a href="../Classes/swypContentInteractionManager.html">swypContentInteracti
 						
 						
 						
-						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/showContentWithoutConnection">&nbsp;&nbsp;showContentWithoutConnection</a></code>
-		<span class="tooltip"><p>if set to TRUE, then content is displayed before swyp connection is made, and if content is swyped, then connection + content transfer is made</p></span>
+		<code><a href="#//api/name/contentDataSource">&nbsp;&nbsp;contentDataSource</a></code>
+		<span class="tooltip"><p>Sets the swypContentInteractionManager&rsquo;s <a href="#//api/name/contentDataSource">contentDataSource</a></p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initWithWorkspaceDelegate:">&ndash;&nbsp;initWithWorkspaceDelegate:</a></code>
-		<span class="tooltip"><p>the main workspace init method</p></span>
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+		<span class="tooltip"><p>The primary <a href="#//api/name/init">init</a> function</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedSwypWorkspace">+&nbsp;sharedSwypWorkspace</a></code>
+		<span class="tooltip"><p>Self retaining singleton swyp workspace for apps that use swyp everywhere.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/presentContentWorkspaceAtopViewController:">&ndash;&nbsp;presentContentWorkspaceAtopViewController:</a></code>
+		<span class="tooltip"><p>Dispays workspace with nice texture, with scroll up from bottom</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/presentContentSwypWorkspaceAtopViewController:withContentView:forContentOfID:atRect:">&ndash;&nbsp;presentContentSwypWorkspaceAtopViewController:withContentView:forContentOfID:atRect:</a></code>
+		<span class="tooltip"><p>displays the workspace with content in background, with fade from background, with content under finger</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/swypConnectionSessionWasCreated:withConnectionManager:">&ndash;&nbsp;swypConnectionSessionWasCreated:withConnectionManager:</a></code>
+		<span class="tooltip"><p>Session was created, please handle display</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/swypConnectionSessionWasInvalidated:withConnectionManager:error:">&ndash;&nbsp;swypConnectionSessionWasInvalidated:withConnectionManager:error:</a></code>
+		<span class="tooltip"><p>Session was invalidated, please remove</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/swypConnectionMethodsUpdated:withConnectionManager:">&ndash;&nbsp;swypConnectionMethodsUpdated:withConnectionManager:</a></code>
+		<span class="tooltip"><p>An update letting the <a href="../Classes/swypWorkspaceViewController.html">swypWorkspaceViewController</a> know that available connection methods have changed.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/swypConnectionMethod:setReadyStatus:withConnectionManager:">&ndash;&nbsp;swypConnectionMethod:setReadyStatus:withConnectionManager:</a></code>
+		<span class="tooltip"><p>This lets <a href="../Classes/swypWorkspaceViewController.html">swypWorkspaceViewController</a> know that an interface is on or offline so it can adjust its UI accordingly.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/workspaceView">&ndash;&nbsp;workspaceView</a></code>
+		<span class="tooltip"><p>The view for touch forwarding; the swyp workspace</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/presentContentSwypWorkspaceAtopViewController:withContentView:swypableContentImage:forContentOfID:atRect:">&ndash;&nbsp;presentContentSwypWorkspaceAtopViewController:withContentView:swypableContentImage:forContentOfID:atRect:</a></code>
+		<span class="tooltip"><p>Causes the workspace to appear, and automatically positions the content of contentID under the user&rsquo;s finger</p></span>
 	</span>
 	
 	
@@ -174,17 +327,17 @@ See <a href="../Classes/swypContentInteractionManager.html">swypContentInteracti
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/showContentWithoutConnection" title="showContentWithoutConnection"></a>
-	<h3 class="subsubtitle method-title">showContentWithoutConnection</h3>
+	<a name="//api/name/contentDataSource" title="contentDataSource"></a>
+	<h3 class="subsubtitle method-title">contentDataSource</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>if set to TRUE, then content is displayed before swyp connection is made, and if content is swyped, then connection + content transfer is made</p>
+		<p>Sets the swypContentInteractionManager&rsquo;s <a href="#//api/name/contentDataSource">contentDataSource</a></p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL showContentWithoutConnection</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSObject&lt;swypContentDataSourceProtocol,swypConnectionSessionDataDelegate&gt; *contentDataSource</code></div>
 	
 	
 	
@@ -195,7 +348,7 @@ See <a href="../Classes/swypContentInteractionManager.html">swypContentInteracti
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>if set to TRUE, then content is displayed before swyp connection is made, and if content is swyped, then connection + content transfer is made</p><div class="warning"><p>this method is deprecated. The default is now YES.</p></div>
+		<p>Sets the swypContentInteractionManager&rsquo;s <a href="#//api/name/contentDataSource">contentDataSource</a></p>
 	</div>
 	
 	
@@ -216,24 +369,22 @@ See <a href="../Classes/swypContentInteractionManager.html">swypContentInteracti
 					
 					
 					
-					
-					
 					<div class="section section-methods">
-						<a title="Instance Methods" name="instance_methods"></a>
-						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/initWithWorkspaceDelegate:" title="initWithWorkspaceDelegate:"></a>
-	<h3 class="subsubtitle method-title">initWithWorkspaceDelegate:</h3>
+	<a name="//api/name/sharedSwypWorkspace" title="sharedSwypWorkspace"></a>
+	<h3 class="subsubtitle method-title">sharedSwypWorkspace</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>the main workspace init method</p>
+		<p>Self retaining singleton swyp workspace for apps that use swyp everywhere.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (id)initWithWorkspaceDelegate:(id&lt;swypWorkspaceDelegate&gt;)<em>worspaceDelegate</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (swypWorkspaceViewController *)sharedSwypWorkspace</code></div>
 	
 	
 	
@@ -244,9 +395,7 @@ See <a href="../Classes/swypContentInteractionManager.html">swypContentInteracti
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>the main workspace init method</p>
-
-<p>You&rsquo;ll need to set the workpace delegate to be told when workspace wants to be dismissed.</p>
+		<p>Self retaining singleton swyp workspace for apps that use swyp everywhere.</p>
 	</div>
 	
 	
@@ -258,6 +407,365 @@ See <a href="../Classes/swypContentInteractionManager.html">swypContentInteracti
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
 		<code class="declared-in-ref">swypWorkspaceViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The primary <a href="#//api/name/init">init</a> function</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The primary <a href="#//api/name/init">init</a> function</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypWorkspaceViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/presentContentSwypWorkspaceAtopViewController:withContentView:forContentOfID:atRect:" title="presentContentSwypWorkspaceAtopViewController:withContentView:forContentOfID:atRect:"></a>
+	<h3 class="subsubtitle method-title">presentContentSwypWorkspaceAtopViewController:withContentView:forContentOfID:atRect:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>displays the workspace with content in background, with fade from background, with content under finger</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)presentContentSwypWorkspaceAtopViewController:(UIViewController *)<em>controller</em> withContentView:(swypSwypableContentSuperview *)<em>contentView</em> forContentOfID:(NSString *)<em>contentID</em> atRect:(CGRect)<em>contentRect</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>displays the workspace with content in background, with fade from background, with content under finger</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypWorkspaceViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/presentContentSwypWorkspaceAtopViewController:withContentView:swypableContentImage:forContentOfID:atRect:" title="presentContentSwypWorkspaceAtopViewController:withContentView:swypableContentImage:forContentOfID:atRect:"></a>
+	<h3 class="subsubtitle method-title">presentContentSwypWorkspaceAtopViewController:withContentView:swypableContentImage:forContentOfID:atRect:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Causes the workspace to appear, and automatically positions the content of contentID under the user&rsquo;s finger</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)presentContentSwypWorkspaceAtopViewController:(UIViewController *)<em>controller</em> withContentView:(swypSwypableContentSuperview *)<em>contentView</em> swypableContentImage:(UIImage *)<em>contentImage</em> forContentOfID:(NSString *)<em>contentID</em> atRect:(CGRect)<em>contentRect</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Causes the workspace to appear, and automatically positions the content of contentID under the user&rsquo;s finger</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypSwypableContentSuperview.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/presentContentWorkspaceAtopViewController:" title="presentContentWorkspaceAtopViewController:"></a>
+	<h3 class="subsubtitle method-title">presentContentWorkspaceAtopViewController:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Dispays workspace with nice texture, with scroll up from bottom</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)presentContentWorkspaceAtopViewController:(UIViewController *)<em>controller</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Dispays workspace with nice texture, with scroll up from bottom</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypWorkspaceViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/swypConnectionMethod:setReadyStatus:withConnectionManager:" title="swypConnectionMethod:setReadyStatus:withConnectionManager:"></a>
+	<h3 class="subsubtitle method-title">swypConnectionMethod:setReadyStatus:withConnectionManager:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This lets <a href="../Classes/swypWorkspaceViewController.html">swypWorkspaceViewController</a> know that an interface is on or offline so it can adjust its UI accordingly.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)swypConnectionMethod:(swypConnectionMethod)<em>method</em> setReadyStatus:(BOOL)<em>isReady</em> withConnectionManager:(swypConnectionManager *)<em>manager</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This lets <a href="../Classes/swypWorkspaceViewController.html">swypWorkspaceViewController</a> know that an interface is on or offline so it can adjust its UI accordingly.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/swypConnectionMethodsUpdated:withConnectionManager:" title="swypConnectionMethodsUpdated:withConnectionManager:"></a>
+	<h3 class="subsubtitle method-title">swypConnectionMethodsUpdated:withConnectionManager:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An update letting the <a href="../Classes/swypWorkspaceViewController.html">swypWorkspaceViewController</a> know that available connection methods have changed.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)swypConnectionMethodsUpdated:(swypConnectionMethod)<em>availableMethods</em> withConnectionManager:(swypConnectionManager *)<em>manager</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>An update letting the <a href="../Classes/swypWorkspaceViewController.html">swypWorkspaceViewController</a> know that available connection methods have changed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/swypConnectionSessionWasCreated:withConnectionManager:" title="swypConnectionSessionWasCreated:withConnectionManager:"></a>
+	<h3 class="subsubtitle method-title">swypConnectionSessionWasCreated:withConnectionManager:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Session was created, please handle display</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)swypConnectionSessionWasCreated:(swypConnectionSession *)<em>session</em> withConnectionManager:(swypConnectionManager *)<em>manager</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Session was created, please handle display</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/swypConnectionSessionWasInvalidated:withConnectionManager:error:" title="swypConnectionSessionWasInvalidated:withConnectionManager:error:"></a>
+	<h3 class="subsubtitle method-title">swypConnectionSessionWasInvalidated:withConnectionManager:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Session was invalidated, please remove</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)swypConnectionSessionWasInvalidated:(swypConnectionSession *)<em>session</em> withConnectionManager:(swypConnectionManager *)<em>manager</em> error:(NSError *)<em>error</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Session was invalidated, please remove</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/workspaceView" title="workspaceView"></a>
+	<h3 class="subsubtitle method-title">workspaceView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The view for touch forwarding; the swyp workspace</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (UIView *)workspaceView</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The view for touch forwarding; the swyp workspace</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypSwypableContentSuperview.h</code><br />
 	</div>				
 	
 	
@@ -276,7 +784,7 @@ See <a href="../Classes/swypContentInteractionManager.html">swypContentInteracti
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-01-18)</span><br />
+						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-02-03)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
 						
