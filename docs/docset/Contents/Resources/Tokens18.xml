@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/swypContentInteractionManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/swypContentInteractionManager</TokenIdentifier>
+			<Abstract type="html">This class is responsible for unifying modal and controller, and displaying them upon the workspace.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/setContentDataSource:</TokenIdentifier>
+			<Abstract type="html">This property is the datasource that the content in contentDisplayController is sourced from per the swypContentDataSourceProtocol protocol.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSObject&lt;swypContentDataSourceProtocol,swypConnectionSessionDataDelegate&gt; *contentDataSource</Declaration>
+			
+			
+			<Anchor>//api/name/contentDataSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypContentInteractionManager/contentDataSource</TokenIdentifier>
+			<Abstract type="html">This property is the datasource that the content in contentDisplayController is sourced from per the swypContentDataSourceProtocol protocol.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSObject&lt;swypContentDataSourceProtocol,swypConnectionSessionDataDelegate&gt; *contentDataSource</Declaration>
+			
+			
+			<Anchor>//api/name/contentDataSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/setContentDisplayController:</TokenIdentifier>
+			<Abstract type="html">This property is the view controller that contentDataSource content is displayed from.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIViewController&lt;swypContentDisplayViewController&gt; *contentDisplayController</Declaration>
+			
+			
+			<Anchor>//api/name/contentDisplayController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypContentInteractionManager/contentDisplayController</TokenIdentifier>
+			<Abstract type="html">This property is the view controller that contentDataSource content is displayed from.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIViewController&lt;swypContentDisplayViewController&gt; *contentDisplayController</Declaration>
+			
+			
+			<Anchor>//api/name/contentDisplayController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/initWithMainWorkspaceView:</TokenIdentifier>
+			<Abstract type="html">The main init function.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMainWorkspaceView:(UIView *)workspaceView</Declaration>
+			
+			
+			<Anchor>//api/name/initWithMainWorkspaceView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/swypContentInteractionManager/supportedReceiptFileTypes</TokenIdentifier>
+			<Abstract type="html">Supported swyp receipt file types; in order of greatest preference, where index 0=most preferant</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)supportedReceiptFileTypes</Declaration>
+			
+			
+			<Anchor>//api/name/supportedReceiptFileTypes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/maintainSwypSessionViewController:</TokenIdentifier>
+			<Abstract type="html">Causes a sessionViewController to be displayed on workspace, and for it to be tracked locally</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)maintainSwypSessionViewController:(swypSessionViewController *)sessionViewController</Declaration>
+			
+			
+			<Anchor>//api/name/maintainSwypSessionViewController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/stopMaintainingViewControllerForSwypSession:</TokenIdentifier>
+			<Abstract type="html">Removes from display, releases</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopMaintainingViewControllerForSwypSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/stopMaintainingViewControllerForSwypSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/maintainedSwypSessionViewControllerForSession:</TokenIdentifier>
+			<Abstract type="html">Gets the viewController for an associated session</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			
+			<Declaration>- (swypSessionViewController *)maintainedSwypSessionViewControllerForSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/maintainedSwypSessionViewControllerForSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/stopMaintainingAllSessionViewControllers</TokenIdentifier>
+			<Abstract type="html">Removes all, typically for app exit</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopMaintainingAllSessionViewControllers</Declaration>
+			
+			
+			<Anchor>//api/name/stopMaintainingAllSessionViewControllers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/handleContentSwypOfContentWithID:withContentImage:toRect:</TokenIdentifier>
+			<Abstract type="html">Used by swypWorkspaceManager to indicate swypSwypableContentSuperview content addition.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleContentSwypOfContentWithID:(NSString *)contentID withContentImage:(UIImage *)contentImage toRect:(CGRect)destination</Declaration>
+			
+			
+			<Anchor>//api/name/handleContentSwypOfContentWithID:withContentImage:toRect:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/updatedProgressToPercentage:withDiscernedInputStream:</TokenIdentifier>
+			<Abstract type="html">From 0 to 1, passes the % completion for a specifc stream.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)updatedProgressToPercentage:(double)complete withDiscernedInputStream:(swypDiscernedInputStream *)discernedStream</Declaration>
+			
+			
+			<Anchor>//api/name/updatedProgressToPercentage:withDiscernedInputStream:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/discernedInputStreamCompletedReceivingData:</TokenIdentifier>
+			<Abstract type="html">Indicates that a stream has 'ended,' and is just about to call its swypDiscernedInputStreamDataSource callback.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)discernedInputStreamCompletedReceivingData:(swypDiscernedInputStream *)discernedStream</Declaration>
+			
+			
+			<Anchor>//api/name/discernedInputStreamCompletedReceivingData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/discernedInputStreamFailedReceivingData:</TokenIdentifier>
+			<Abstract type="html">Indicates that a stream has just failed somehow... For anything other than completion.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)discernedInputStreamFailedReceivingData:(swypDiscernedInputStream *)discernedStream</Declaration>
+			
+			
+			<Anchor>//api/name/discernedInputStreamFailedReceivingData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/didBeginReceivingDataInConnectionSession:</TokenIdentifier>
+			<Abstract type="html">	Will notify you when the data IN stream is receiving so that UI can be updated accordingly</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)didBeginReceivingDataInConnectionSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/didBeginReceivingDataInConnectionSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/didFinnishReceivingDataInConnectionSession:</TokenIdentifier>
+			<Abstract type="html">	Will notify you when the data IN stream is DONE receiving so that UI can be updated accordingly</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)didFinnishReceivingDataInConnectionSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/didFinnishReceivingDataInConnectionSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</TokenIdentifier>
+			<Abstract type="html">See whether delegate will handle data stream.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (BOOL)delegateWillHandleDiscernedStream:(swypDiscernedInputStream *)discernedStream wantsAsData:(BOOL *)wantsProvidedAsNSData inConnectionSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/yieldedData:discernedStream:inConnectionSession:</TokenIdentifier>
+			<Abstract type="html">	The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.
+	</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)yieldedData:(NSData *)streamData discernedStream:(swypDiscernedInputStream *)discernedStream inConnectionSession:(swypConnectionSession *)session</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>discernedStream</Name>
+					<Abstract type="html">the stream containing properties like streamType, and streamTag.</Abstract>
+				</Parameter><Parameter>
+					<Name>streamData</Name>
+					<Abstract type="html">Data from the discernedStream.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/yieldedData:discernedStream:inConnectionSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/failedSendingStream:error:connectionSession:</TokenIdentifier>
+			<Abstract type="html">Upon failing to send data</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)failedSendingStream:(NSInputStream *)stream error:(NSError *)error connectionSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/failedSendingStream:error:connectionSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/completedSendingStream:connectionSession:</TokenIdentifier>
+			<Abstract type="html">Upon happily sending data</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)completedSendingStream:(NSInputStream *)stream connectionSession:(swypConnectionSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/completedSendingStream:connectionSession:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/sessionDied:withError:</TokenIdentifier>
+			<Abstract type="html">Alerts that the session is over. Error is commonly nil because we r lazy.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)sessionDied:(swypConnectionSession *)session withError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/sessionDied:withError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/contentWithIDUnderwentSwypOut:inController:</TokenIdentifier>
+			<Abstract type="html">Signals that a view was swyped-out ontop of a certain content with the enclosed contentID.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)contentWithIDUnderwentSwypOut:(NSString *)contentID inController:(UIViewController&lt;swypContentDisplayViewController&gt; *)contentDisplayController</Declaration>
+			
+			
+			<Anchor>//api/name/contentWithIDUnderwentSwypOut:inController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/viewForContentWithID:ofMaxSize:inController:</TokenIdentifier>
+			<Abstract type="html">the returned UIView will be as close as possible to and no larger than maxIconSize, while in proper-perspective and not distorted</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (UIView *)viewForContentWithID:(NSString *)contentID ofMaxSize:(CGSize)maxIconSize inController:(UIViewController&lt;swypContentDisplayViewController&gt; *)contentDisplayController</Declaration>
+			
+			
+			<Anchor>//api/name/viewForContentWithID:ofMaxSize:inController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/allIDsForContentInController:</TokenIdentifier>
+			<Abstract type="html">All ids in NSString that the delegate can provide UIViews for</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)allIDsForContentInController:(UIViewController&lt;swypContentDisplayViewController&gt; *)contentDisplayController</Declaration>
+			
+			
+			<Anchor>//api/name/allIDsForContentInController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/datasourceInsertedContentWithID:withDatasource:</TokenIdentifier>
+			<Abstract type="html">This indicates that the datasourceInsertedContentWithID, and that the views should update accordingly.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)datasourceInsertedContentWithID:(NSString *)insertID withDatasource:(id&lt;swypContentDataSourceProtocol&gt;)datasource</Declaration>
+			
+			
+			<Anchor>//api/name/datasourceInsertedContentWithID:withDatasource:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/datasourceRemovedContentWithID:withDatasource:</TokenIdentifier>
+			<Abstract type="html">This indicates that the datasourceRemovedContentWithID, and that the views should update accordingly.
+  </Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)datasourceRemovedContentWithID:(NSString *)removeID withDatasource:(id&lt;swypContentDataSourceProtocol&gt;)datasource</Declaration>
+			
+			
+			<Anchor>//api/name/datasourceRemovedContentWithID:withDatasource:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypContentInteractionManager/datasourceSignificantlyModifiedContent:</TokenIdentifier>
+			<Abstract type="html">This indicates that the datasourceSignificantlyModifiedContent, and that the views should update accordingly by reloading all content.</Abstract>
+			<DeclaredIn>swypContentInteractionManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)datasourceSignificantlyModifiedContent:(id&lt;swypContentDataSourceProtocol&gt;)datasource</Declaration>
+			
+			
+			<Anchor>//api/name/datasourceSignificantlyModifiedContent:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

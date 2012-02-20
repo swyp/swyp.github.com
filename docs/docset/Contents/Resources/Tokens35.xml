@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/swypThumbView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/swypThumbView</TokenIdentifier>
+			<Abstract type="html">The thumbnails in the swypWorkspace are swypThumbViews.
+Because swyp first sends thumbnails before sending the
+original files, swypThumbView has a built-in progress
+indicator.</Abstract>
+			<DeclaredIn>swypThumbView.h</DeclaredIn>
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/swypThumbView/thumbViewWithImage:</TokenIdentifier>
+			<Abstract type="html">Convenience method returning an autoreleased thumbView</Abstract>
+			<DeclaredIn>swypThumbView.h</DeclaredIn>			
+			
+			<Declaration>+ (swypThumbView *)thumbViewWithImage:(UIImage *)theImage</Declaration>
+			
+			
+			<Anchor>//api/name/thumbViewWithImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypThumbView/setLoading:</TokenIdentifier>
+			<Abstract type="html">When loading is set to YES, the activity indicator and
+progressView fade in. When set to NO, they fade out.</Abstract>
+			<DeclaredIn>swypThumbView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setLoading:(BOOL)loading</Declaration>
+			
+			
+			<Anchor>//api/name/setLoading:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypThumbView/setImage:</TokenIdentifier>
+			<Abstract type="html">If you need to update the thumbnail after initialization,
+just use setImage: or the synonomous dot syntax: thumbView.image = theImage</Abstract>
+			<DeclaredIn>swypThumbView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setImage:(UIImage *)theImage</Declaration>
+			
+			
+			<Anchor>//api/name/setImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypThumbView/setProgress:</TokenIdentifier>
+			<Abstract type="html">Expects a float between 0.0 and 1.0. Any value higher than 1 is
+truncated to 1.</Abstract>
+			<DeclaredIn>swypThumbView.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/SSPieProgressView</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setProgress:(CGFloat)theProgress</Declaration>
+			
+			
+			<Anchor>//api/name/setProgress:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypThumbView/setImage:</TokenIdentifier>
+			<Abstract type="html">The thumbnail image.</Abstract>
+			<DeclaredIn>swypThumbView.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/swypThumbView/image</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) UIImage *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypThumbView/image</TokenIdentifier>
+			<Abstract type="html">The thumbnail image.</Abstract>
+			<DeclaredIn>swypThumbView.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/swypThumbView/image</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) UIImage *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypThumbView/setProgress:</TokenIdentifier>
+			<Abstract type="html">The current download progress, a float between 0.0 and 1.0.</Abstract>
+			<DeclaredIn>swypThumbView.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/swypThumbView/progress</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) CGFloat progress</Declaration>
+			
+			
+			<Anchor>//api/name/progress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypThumbView/progress</TokenIdentifier>
+			<Abstract type="html">The current download progress, a float between 0.0 and 1.0.</Abstract>
+			<DeclaredIn>swypThumbView.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/swypThumbView/progress</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) CGFloat progress</Declaration>
+			
+			
+			<Anchor>//api/name/progress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypThumbView/setLoading:</TokenIdentifier>
+			<Abstract type="html">Indicates whether or not the file is currently loading.</Abstract>
+			<DeclaredIn>swypThumbView.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/swypThumbView/loading</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) BOOL loading</Declaration>
+			
+			
+			<Anchor>//api/name/loading</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypThumbView/loading</TokenIdentifier>
+			<Abstract type="html">Indicates whether or not the file is currently loading.</Abstract>
+			<DeclaredIn>swypThumbView.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/swypThumbView/loading</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) BOOL loading</Declaration>
+			
+			
+			<Anchor>//api/name/loading</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

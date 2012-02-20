@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/swypBackedPhotoDataSourceDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/swypBackedPhotoDataSourceDelegate</TokenIdentifier>
+			<Abstract type="html">The delegate protocol for swypBackedPhotoDataSource</Abstract>
+			<DeclaredIn>swypBackedPhotoDataSource.h</DeclaredIn>
+			
+			<NodeRef refid="42"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypBackedPhotoDataSourceDelegate/swypBackedPhotoDataSourceRecievedPhoto:withDataSource:</TokenIdentifier>
+			<Abstract type="html">The only supported callback, which alerts the delegate that a photo was received.</Abstract>
+			<DeclaredIn>swypBackedPhotoDataSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)swypBackedPhotoDataSourceRecievedPhoto:(UIImage *)photo withDataSource:(swypBackedPhotoDataSource *)dataSource</Declaration>
+			
+			
+			<Anchor>//api/name/swypBackedPhotoDataSourceRecievedPhoto:withDataSource:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

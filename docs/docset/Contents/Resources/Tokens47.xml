@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/swypContentDataSourceDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/swypContentDataSourceDelegate</TokenIdentifier>
+			<Abstract type="html">this protocol defines the actions that a datasource expects its delegate to respond to
+	
+These should allow model changes to easily propagate through the swypContentInteractionManager to a swypContentViewController</Abstract>
+			<DeclaredIn>swypContentDataSourceProtocol.h</DeclaredIn>
+			
+			<NodeRef refid="47"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDataSourceDelegate/datasourceInsertedContentWithID:withDatasource:</TokenIdentifier>
+			<Abstract type="html">This indicates that the datasourceInsertedContentWithID, and that the views should update accordingly.</Abstract>
+			<DeclaredIn>swypContentDataSourceProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)datasourceInsertedContentWithID:(NSString *)insertID withDatasource:(id&lt;swypContentDataSourceProtocol&gt;)datasource</Declaration>
+			
+			
+			<Anchor>//api/name/datasourceInsertedContentWithID:withDatasource:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDataSourceDelegate/datasourceRemovedContentWithID:withDatasource:</TokenIdentifier>
+			<Abstract type="html">This indicates that the datasourceRemovedContentWithID, and that the views should update accordingly.
+  </Abstract>
+			<DeclaredIn>swypContentDataSourceProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)datasourceRemovedContentWithID:(NSString *)removeID withDatasource:(id&lt;swypContentDataSourceProtocol&gt;)datasource</Declaration>
+			
+			
+			<Anchor>//api/name/datasourceRemovedContentWithID:withDatasource:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDataSourceDelegate/datasourceSignificantlyModifiedContent:</TokenIdentifier>
+			<Abstract type="html">This indicates that the datasourceSignificantlyModifiedContent, and that the views should update accordingly by reloading all content.</Abstract>
+			<DeclaredIn>swypContentDataSourceProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)datasourceSignificantlyModifiedContent:(id&lt;swypContentDataSourceProtocol&gt;)datasource</Declaration>
+			
+			
+			<Anchor>//api/name/datasourceSignificantlyModifiedContent:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

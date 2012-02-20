@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/swypContentDisplayViewControllerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/swypContentDisplayViewControllerDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>swypContentDisplayViewControllerProtocol.h</DeclaredIn>
+			
+			<NodeRef refid="50"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDisplayViewControllerDelegate/contentWithIDUnderwentSwypOut:inController:</TokenIdentifier>
+			<Abstract type="html">Signals that a view was swyped-out ontop of a certain content with the enclosed contentID.</Abstract>
+			<DeclaredIn>swypContentDisplayViewControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)contentWithIDUnderwentSwypOut:(NSString *)contentID inController:(UIViewController&lt;swypContentDisplayViewController&gt; *)contentDisplayController</Declaration>
+			
+			
+			<Anchor>//api/name/contentWithIDUnderwentSwypOut:inController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDisplayViewControllerDelegate/viewForContentWithID:ofMaxSize:inController:</TokenIdentifier>
+			<Abstract type="html">the returned UIView will be as close as possible to and no larger than maxIconSize, while in proper-perspective and not distorted</Abstract>
+			<DeclaredIn>swypContentDisplayViewControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (UIView *)viewForContentWithID:(NSString *)contentID ofMaxSize:(CGSize)maxIconSize inController:(UIViewController&lt;swypContentDisplayViewController&gt; *)contentDisplayController</Declaration>
+			
+			
+			<Anchor>//api/name/viewForContentWithID:ofMaxSize:inController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDisplayViewControllerDelegate/allIDsForContentInController:</TokenIdentifier>
+			<Abstract type="html">All ids in NSString that the delegate can provide UIViews for</Abstract>
+			<DeclaredIn>swypContentDisplayViewControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)allIDsForContentInController:(UIViewController&lt;swypContentDisplayViewController&gt; *)contentDisplayController</Declaration>
+			
+			
+			<Anchor>//api/name/allIDsForContentInController:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

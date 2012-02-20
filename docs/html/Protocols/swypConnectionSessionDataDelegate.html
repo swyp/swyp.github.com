@@ -1,0 +1,712 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>swypConnectionSessionDataDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 752)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">libSwÿp </a></h1>
+				<a id="developerHome" href="../index.html">Swÿp</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">swypConnectionSessionDataDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/completedSendingStream:connectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- completedSendingStream:connectionSession:</option>
+	
+	<option value="//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</option>
+	
+	<option value="//api/name/delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:</option>
+	
+	<option value="//api/name/didBeginReceivingDataInConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- didBeginReceivingDataInConnectionSession:</option>
+	
+	<option value="//api/name/didFinnishReceivingDataInConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- didFinnishReceivingDataInConnectionSession:</option>
+	
+	<option value="//api/name/failedSendingStream:error:connectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- failedSendingStream:error:connectionSession:</option>
+	
+	<option value="//api/name/supportedFileTypesForReceipt">&nbsp;&nbsp;&nbsp;&nbsp;- supportedFileTypesForReceipt</option>
+	
+	<option value="//api/name/yieldedData:discernedStream:inConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- yieldedData:discernedStream:inConnectionSession:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/completedSendingStream:connectionSession:">completedSendingStream:connectionSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:">delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didBeginReceivingDataInConnectionSession:">didBeginReceivingDataInConnectionSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didFinnishReceivingDataInConnectionSession:">didFinnishReceivingDataInConnectionSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/failedSendingStream:error:connectionSession:">failedSendingStream:error:connectionSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/supportedFileTypesForReceipt">supportedFileTypesForReceipt</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/yieldedData:discernedStream:inConnectionSession:">yieldedData:discernedStream:inConnectionSession:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="swypConnectionSessionDataDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">swypConnectionSessionDataDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">swypConnectionSession.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>How a <a href="../Classes/swypConnectionSession.html">swypConnectionSession</a> gives away its received data. See addDataDelegate: of <a href="../Classes/swypConnectionSession.html">swypConnectionSession</a>.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/supportedFileTypesForReceipt">&ndash;&nbsp;supportedFileTypesForReceipt</a></code>
+		<span class="tooltip"><p>swypFileTypeStrings in order of preference where 0 = most preferent</p>
+
+<pre><code>Use this on your datasource set in swypContentInteractionManager to choose what files your app accepts.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:">&ndash;&nbsp;delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:</a></code>
+		<span class="tooltip"><p>A convenience method for <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</a>. Return true to accept the enclosed discernedStream as NSData through <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/yieldedData:discernedStream:inConnectionSession:">yieldedData:discernedStream:inConnectionSession:</a> when it&rsquo;s done being received.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">&ndash;&nbsp;delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</a></code>
+		<span class="tooltip"><p>See whether delegate will handle data stream.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/yieldedData:discernedStream:inConnectionSession:">&ndash;&nbsp;yieldedData:discernedStream:inConnectionSession:</a></code>
+		<span class="tooltip"><pre><code>The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/failedSendingStream:error:connectionSession:">&ndash;&nbsp;failedSendingStream:error:connectionSession:</a></code>
+		<span class="tooltip"><p>Upon failing to send data</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/completedSendingStream:connectionSession:">&ndash;&nbsp;completedSendingStream:connectionSession:</a></code>
+		<span class="tooltip"><p>Upon happily sending data</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didBeginReceivingDataInConnectionSession:">&ndash;&nbsp;didBeginReceivingDataInConnectionSession:</a></code>
+		<span class="tooltip"><pre><code>Will notify you when the data IN stream is receiving so that UI can be updated accordingly
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didFinnishReceivingDataInConnectionSession:">&ndash;&nbsp;didFinnishReceivingDataInConnectionSession:</a></code>
+		<span class="tooltip"><pre><code>Will notify you when the data IN stream is DONE receiving so that UI can be updated accordingly
+</code></pre></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/completedSendingStream:connectionSession:" title="completedSendingStream:connectionSession:"></a>
+	<h3 class="subsubtitle method-title">completedSendingStream:connectionSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Upon happily sending data</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)completedSendingStream:(NSInputStream *)<em>stream</em> connectionSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Upon happily sending data</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:" title="delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:"></a>
+	<h3 class="subsubtitle method-title">delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>See whether delegate will handle data stream.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)delegateWillHandleDiscernedStream:(swypDiscernedInputStream *)<em>discernedStream</em> wantsAsData:(BOOL *)<em>wantsProvidedAsNSData</em> inConnectionSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See whether delegate will handle data stream.</p>
+
+<pre><code>Though there are several data delegates, only one delegate should handle and return TRUE, all else returning false
+    Delegates should see if they're interested through discerned stream's properities like 'streamType' and 'streamTag'
+    If no one handles, an exception is thrown
+
+All delegates will be notified using this method, but only one should return TRUE.
+
+discernedStream can be read as an input stream, and attached to output streams using SwypInputToOutput, for example
+Alternatively, 'wantsProvidedAsNSData,' the bool passed as a reference, can be set to true, '*wantsProvidedAsNSData = TRUE;', to have data provided by yieldedData:discernedStream:inConnectionSession:
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:" title="delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:"></a>
+	<h3 class="subsubtitle method-title">delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A convenience method for <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</a>. Return true to accept the enclosed discernedStream as NSData through <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/yieldedData:discernedStream:inConnectionSession:">yieldedData:discernedStream:inConnectionSession:</a> when it&rsquo;s done being received.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)delegateWillReceiveDataFromDiscernedStream:(swypDiscernedInputStream *)<em>discernedStream</em> ofType:(NSString *)<em>streamType</em> inConnectionSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>streamType</em></dt>
+			<dd><p>is a shortcut for discernedStream.streamType</p>
+
+<p>Though there are several data delegates, only one delegate should handle and return TRUE, all else returning false
+Delegates should see if they&rsquo;re interested through discerned stream&rsquo;s properities like &lsquo;streamType&rsquo; and &lsquo;streamTag&rsquo;
+If no one handles, an exception is thrown</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>true or false depending on interest in stream.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A convenience method for <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</a>. Return true to accept the enclosed discernedStream as NSData through <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/yieldedData:discernedStream:inConnectionSession:">yieldedData:discernedStream:inConnectionSession:</a> when it&rsquo;s done being received.</p><div class="warning"><p>if you want to do anything special with NSStream functionality, don&rsquo;t implement this method on your datasource.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didBeginReceivingDataInConnectionSession:" title="didBeginReceivingDataInConnectionSession:"></a>
+	<h3 class="subsubtitle method-title">didBeginReceivingDataInConnectionSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>Will notify you when the data IN stream is receiving so that UI can be updated accordingly
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didBeginReceivingDataInConnectionSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>Will notify you when the data IN stream is receiving so that UI can be updated accordingly
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didFinnishReceivingDataInConnectionSession:" title="didFinnishReceivingDataInConnectionSession:"></a>
+	<h3 class="subsubtitle method-title">didFinnishReceivingDataInConnectionSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>Will notify you when the data IN stream is DONE receiving so that UI can be updated accordingly
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didFinnishReceivingDataInConnectionSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>Will notify you when the data IN stream is DONE receiving so that UI can be updated accordingly
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/failedSendingStream:error:connectionSession:" title="failedSendingStream:error:connectionSession:"></a>
+	<h3 class="subsubtitle method-title">failedSendingStream:error:connectionSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Upon failing to send data</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)failedSendingStream:(NSInputStream *)<em>stream</em> error:(NSError *)<em>error</em> connectionSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Upon failing to send data</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/supportedFileTypesForReceipt" title="supportedFileTypesForReceipt"></a>
+	<h3 class="subsubtitle method-title">supportedFileTypesForReceipt</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>swypFileTypeStrings in order of preference where 0 = most preferent</p>
+
+<pre><code>Use this on your datasource set in swypContentInteractionManager to choose what files your app accepts.
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)supportedFileTypesForReceipt</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>swypFileTypeStrings in order of preference where 0 = most preferent</p>
+
+<pre><code>Use this on your datasource set in swypContentInteractionManager to choose what files your app accepts.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/yieldedData:discernedStream:inConnectionSession:" title="yieldedData:discernedStream:inConnectionSession:"></a>
+	<h3 class="subsubtitle method-title">yieldedData:discernedStream:inConnectionSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)yieldedData:(NSData *)<em>streamData</em> discernedStream:(swypDiscernedInputStream *)<em>discernedStream</em> inConnectionSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>discernedStream</em></dt>
+			<dd><p>the stream containing properties like streamType, and streamTag.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>streamData</em></dt>
+			<dd><p>Data from the discernedStream.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-02-03)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

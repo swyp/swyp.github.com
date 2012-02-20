@@ -1,0 +1,1202 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>swypPhotoArrayDatasource Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 752)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">libSwÿp </a></h1>
+				<a id="developerHome" href="../index.html">Swÿp</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">swypPhotoArrayDatasource Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addPhotoData:atIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- addPhotoData:atIndex:</option>
+	
+	<option value="//api/name/addPhotoDataArray:">&nbsp;&nbsp;&nbsp;&nbsp;- addPhotoDataArray:</option>
+	
+	<option value="//api/name/addUIImage:atIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- addUIImage:atIndex:</option>
+	
+	<option value="//api/name/addUIImageArray:">&nbsp;&nbsp;&nbsp;&nbsp;- addUIImageArray:</option>
+	
+	<option value="//api/name/dataForContentWithID:fileType:">&nbsp;&nbsp;&nbsp;&nbsp;- dataForContentWithID:fileType:</option>
+	
+	<option value="//api/name/datasourceDelegate">&nbsp;&nbsp;&nbsp;&nbsp;- datasourceDelegate</option>
+	
+	<option value="//api/name/delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:</option>
+	
+	<option value="//api/name/iconImageForContentWithID:ofMaxSize:">&nbsp;&nbsp;&nbsp;&nbsp;- iconImageForContentWithID:ofMaxSize:</option>
+	
+	<option value="//api/name/idsForAllContent">&nbsp;&nbsp;&nbsp;&nbsp;- idsForAllContent</option>
+	
+	<option value="//api/name/initWithImageDataArray:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithImageDataArray:</option>
+	
+	<option value="//api/name/removeAllPhotos">&nbsp;&nbsp;&nbsp;&nbsp;- removeAllPhotos</option>
+	
+	<option value="//api/name/removePhotoAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- removePhotoAtIndex:</option>
+	
+	<option value="//api/name/setDatasourceDelegate:">&nbsp;&nbsp;&nbsp;&nbsp;- setDatasourceDelegate:</option>
+	
+	<option value="//api/name/supportedFileTypesForContentWithID:">&nbsp;&nbsp;&nbsp;&nbsp;- supportedFileTypesForContentWithID:</option>
+	
+	<option value="//api/name/supportedFileTypesForReceipt">&nbsp;&nbsp;&nbsp;&nbsp;- supportedFileTypesForReceipt</option>
+	
+	<option value="//api/name/yieldedData:discernedStream:inConnectionSession:">&nbsp;&nbsp;&nbsp;&nbsp;- yieldedData:discernedStream:inConnectionSession:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addPhotoData:atIndex:">addPhotoData:atIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addPhotoDataArray:">addPhotoDataArray:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addUIImage:atIndex:">addUIImage:atIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addUIImageArray:">addUIImageArray:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataForContentWithID:fileType:">dataForContentWithID:fileType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/datasourceDelegate">datasourceDelegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:">delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/iconImageForContentWithID:ofMaxSize:">iconImageForContentWithID:ofMaxSize:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/idsForAllContent">idsForAllContent</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithImageDataArray:">initWithImageDataArray:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAllPhotos">removeAllPhotos</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removePhotoAtIndex:">removePhotoAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDatasourceDelegate:">setDatasourceDelegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/supportedFileTypesForContentWithID:">supportedFileTypesForContentWithID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/supportedFileTypesForReceipt">supportedFileTypesForReceipt</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/yieldedData:discernedStream:inConnectionSession:">yieldedData:discernedStream:inConnectionSession:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="swypPhotoArrayDatasource Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">swypPhotoArrayDatasource Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/swypConnectionSessionDataDelegate.html">swypConnectionSessionDataDelegate</a><br /><a href="../Protocols/swypContentDataSourceProtocol.html">swypContentDataSourceProtocol</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">swypPhotoArrayDatasource.h<br />swypPhotoArrayDatasource.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<pre><code>This class allows its owners to add photo data, and serves as a datasource in the swypContentInteractionManager. 
+</code></pre>
+
+<p>This class adopts <a href="../Protocols/swypContentDataSourceProtocol.html">swypContentDataSourceProtocol</a>, which is how your app interacts with the interactionManager, and provides previews and streams to the user and connected peer.</p><div class="warning"><p>Observe how internally we use contentIDs, yet externally we stil support the typical contentAtIndex paradigm.</p></div><div class="warning"><p>The following determines what filetypes your app accepts.
+This class adopts <a href="../Protocols/swypConnectionSessionDataDelegate.html">swypConnectionSessionDataDelegate</a>, which includes the <a href="#//api/name/supportedFileTypesForReceipt">supportedFileTypesForReceipt</a> method. As this dataSource is set in <a href="../Classes/swypContentInteractionManager.html">swypContentInteractionManager</a>, <a href="#//api/name/supportedFileTypesForReceipt">supportedFileTypesForReceipt</a> determines what fileTypes your app can receive.</p></div>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithImageDataArray:">&ndash;&nbsp;initWithImageDataArray:</a></code>
+		<span class="tooltip"><p>Initialize the datasource backed by an array of png data.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removePhotoAtIndex:">&ndash;&nbsp;removePhotoAtIndex:</a></code>
+		<span class="tooltip"><p>remove a specific image from the model</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeAllPhotos">&ndash;&nbsp;removeAllPhotos</a></code>
+		<span class="tooltip"><p>add all images from the model</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addUIImage:atIndex:">&ndash;&nbsp;addUIImage:atIndex:</a></code>
+		<span class="tooltip"><p>add a UIImage to the model</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addUIImageArray:">&ndash;&nbsp;addUIImageArray:</a></code>
+		<span class="tooltip"><p>add a UIImage array to the model</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addPhotoData:atIndex:">&ndash;&nbsp;addPhotoData:atIndex:</a></code>
+		<span class="tooltip"><p>add PNG data to dataSource</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addPhotoDataArray:">&ndash;&nbsp;addPhotoDataArray:</a></code>
+		<span class="tooltip"><p>Add a NSData of PNG array to dataSource</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/idsForAllContent">&ndash;&nbsp;idsForAllContent</a></code>
+		<span class="tooltip"><p>Returns list of all unique IDs for each piece of content to displayed to swyp workspace.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/iconImageForContentWithID:ofMaxSize:">&ndash;&nbsp;iconImageForContentWithID:ofMaxSize:</a></code>
+		<span class="tooltip"><p>Returns a UIImage representing content, which has dimensions no greater than maxIconSize.</p>
+
+<pre><code>This image is displayed by the swypContentViewController.
+</code></pre></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/supportedFileTypesForContentWithID:">&ndash;&nbsp;supportedFileTypesForContentWithID:</a></code>
+		<span class="tooltip"><p>Returns swypFileTypeString array that a specifc contentID supports</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataForContentWithID:fileType:">&ndash;&nbsp;dataForContentWithID:fileType:</a></code>
+		<span class="tooltip"><p>Returns the data for the specified file type.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDatasourceDelegate:">&ndash;&nbsp;setDatasourceDelegate:</a></code>
+		<span class="tooltip"><p>Sets the <a href="../Protocols/swypContentDataSourceDelegate.html">swypContentDataSourceDelegate</a> for the dataSource</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/datasourceDelegate">&ndash;&nbsp;datasourceDelegate</a></code>
+		<span class="tooltip"><p>Retrieves the delegate</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/supportedFileTypesForReceipt">&ndash;&nbsp;supportedFileTypesForReceipt</a></code>
+		<span class="tooltip"><p>swypFileTypeStrings in order of preference where 0 = most preferent</p>
+
+<pre><code>Use this on your datasource set in swypContentInteractionManager to choose what files your app accepts.
+</code></pre></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:">&ndash;&nbsp;delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:</a></code>
+		<span class="tooltip"><p>A convenience method for <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</a>. Return true to accept the enclosed discernedStream as NSData through <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/yieldedData:discernedStream:inConnectionSession:">yieldedData:discernedStream:inConnectionSession:</a> when it&rsquo;s done being received.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/yieldedData:discernedStream:inConnectionSession:">&ndash;&nbsp;yieldedData:discernedStream:inConnectionSession:</a></code>
+		<span class="tooltip"><pre><code>The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.
+</code></pre></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addPhotoData:atIndex:" title="addPhotoData:atIndex:"></a>
+	<h3 class="subsubtitle method-title">addPhotoData:atIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>add PNG data to dataSource</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)addPhotoData:(NSData *)<em>photoData</em> atIndex:(NSUInteger)<em>insertIndex</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>add PNG data to dataSource</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypPhotoArrayDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addPhotoDataArray:" title="addPhotoDataArray:"></a>
+	<h3 class="subsubtitle method-title">addPhotoDataArray:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add a NSData of PNG array to dataSource</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)addPhotoDataArray:(NSArray *)<em>arrayOfPhotoData</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Add a NSData of PNG array to dataSource</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypPhotoArrayDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addUIImage:atIndex:" title="addUIImage:atIndex:"></a>
+	<h3 class="subsubtitle method-title">addUIImage:atIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>add a UIImage to the model</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)addUIImage:(UIImage *)<em>addImage</em> atIndex:(NSUInteger)<em>insertIndex</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>add a UIImage to the model</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypPhotoArrayDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addUIImageArray:" title="addUIImageArray:"></a>
+	<h3 class="subsubtitle method-title">addUIImageArray:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>add a UIImage array to the model</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)addUIImageArray:(NSArray *)<em>imageArray</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>add a UIImage array to the model</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypPhotoArrayDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataForContentWithID:fileType:" title="dataForContentWithID:fileType:"></a>
+	<h3 class="subsubtitle method-title">dataForContentWithID:fileType:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the data for the specified file type.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSData *)dataForContentWithID:(NSString *)<em>contentID</em> fileType:(swypFileTypeString *)<em>type</em></code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSData must contain the complete file of a given format. Returning nil causes no data to be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the data for the specified file type.</p>
+
+<p>This is a convenience method in leu of <a href="../Protocols/swypContentDataSourceProtocol.html#//api/name/inputStreamForContentWithID:fileType:length:">inputStreamForContentWithID:fileType:length:</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDataSourceProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/datasourceDelegate" title="datasourceDelegate"></a>
+	<h3 class="subsubtitle method-title">datasourceDelegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves the delegate</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id&lt;swypContentDataSourceDelegate&gt;)datasourceDelegate</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Retrieves the delegate</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDataSourceProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:" title="delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:"></a>
+	<h3 class="subsubtitle method-title">delegateWillReceiveDataFromDiscernedStream:ofType:inConnectionSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A convenience method for <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</a>. Return true to accept the enclosed discernedStream as NSData through <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/yieldedData:discernedStream:inConnectionSession:">yieldedData:discernedStream:inConnectionSession:</a> when it&rsquo;s done being received.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)delegateWillReceiveDataFromDiscernedStream:(swypDiscernedInputStream *)<em>discernedStream</em> ofType:(NSString *)<em>streamType</em> inConnectionSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>streamType</em></dt>
+			<dd><p>is a shortcut for discernedStream.streamType</p>
+
+<p>Though there are several data delegates, only one delegate should handle and return TRUE, all else returning false
+Delegates should see if they&rsquo;re interested through discerned stream&rsquo;s properities like &lsquo;streamType&rsquo; and &lsquo;streamTag&rsquo;
+If no one handles, an exception is thrown</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>true or false depending on interest in stream.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A convenience method for <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:">delegateWillHandleDiscernedStream:wantsAsData:inConnectionSession:</a>. Return true to accept the enclosed discernedStream as NSData through <a href="../Protocols/swypConnectionSessionDataDelegate.html#//api/name/yieldedData:discernedStream:inConnectionSession:">yieldedData:discernedStream:inConnectionSession:</a> when it&rsquo;s done being received.</p><div class="warning"><p>if you want to do anything special with NSStream functionality, don&rsquo;t implement this method on your datasource.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/iconImageForContentWithID:ofMaxSize:" title="iconImageForContentWithID:ofMaxSize:"></a>
+	<h3 class="subsubtitle method-title">iconImageForContentWithID:ofMaxSize:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a UIImage representing content, which has dimensions no greater than maxIconSize.</p>
+
+<pre><code>This image is displayed by the swypContentViewController.
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (UIImage *)iconImageForContentWithID:(NSString *)<em>contentID</em> ofMaxSize:(CGSize)<em>maxIconSize</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a UIImage representing content, which has dimensions no greater than maxIconSize.</p>
+
+<pre><code>This image is displayed by the swypContentViewController.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDataSourceProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/idsForAllContent" title="idsForAllContent"></a>
+	<h3 class="subsubtitle method-title">idsForAllContent</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns list of all unique IDs for each piece of content to displayed to swyp workspace.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)idsForAllContent</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSArray choc full of NSStrings.</p>
+
+<pre><code>        Can be as simple as [[NSNumber numberWithInt:index] stringValue];
+        Most methods must be implemented if the Array is not empty or nil.
+</code></pre>
+
+<p>  Content can be ordered, or not, in returning the &lsquo;idsForAllContent&rsquo; array.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns list of all unique IDs for each piece of content to displayed to swyp workspace.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDataSourceProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithImageDataArray:" title="initWithImageDataArray:"></a>
+	<h3 class="subsubtitle method-title">initWithImageDataArray:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initialize the datasource backed by an array of png data.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithImageDataArray:(NSArray *)<em>arrayOfPhotoData</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initialize the datasource backed by an array of png data.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypPhotoArrayDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeAllPhotos" title="removeAllPhotos"></a>
+	<h3 class="subsubtitle method-title">removeAllPhotos</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>add all images from the model</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removeAllPhotos</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>add all images from the model</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypPhotoArrayDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removePhotoAtIndex:" title="removePhotoAtIndex:"></a>
+	<h3 class="subsubtitle method-title">removePhotoAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>remove a specific image from the model</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removePhotoAtIndex:(NSUInteger)<em>removeIndex</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>remove a specific image from the model</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypPhotoArrayDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDatasourceDelegate:" title="setDatasourceDelegate:"></a>
+	<h3 class="subsubtitle method-title">setDatasourceDelegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the <a href="../Protocols/swypContentDataSourceDelegate.html">swypContentDataSourceDelegate</a> for the dataSource</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setDatasourceDelegate:(id&lt;swypContentDataSourceDelegate&gt;)<em>delegate</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the <a href="../Protocols/swypContentDataSourceDelegate.html">swypContentDataSourceDelegate</a> for the dataSource</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDataSourceProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/supportedFileTypesForContentWithID:" title="supportedFileTypesForContentWithID:"></a>
+	<h3 class="subsubtitle method-title">supportedFileTypesForContentWithID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns swypFileTypeString array that a specifc contentID supports</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)supportedFileTypesForContentWithID:(NSString *)<em>contentID</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns swypFileTypeString array that a specifc contentID supports</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypContentDataSourceProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/supportedFileTypesForReceipt" title="supportedFileTypesForReceipt"></a>
+	<h3 class="subsubtitle method-title">supportedFileTypesForReceipt</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>swypFileTypeStrings in order of preference where 0 = most preferent</p>
+
+<pre><code>Use this on your datasource set in swypContentInteractionManager to choose what files your app accepts.
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)supportedFileTypesForReceipt</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>swypFileTypeStrings in order of preference where 0 = most preferent</p>
+
+<pre><code>Use this on your datasource set in swypContentInteractionManager to choose what files your app accepts.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/yieldedData:discernedStream:inConnectionSession:" title="yieldedData:discernedStream:inConnectionSession:"></a>
+	<h3 class="subsubtitle method-title">yieldedData:discernedStream:inConnectionSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)yieldedData:(NSData *)<em>streamData</em> discernedStream:(swypDiscernedInputStream *)<em>discernedStream</em> inConnectionSession:(swypConnectionSession *)<em>session</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>discernedStream</em></dt>
+			<dd><p>the stream containing properties like streamType, and streamTag.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>streamData</em></dt>
+			<dd><p>Data from the discernedStream.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>The following function is called if 'delegateWillHandleDiscernedStream' returns true and sets 'wantsProvidedAsNSData' to true.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypConnectionSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-02-03)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

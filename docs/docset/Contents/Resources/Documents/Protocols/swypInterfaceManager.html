@@ -1,0 +1,807 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>swypInterfaceManager Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 752)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">libSwÿp </a></h1>
+				<a id="developerHome" href="../index.html">Swÿp</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">swypInterfaceManager Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/interfaceReady">&nbsp;&nbsp;&nbsp;&nbsp;interfaceReady</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/advertiseSwypOutAsCompleted:">&nbsp;&nbsp;&nbsp;&nbsp;- advertiseSwypOutAsCompleted:</option>
+	
+	<option value="//api/name/advertiseSwypOutAsPending:">&nbsp;&nbsp;&nbsp;&nbsp;- advertiseSwypOutAsPending:</option>
+	
+	<option value="//api/name/initWithInterfaceManagerDelegate:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithInterfaceManagerDelegate:</option>
+	
+	<option value="//api/name/isAdvertisingSwypOut:">&nbsp;&nbsp;&nbsp;&nbsp;- isAdvertisingSwypOut:</option>
+	
+	<option value="//api/name/resumeNetworkActivity">&nbsp;&nbsp;&nbsp;&nbsp;- resumeNetworkActivity</option>
+	
+	<option value="//api/name/startFindingSwypInServerCandidatesForRef:">&nbsp;&nbsp;&nbsp;&nbsp;- startFindingSwypInServerCandidatesForRef:</option>
+	
+	<option value="//api/name/stopAdvertisingSwypOut:">&nbsp;&nbsp;&nbsp;&nbsp;- stopAdvertisingSwypOut:</option>
+	
+	<option value="//api/name/stopFindingSwypInServerCandidatesForRef:">&nbsp;&nbsp;&nbsp;&nbsp;- stopFindingSwypInServerCandidatesForRef:</option>
+	
+	<option value="//api/name/suspendNetworkActivity">&nbsp;&nbsp;&nbsp;&nbsp;- suspendNetworkActivity</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_network">network</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_swypOut">swypOut</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_swypIn">swypIn</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interfaceReady">interfaceReady</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/advertiseSwypOutAsCompleted:">advertiseSwypOutAsCompleted:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/advertiseSwypOutAsPending:">advertiseSwypOutAsPending:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithInterfaceManagerDelegate:">initWithInterfaceManagerDelegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isAdvertisingSwypOut:">isAdvertisingSwypOut:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resumeNetworkActivity">resumeNetworkActivity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startFindingSwypInServerCandidatesForRef:">startFindingSwypInServerCandidatesForRef:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopAdvertisingSwypOut:">stopAdvertisingSwypOut:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopFindingSwypInServerCandidatesForRef:">stopFindingSwypInServerCandidatesForRef:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/suspendNetworkActivity">suspendNetworkActivity</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="swypInterfaceManager Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">swypInterfaceManager Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">swypInterfaceManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Defines how network interfaces should behave</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="network" name="task_network"></a>
+						<h3 class="subsubtitle task-title">network</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/suspendNetworkActivity">&ndash;&nbsp;suspendNetworkActivity</a></code>
+		<span class="tooltip"><p>Pause network activity on this interface. Ususally app is going background.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resumeNetworkActivity">&ndash;&nbsp;resumeNetworkActivity</a></code>
+		<span class="tooltip"><p>Allow network activity to resume on this interface. Ususally app is going foreground, or workspace is opening for first time.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+						
+						<a title="swypOut" name="task_swypOut"></a>
+						<h3 class="subsubtitle task-title">swypOut</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/advertiseSwypOutAsPending:">&ndash;&nbsp;advertiseSwypOutAsPending:</a></code>
+		<span class="tooltip"><p>Begin advertising a specifc swypOut. Don&rsquo;t accept any connections from it yet as it hasn&rsquo;t completed successfully.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/advertiseSwypOutAsCompleted:">&ndash;&nbsp;advertiseSwypOutAsCompleted:</a></code>
+		<span class="tooltip"><p>Continue advertising specifc swypOut, perhaps updating with finalized swyp-info where necessary. Accept connections.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopAdvertisingSwypOut:">&ndash;&nbsp;stopAdvertisingSwypOut:</a></code>
+		<span class="tooltip"><p>No longer advertise a swyp out; remove from reference queue. No longer accept a connection for it (if an interface is able to tell this).</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isAdvertisingSwypOut:">&ndash;&nbsp;isAdvertisingSwypOut:</a></code>
+		<span class="tooltip"><p>Tells whether actually being advertised</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithInterfaceManagerDelegate:">&ndash;&nbsp;initWithInterfaceManagerDelegate:</a></code>
+		<span class="tooltip"><p>Standardized init function for interfaces</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+						
+						<a title="swypIn" name="task_swypIn"></a>
+						<h3 class="subsubtitle task-title">swypIn</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startFindingSwypInServerCandidatesForRef:">&ndash;&nbsp;startFindingSwypInServerCandidatesForRef:</a></code>
+		<span class="tooltip"><p>Start looking for and resolving for any networked candidates. Candidates are returned to <a href="../Protocols/swypInterfaceManagerDelegate.html">swypInterfaceManagerDelegate</a>.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopFindingSwypInServerCandidatesForRef:">&ndash;&nbsp;stopFindingSwypInServerCandidatesForRef:</a></code>
+		<span class="tooltip"><p>No longer search for additional swypIn servers for this ref; remove from reference queue.</p>
+
+<pre><code>Do not send further delegate messages with this ref after notifying of the stoppage. 
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/interfaceReady">&nbsp;&nbsp;interfaceReady</a></code>
+		<span class="tooltip"><p>Tells when the interface is ready for use; used with key-value coding to show and hide the bluetooth pending view</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/interfaceReady" title="interfaceReady"></a>
+	<h3 class="subsubtitle method-title">interfaceReady</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells when the interface is ready for use; used with key-value coding to show and hide the bluetooth pending view</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL interfaceReady</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Tells when the interface is ready for use; used with key-value coding to show and hide the bluetooth pending view</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypInterfaceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/advertiseSwypOutAsCompleted:" title="advertiseSwypOutAsCompleted:"></a>
+	<h3 class="subsubtitle method-title">advertiseSwypOutAsCompleted:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Continue advertising specifc swypOut, perhaps updating with finalized swyp-info where necessary. Accept connections.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)advertiseSwypOutAsCompleted:(swypInfoRef *)<em>ref</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Continue advertising specifc swypOut, perhaps updating with finalized swyp-info where necessary. Accept connections.</p>
+
+<p>Set a timeout for advertisement; let <a href="../Protocols/swypInterfaceManagerDelegate.html">swypInterfaceManagerDelegate</a> know when expired.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypInterfaceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/advertiseSwypOutAsPending:" title="advertiseSwypOutAsPending:"></a>
+	<h3 class="subsubtitle method-title">advertiseSwypOutAsPending:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Begin advertising a specifc swypOut. Don&rsquo;t accept any connections from it yet as it hasn&rsquo;t completed successfully.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)advertiseSwypOutAsPending:(swypInfoRef *)<em>ref</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Begin advertising a specifc swypOut. Don&rsquo;t accept any connections from it yet as it hasn&rsquo;t completed successfully.</p>
+
+<p>Set a timeout for advertisement; let <a href="../Protocols/swypInterfaceManagerDelegate.html">swypInterfaceManagerDelegate</a> know when expired.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypInterfaceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithInterfaceManagerDelegate:" title="initWithInterfaceManagerDelegate:"></a>
+	<h3 class="subsubtitle method-title">initWithInterfaceManagerDelegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Standardized init function for interfaces</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithInterfaceManagerDelegate:(id&lt;swypInterfaceManagerDelegate&gt;)<em>delegate</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Standardized init function for interfaces</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypInterfaceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isAdvertisingSwypOut:" title="isAdvertisingSwypOut:"></a>
+	<h3 class="subsubtitle method-title">isAdvertisingSwypOut:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells whether actually being advertised</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)isAdvertisingSwypOut:(swypInfoRef *)<em>ref</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Tells whether actually being advertised</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypInterfaceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resumeNetworkActivity" title="resumeNetworkActivity"></a>
+	<h3 class="subsubtitle method-title">resumeNetworkActivity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allow network activity to resume on this interface. Ususally app is going foreground, or workspace is opening for first time.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)resumeNetworkActivity</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Allow network activity to resume on this interface. Ususally app is going foreground, or workspace is opening for first time.</p>
+
+<p>Don&rsquo;t restart stuff that was paused.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypInterfaceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startFindingSwypInServerCandidatesForRef:" title="startFindingSwypInServerCandidatesForRef:"></a>
+	<h3 class="subsubtitle method-title">startFindingSwypInServerCandidatesForRef:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Start looking for and resolving for any networked candidates. Candidates are returned to <a href="../Protocols/swypInterfaceManagerDelegate.html">swypInterfaceManagerDelegate</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)startFindingSwypInServerCandidatesForRef:(swypInfoRef *)<em>ref</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Start looking for and resolving for any networked candidates. Candidates are returned to <a href="../Protocols/swypInterfaceManagerDelegate.html">swypInterfaceManagerDelegate</a>.</p>
+
+<p>  Set a timeout for search; let <a href="../Protocols/swypInterfaceManagerDelegate.html">swypInterfaceManagerDelegate</a> know when expired.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypInterfaceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopAdvertisingSwypOut:" title="stopAdvertisingSwypOut:"></a>
+	<h3 class="subsubtitle method-title">stopAdvertisingSwypOut:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>No longer advertise a swyp out; remove from reference queue. No longer accept a connection for it (if an interface is able to tell this).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)stopAdvertisingSwypOut:(swypInfoRef *)<em>ref</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>No longer advertise a swyp out; remove from reference queue. No longer accept a connection for it (if an interface is able to tell this).</p>
+
+<pre><code>Do not send further delegate messages with this ref. Perhaps the swyp failed.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypInterfaceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopFindingSwypInServerCandidatesForRef:" title="stopFindingSwypInServerCandidatesForRef:"></a>
+	<h3 class="subsubtitle method-title">stopFindingSwypInServerCandidatesForRef:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>No longer search for additional swypIn servers for this ref; remove from reference queue.</p>
+
+<pre><code>Do not send further delegate messages with this ref after notifying of the stoppage. 
+</code></pre>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)stopFindingSwypInServerCandidatesForRef:(swypInfoRef *)<em>ref</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>No longer search for additional swypIn servers for this ref; remove from reference queue.</p>
+
+<pre><code>Do not send further delegate messages with this ref after notifying of the stoppage. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypInterfaceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/suspendNetworkActivity" title="suspendNetworkActivity"></a>
+	<h3 class="subsubtitle method-title">suspendNetworkActivity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pause network activity on this interface. Ususally app is going background.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)suspendNetworkActivity</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Pause network activity on this interface. Ususally app is going background.</p>
+
+<p>Stop advertising, stop finding, but call delegate callbacks to notify about the stop of each swyp.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">swypInterfaceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Swÿp. All rights reserved. (Last updated: 2012-02-03)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

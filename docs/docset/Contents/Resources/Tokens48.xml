@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/swypContentDataSourceProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/swypContentDataSourceProtocol</TokenIdentifier>
+			<Abstract type="html">This ID-based content identification protocol for swypContentDataSources has some central tennets.</Abstract>
+			<DeclaredIn>swypContentDataSourceProtocol.h</DeclaredIn>
+			
+			<NodeRef refid="48"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDataSourceProtocol/idsForAllContent</TokenIdentifier>
+			<Abstract type="html">Returns list of all unique IDs for each piece of content to displayed to swyp workspace.</Abstract>
+			<DeclaredIn>swypContentDataSourceProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)idsForAllContent</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSArray choc full of NSStrings.
+			Can be as simple as [[NSNumber numberWithInt:index] stringValue];
+			Most methods must be implemented if the Array is not empty or nil.
+
+  Content can be ordered, or not, in returning the 'idsForAllContent' array.</Abstract></ReturnValue>
+			<Anchor>//api/name/idsForAllContent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDataSourceProtocol/iconImageForContentWithID:ofMaxSize:</TokenIdentifier>
+			<Abstract type="html">Returns a UIImage representing content, which has dimensions no greater than maxIconSize.
+	This image is displayed by the swypContentViewController.</Abstract>
+			<DeclaredIn>swypContentDataSourceProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (UIImage *)iconImageForContentWithID:(NSString *)contentID ofMaxSize:(CGSize)maxIconSize</Declaration>
+			
+			
+			<Anchor>//api/name/iconImageForContentWithID:ofMaxSize:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDataSourceProtocol/supportedFileTypesForContentWithID:</TokenIdentifier>
+			<Abstract type="html">Returns swypFileTypeString array that a specifc contentID supports</Abstract>
+			<DeclaredIn>swypContentDataSourceProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)supportedFileTypesForContentWithID:(NSString *)contentID</Declaration>
+			
+			
+			<Anchor>//api/name/supportedFileTypesForContentWithID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDataSourceProtocol/setDatasourceDelegate:</TokenIdentifier>
+			<Abstract type="html">Sets the swypContentDataSourceDelegate for the dataSource</Abstract>
+			<DeclaredIn>swypContentDataSourceProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)setDatasourceDelegate:(id&lt;swypContentDataSourceDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/setDatasourceDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDataSourceProtocol/datasourceDelegate</TokenIdentifier>
+			<Abstract type="html">Retrieves the delegate</Abstract>
+			<DeclaredIn>swypContentDataSourceProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;swypContentDataSourceDelegate&gt;)datasourceDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/datasourceDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDataSourceProtocol/dataForContentWithID:fileType:</TokenIdentifier>
+			<Abstract type="html">Returns the data for the specified file type.</Abstract>
+			<DeclaredIn>swypContentDataSourceProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)dataForContentWithID:(NSString *)contentID fileType:(swypFileTypeString *)type</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSData must contain the complete file of a given format. Returning nil causes no data to be sent.</Abstract></ReturnValue>
+			<Anchor>//api/name/dataForContentWithID:fileType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDataSourceProtocol/inputStreamForContentWithID:fileType:length:</TokenIdentifier>
+			<Abstract type="html">Gets an NSInputStream for a specific piece of content for sending over connectionSession</Abstract>
+			<DeclaredIn>swypContentDataSourceProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (NSInputStream *)inputStreamForContentWithID:(NSString *)contentID fileType:(swypFileTypeString *)type length:(NSUInteger *)contentLengthDestOrNULL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contentLengthDestOrNULL</Name>
+					<Abstract type="html">is a pointer that after function call should contain length of inputStream, or not if indefinite or unknown.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/inputStreamForContentWithID:fileType:length:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/swypWorkspaceViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/swypWorkspaceViewController</TokenIdentifier>
+			<Abstract type="html">This class is the UIViewController displayed to the user.</Abstract>
+			<DeclaredIn>swypWorkspaceViewController.h</DeclaredIn>
+			
+			<NodeRef refid="38"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypWorkspaceViewController/setContentDataSource:</TokenIdentifier>
+			<Abstract type="html">Sets the swypContentInteractionManager's contentDataSource</Abstract>
+			<DeclaredIn>swypWorkspaceViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSObject&lt;swypContentDataSourceProtocol,swypConnectionSessionDataDelegate&gt; *contentDataSource</Declaration>
+			
+			
+			<Anchor>//api/name/contentDataSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypWorkspaceViewController/contentDataSource</TokenIdentifier>
+			<Abstract type="html">Sets the swypContentInteractionManager's contentDataSource</Abstract>
+			<DeclaredIn>swypWorkspaceViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSObject&lt;swypContentDataSourceProtocol,swypConnectionSessionDataDelegate&gt; *contentDataSource</Declaration>
+			
+			
+			<Anchor>//api/name/contentDataSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypWorkspaceViewController/init</TokenIdentifier>
+			<Abstract type="html">The primary init function</Abstract>
+			<DeclaredIn>swypWorkspaceViewController.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/swypWorkspaceViewController/sharedSwypWorkspace</TokenIdentifier>
+			<Abstract type="html">Self retaining singleton swyp workspace for apps that use swyp everywhere.</Abstract>
+			<DeclaredIn>swypWorkspaceViewController.h</DeclaredIn>			
+			
+			<Declaration>+ (swypWorkspaceViewController *)sharedSwypWorkspace</Declaration>
+			
+			
+			<Anchor>//api/name/sharedSwypWorkspace</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypWorkspaceViewController/presentContentWorkspaceAtopViewController:</TokenIdentifier>
+			<Abstract type="html">Dispays workspace with nice texture, with scroll up from bottom</Abstract>
+			<DeclaredIn>swypWorkspaceViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)presentContentWorkspaceAtopViewController:(UIViewController *)controller</Declaration>
+			
+			
+			<Anchor>//api/name/presentContentWorkspaceAtopViewController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypWorkspaceViewController/presentContentSwypWorkspaceAtopViewController:withContentView:forContentOfID:atRect:</TokenIdentifier>
+			<Abstract type="html">displays the workspace with content in background, with fade from background, with content under finger</Abstract>
+			<DeclaredIn>swypWorkspaceViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)presentContentSwypWorkspaceAtopViewController:(UIViewController *)controller withContentView:(swypSwypableContentSuperview *)contentView forContentOfID:(NSString *)contentID atRect:(CGRect)contentRect</Declaration>
+			
+			
+			<Anchor>//api/name/presentContentSwypWorkspaceAtopViewController:withContentView:forContentOfID:atRect:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypWorkspaceViewController/swypConnectionSessionWasCreated:withConnectionManager:</TokenIdentifier>
+			<Abstract type="html">Session was created, please handle display</Abstract>
+			<DeclaredIn>swypWorkspaceViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)swypConnectionSessionWasCreated:(swypConnectionSession *)session withConnectionManager:(swypConnectionManager *)manager</Declaration>
+			
+			
+			<Anchor>//api/name/swypConnectionSessionWasCreated:withConnectionManager:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypWorkspaceViewController/swypConnectionSessionWasInvalidated:withConnectionManager:error:</TokenIdentifier>
+			<Abstract type="html">Session was invalidated, please remove</Abstract>
+			<DeclaredIn>swypWorkspaceViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)swypConnectionSessionWasInvalidated:(swypConnectionSession *)session withConnectionManager:(swypConnectionManager *)manager error:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/swypConnectionSessionWasInvalidated:withConnectionManager:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypWorkspaceViewController/swypConnectionMethodsUpdated:withConnectionManager:</TokenIdentifier>
+			<Abstract type="html">An update letting the swypWorkspaceViewController know that available connection methods have changed.</Abstract>
+			<DeclaredIn>swypWorkspaceViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)swypConnectionMethodsUpdated:(swypConnectionMethod)availableMethods withConnectionManager:(swypConnectionManager *)manager</Declaration>
+			
+			
+			<Anchor>//api/name/swypConnectionMethodsUpdated:withConnectionManager:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypWorkspaceViewController/swypConnectionMethod:setReadyStatus:withConnectionManager:</TokenIdentifier>
+			<Abstract type="html">This lets swypWorkspaceViewController know that an interface is on or offline so it can adjust its UI accordingly.</Abstract>
+			<DeclaredIn>swypWorkspaceViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)swypConnectionMethod:(swypConnectionMethod)method setReadyStatus:(BOOL)isReady withConnectionManager:(swypConnectionManager *)manager</Declaration>
+			
+			
+			<Anchor>//api/name/swypConnectionMethod:setReadyStatus:withConnectionManager:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypWorkspaceViewController/workspaceView</TokenIdentifier>
+			<Abstract type="html">The view for touch forwarding; the swyp workspace</Abstract>
+			<DeclaredIn>swypWorkspaceViewController.m</DeclaredIn>			
+			
+			<Declaration>- (UIView *)workspaceView</Declaration>
+			
+			
+			<Anchor>//api/name/workspaceView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypWorkspaceViewController/presentContentSwypWorkspaceAtopViewController:withContentView:swypableContentImage:forContentOfID:atRect:</TokenIdentifier>
+			<Abstract type="html">Causes the workspace to appear, and automatically positions the content of contentID under the user's finger</Abstract>
+			<DeclaredIn>swypWorkspaceViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)presentContentSwypWorkspaceAtopViewController:(UIViewController *)controller withContentView:(swypSwypableContentSuperview *)contentView swypableContentImage:(UIImage *)contentImage forContentOfID:(NSString *)contentID atRect:(CGRect)contentRect</Declaration>
+			
+			
+			<Anchor>//api/name/presentContentSwypWorkspaceAtopViewController:withContentView:swypableContentImage:forContentOfID:atRect:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

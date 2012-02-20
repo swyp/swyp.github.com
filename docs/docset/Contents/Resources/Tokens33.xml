@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/swypSessionViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/swypSessionViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>swypSessionViewController.h</DeclaredIn>
+			
+			<NodeRef refid="33"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypSessionViewController/setConnectionSession:</TokenIdentifier>
+			<Abstract type="html">associated connection session</Abstract>
+			<DeclaredIn>swypSessionViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) swypConnectionSession *connectionSession</Declaration>
+			
+			
+			<Anchor>//api/name/connectionSession</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypSessionViewController/connectionSession</TokenIdentifier>
+			<Abstract type="html">associated connection session</Abstract>
+			<DeclaredIn>swypSessionViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) swypConnectionSession *connectionSession</Declaration>
+			
+			
+			<Anchor>//api/name/connectionSession</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypSessionViewController/indicateTransferringData:</TokenIdentifier>
+			<Abstract type="html">The following is a 'smart' status indicator set true twice, and false once, and the thing is still indicating</Abstract>
+			<DeclaredIn>swypSessionViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)indicateTransferringData:(BOOL)isTransferring</Declaration>
+			
+			
+			<Anchor>//api/name/indicateTransferringData:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

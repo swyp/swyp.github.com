@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/swypInterfaceManagerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/swypInterfaceManagerDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>
+			
+			<NodeRef refid="58"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManagerDelegate/interfaceManager:isDoneAdvertisingSwypOutAsPending:forConnectionMethod:</TokenIdentifier>
+			<Abstract type="html">This method decrements a given swyp in the swypHandShakeManger's dereferenceSwypOutAsPending</Abstract>
+			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)interfaceManager:(id&lt;swypInterfaceManager&gt;)manager isDoneAdvertisingSwypOutAsPending:(swypInfoRef *)ref forConnectionMethod:(swypConnectionMethod)method</Declaration>
+			
+			
+			<Anchor>//api/name/interfaceManager:isDoneAdvertisingSwypOutAsPending:forConnectionMethod:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManagerDelegate/interfaceManager:isDoneSearchForSwypInServerCandidatesForRef:forConnectionMethod:</TokenIdentifier>
+			<Abstract type="html">This method let's the swypConnectionManager know that this interface is no longer searching for candidates, and that it can proceed through to the lower priorities in swypPendingConnectionQueue</Abstract>
+			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)interfaceManager:(id&lt;swypInterfaceManager&gt;)manager isDoneSearchForSwypInServerCandidatesForRef:(swypInfoRef *)ref forConnectionMethod:(swypConnectionMethod)method</Declaration>
+			
+			
+			<Anchor>//api/name/interfaceManager:isDoneSearchForSwypInServerCandidatesForRef:forConnectionMethod:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManagerDelegate/interfaceManager:madeUninitializedSwypServerCandidateConnectionSession:forRef:withConnectionMethod:</TokenIdentifier>
+			<Abstract type="html">This method triggers when the interface has found a server candidate and made a connection session out of it.</Abstract>
+			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)interfaceManager:(id&lt;swypInterfaceManager&gt;)manager madeUninitializedSwypServerCandidateConnectionSession:(swypConnectionSession *)connectionSession forRef:(swypInfoRef *)ref withConnectionMethod:(swypConnectionMethod)method</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>ref</Name>
+					<Abstract type="html">This value is mandatory, as a client candidate must be the first to pitch its swyp info to a server.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/interfaceManager:madeUninitializedSwypServerCandidateConnectionSession:forRef:withConnectionMethod:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypInterfaceManagerDelegate/interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:withConnectionMethod:</TokenIdentifier>
+			<Abstract type="html">This method triggers when the interface has received a client candidate connection and has made session out of it w/ out intitializing it.</Abstract>
+			<DeclaredIn>swypInterfaceManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)interfaceManager:(id&lt;swypInterfaceManager&gt;)manager receivedUninitializedSwypClientCandidateConnectionSession:(swypConnectionSession *)connectionSession withConnectionMethod:(swypConnectionMethod)method</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connectionSession</Name>
+					<Abstract type="html">the candidate within the session can contain a matchable swyp when percise.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/interfaceManager:receivedUninitializedSwypClientCandidateConnectionSession:withConnectionMethod:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

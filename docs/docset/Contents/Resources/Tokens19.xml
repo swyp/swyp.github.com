@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/swypDiscernedInputStream.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/swypDiscernedInputStream</TokenIdentifier>
+			<Abstract type="html">This class allows discrete files to be removed from a flowing NSInputStream.</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypDiscernedInputStream/setIsIndefinite:</TokenIdentifier>
+			<Abstract type="html">	Indefinite streams occur when both endpoints support the same proprietary protocol, and set stream payload length to 0
+	When the indefinite stream is to be ended, endIndefiniteStreamAtByteIndex: must be called referencing a byte that has either not yet been read, or has been read in the last read cycle.</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isIndefinite</Declaration>
+			
+			
+			<Anchor>//api/name/isIndefinite</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypDiscernedInputStream/isIndefinite</TokenIdentifier>
+			<Abstract type="html">	Indefinite streams occur when both endpoints support the same proprietary protocol, and set stream payload length to 0
+	When the indefinite stream is to be ended, endIndefiniteStreamAtByteIndex: must be called referencing a byte that has either not yet been read, or has been read in the last read cycle.</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isIndefinite</Declaration>
+			
+			
+			<Anchor>//api/name/isIndefinite</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypDiscernedInputStream/setStreamLength:</TokenIdentifier>
+			<Abstract type="html">Length of stream, if known</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger streamLength</Declaration>
+			
+			
+			<Anchor>//api/name/streamLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypDiscernedInputStream/streamLength</TokenIdentifier>
+			<Abstract type="html">Length of stream, if known</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger streamLength</Declaration>
+			
+			
+			<Anchor>//api/name/streamLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypDiscernedInputStream/setStreamTag:</TokenIdentifier>
+			<Abstract type="html">Tag for the stream</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *streamTag</Declaration>
+			
+			
+			<Anchor>//api/name/streamTag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypDiscernedInputStream/streamTag</TokenIdentifier>
+			<Abstract type="html">Tag for the stream</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *streamTag</Declaration>
+			
+			
+			<Anchor>//api/name/streamTag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypDiscernedInputStream/setStreamType:</TokenIdentifier>
+			<Abstract type="html">The swypFileTypeString for the stream type</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *streamType</Declaration>
+			
+			
+			<Anchor>//api/name/streamType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypDiscernedInputStream/streamType</TokenIdentifier>
+			<Abstract type="html">The swypFileTypeString for the stream type</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *streamType</Declaration>
+			
+			
+			<Anchor>//api/name/streamType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypDiscernedInputStream/setLastProvidedByteIndex:</TokenIdentifier>
+			<Abstract type="html">last read byte in stream... Ideal for key-value observing progress.</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger lastProvidedByteIndex</Declaration>
+			
+			
+			<Anchor>//api/name/lastProvidedByteIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypDiscernedInputStream/lastProvidedByteIndex</TokenIdentifier>
+			<Abstract type="html">last read byte in stream... Ideal for key-value observing progress.</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger lastProvidedByteIndex</Declaration>
+			
+			
+			<Anchor>//api/name/lastProvidedByteIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypDiscernedInputStream/setStreamEndByteIndex:</TokenIdentifier>
+			<Abstract type="html">Last byte in stream streamEndByteIndex - lastProvidedByteIndex = remaining bytes.</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger streamEndByteIndex</Declaration>
+			
+			
+			<Anchor>//api/name/streamEndByteIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypDiscernedInputStream/streamEndByteIndex</TokenIdentifier>
+			<Abstract type="html">Last byte in stream streamEndByteIndex - lastProvidedByteIndex = remaining bytes.</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger streamEndByteIndex</Declaration>
+			
+			
+			<Anchor>//api/name/streamEndByteIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypDiscernedInputStream/setSourceConnectionSession:</TokenIdentifier>
+			<Abstract type="html">Refers to the swypConnectionSession that this swypDiscernedInputStream reers from...</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id sourceConnectionSession</Declaration>
+			
+			
+			<Anchor>//api/name/sourceConnectionSession</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypDiscernedInputStream/sourceConnectionSession</TokenIdentifier>
+			<Abstract type="html">Refers to the swypConnectionSession that this swypDiscernedInputStream reers from...</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id sourceConnectionSession</Declaration>
+			
+			
+			<Anchor>//api/name/sourceConnectionSession</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypDiscernedInputStream/setDataSource:</TokenIdentifier>
+			<Abstract type="html">This is for swypInputStreamDiscerner, which will notify you if you are a swypConnectionSessionDataDelegate, don't worry about this.</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;swypDiscernedInputStreamDataSource&gt; dataSource</Declaration>
+			
+			
+			<Anchor>//api/name/dataSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypDiscernedInputStream/dataSource</TokenIdentifier>
+			<Abstract type="html">This is for swypInputStreamDiscerner, which will notify you if you are a swypConnectionSessionDataDelegate, don't worry about this.</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;swypDiscernedInputStreamDataSource&gt; dataSource</Declaration>
+			
+			
+			<Anchor>//api/name/dataSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypDiscernedInputStream/addStatusDelegate:</TokenIdentifier>
+			<Abstract type="html">adds delegate (no-retain, as usual) that adopts swypDiscernedInputStreamStatusDelegate protocol; object must be removed subsequently</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>- (void)addStatusDelegate:(id&lt;swypDiscernedInputStreamStatusDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/addStatusDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypDiscernedInputStream/removeStatusDelegate:</TokenIdentifier>
+			<Abstract type="html">removes delegate (no-release as usual) that has been added via addStatusDelegate</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeStatusDelegate:(id&lt;swypDiscernedInputStreamStatusDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/removeStatusDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypDiscernedInputStream/initWithStreamDataSource:type:tag:length:</TokenIdentifier>
+			<Abstract type="html">the primary init function</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithStreamDataSource:(id&lt;swypDiscernedInputStreamDataSource&gt;)dataSource type:(NSString *)type tag:(NSString *)tag length:(NSUInteger)streamLength</Declaration>
+			
+			
+			<Anchor>//api/name/initWithStreamDataSource:type:tag:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypDiscernedInputStream/endIndefiniteStreamAtByteIndex:</TokenIdentifier>
+			<Abstract type="html">	This method enables the next input stream to be queued out of data already consumed by reading this object's NSStream
+	byteIndex must exist within the most recent read, or in the future
+		eg, it can't be from two stream reads back
+	Calling this method on a discernedInputStream makes it become definite</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>- (void)endIndefiniteStreamAtByteIndex:(NSUInteger)byteIndex</Declaration>
+			
+			
+			<Anchor>//api/name/endIndefiniteStreamAtByteIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypDiscernedInputStream/shouldPullData</TokenIdentifier>
+			<Abstract type="html">this method tells the discernedInputStream that there is data available, and that it should pull it!</Abstract>
+			<DeclaredIn>swypDiscernedInputStream.h</DeclaredIn>			
+			
+			<Declaration>- (void)shouldPullData</Declaration>
+			
+			
+			<Anchor>//api/name/shouldPullData</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

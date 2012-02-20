@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/swypCandidate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/swypCandidate</TokenIdentifier>
+			<Abstract type="html">candidates encapsulate the potential for a connection..
+Though we've transitioned to using swypConnectionSession more, candidates still play the role of encapsulating a bunch of metadata.</Abstract>
+			<DeclaredIn>swypCandidate.h</DeclaredIn>
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypCandidate/setSwypInfo:</TokenIdentifier>
+			<Abstract type="html">This property represents THEIR swypInfo</Abstract>
+			<DeclaredIn>swypCandidate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) swypInfoRef *swypInfo</Declaration>
+			
+			
+			<Anchor>//api/name/swypInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypCandidate/swypInfo</TokenIdentifier>
+			<Abstract type="html">This property represents THEIR swypInfo</Abstract>
+			<DeclaredIn>swypCandidate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) swypInfoRef *swypInfo</Declaration>
+			
+			
+			<Anchor>//api/name/swypInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypCandidate/setAppearanceDate:</TokenIdentifier>
+			<Abstract type="html">When did the candidate firt appear; default is at the object's init date</Abstract>
+			<DeclaredIn>swypCandidate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDate *appearanceDate</Declaration>
+			
+			
+			<Anchor>//api/name/appearanceDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypCandidate/appearanceDate</TokenIdentifier>
+			<Abstract type="html">When did the candidate firt appear; default is at the object's init date</Abstract>
+			<DeclaredIn>swypCandidate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDate *appearanceDate</Declaration>
+			
+			
+			<Anchor>//api/name/appearanceDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypCandidate/setNametag:</TokenIdentifier>
+			<Abstract type="html">the following property is used when peers are strictly nameable, as they are with bonjour and bluetooth</Abstract>
+			<DeclaredIn>swypCandidate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *nametag</Declaration>
+			
+			
+			<Anchor>//api/name/nametag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypCandidate/nametag</TokenIdentifier>
+			<Abstract type="html">the following property is used when peers are strictly nameable, as they are with bonjour and bluetooth</Abstract>
+			<DeclaredIn>swypCandidate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *nametag</Declaration>
+			
+			
+			<Anchor>//api/name/nametag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypCandidate/setSupportedFiletypes:</TokenIdentifier>
+			<Abstract type="html">An NSArray of swypFileTypeString</Abstract>
+			<DeclaredIn>swypCandidate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *supportedFiletypes</Declaration>
+			
+			
+			<Anchor>//api/name/supportedFiletypes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypCandidate/supportedFiletypes</TokenIdentifier>
+			<Abstract type="html">An NSArray of swypFileTypeString</Abstract>
+			<DeclaredIn>swypCandidate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *supportedFiletypes</Declaration>
+			
+			
+			<Anchor>//api/name/supportedFiletypes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypCandidate/setRole:</TokenIdentifier>
+			<Abstract type="html">Defines what role a candidate is playing, whether server or client</Abstract>
+			<DeclaredIn>swypCandidate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) swypCandidateRole role</Declaration>
+			
+			
+			<Anchor>//api/name/role</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypCandidate/role</TokenIdentifier>
+			<Abstract type="html">Defines what role a candidate is playing, whether server or client</Abstract>
+			<DeclaredIn>swypCandidate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) swypCandidateRole role</Declaration>
+			
+			
+			<Anchor>//api/name/role</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypCandidate/setMatchedLocalSwypInfo:</TokenIdentifier>
+			<Abstract type="html">This property represents OUR swyp info.</Abstract>
+			<DeclaredIn>swypCandidate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) swypInfoRef *matchedLocalSwypInfo</Declaration>
+			
+			
+			<Anchor>//api/name/matchedLocalSwypInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypCandidate/matchedLocalSwypInfo</TokenIdentifier>
+			<Abstract type="html">This property represents OUR swyp info.</Abstract>
+			<DeclaredIn>swypCandidate.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) swypInfoRef *matchedLocalSwypInfo</Declaration>
+			
+			
+			<Anchor>//api/name/matchedLocalSwypInfo</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

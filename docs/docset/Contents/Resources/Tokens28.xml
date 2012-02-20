@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/swypOutputToDataStream.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/swypOutputToDataStream</TokenIdentifier>
+			<Abstract type="html">This class basically just acts an NSOutputStream that takes any written bytes, shoves them in an NSData shell, the tells then tosses them at the dataDelegate</Abstract>
+			<DeclaredIn>swypOutputToDataStream.h</DeclaredIn>
+			
+			<NodeRef refid="28"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypOutputToDataStream/initWithDataDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate is of critical importance- otherwise use something else.</Abstract>
+			<DeclaredIn>swypOutputToDataStream.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDataDelegate:(id&lt;swypOutputToDataStreamDataDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDataDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypOutputToDataStream/invalidateByError</TokenIdentifier>
+			<Abstract type="html">this is the invalidate command to push errors up from the GKSession</Abstract>
+			<DeclaredIn>swypOutputToDataStream.h</DeclaredIn>			
+			
+			<Declaration>- (void)invalidateByError</Declaration>
+			
+			
+			<Anchor>//api/name/invalidateByError</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

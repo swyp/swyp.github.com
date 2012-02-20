@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/swypInfoRef.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/swypInfoRef</TokenIdentifier>
+			<Abstract type="html">This class encapsulates the logical components of the gestures found in swypGestureRecognizer.
+	The swypInfoRef is the tracking method for all connections based on gestures. </Abstract>
+			<DeclaredIn>swypInfoRef.h</DeclaredIn>
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypInfoRef/setVelocity:</TokenIdentifier>
+			<Abstract type="html">in mm/second</Abstract>
+			<DeclaredIn>swypInfoRef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) double velocity</Declaration>
+			
+			
+			<Anchor>//api/name/velocity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypInfoRef/velocity</TokenIdentifier>
+			<Abstract type="html">in mm/second</Abstract>
+			<DeclaredIn>swypInfoRef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) double velocity</Declaration>
+			
+			
+			<Anchor>//api/name/velocity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypInfoRef/screenEdgeOfSwyp</TokenIdentifier>
+			<Abstract type="html">Get the general screen position of a swipe (bottom, top, left, right)</Abstract>
+			<DeclaredIn>swypInfoRef.h</DeclaredIn>			
+			
+			<Declaration>- (swypScreenEdgeType)screenEdgeOfSwyp</Declaration>
+			
+			
+			<Anchor>//api/name/screenEdgeOfSwyp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypInfoRef/setSwypBeginningContentView:</TokenIdentifier>
+			<Abstract type="html">property is filled when swyp out occurs on top of displayed content, not filled when swyp begins on workspace</Abstract>
+			<DeclaredIn>swypInfoRef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *swypBeginningContentView</Declaration>
+			
+			
+			<Anchor>//api/name/swypBeginningContentView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypInfoRef/swypBeginningContentView</TokenIdentifier>
+			<Abstract type="html">property is filled when swyp out occurs on top of displayed content, not filled when swyp begins on workspace</Abstract>
+			<DeclaredIn>swypInfoRef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *swypBeginningContentView</Declaration>
+			
+			
+			<Anchor>//api/name/swypBeginningContentView</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

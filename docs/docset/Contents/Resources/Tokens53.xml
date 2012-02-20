@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/swypGKPeerAbstractedStreamSetDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/swypGKPeerAbstractedStreamSetDelegate</TokenIdentifier>
+			<Abstract type="html">The delegate protocol basically is intended to allow all actual peer sending to be done by the GKSession. swypBluetoothPairManager holds all all of these objects and the GKSession.</Abstract>
+			<DeclaredIn>swypGKPeerAbstractedStreamSet.h</DeclaredIn>
+			
+			<NodeRef refid="53"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypGKPeerAbstractedStreamSetDelegate/peerAbstractedStreamSet:wantsDataSent:toPeerNamed:</TokenIdentifier>
+			<Abstract type="html">Gotta send data somehow.</Abstract>
+			<DeclaredIn>swypGKPeerAbstractedStreamSet.h</DeclaredIn>			
+			
+			<Declaration>- (void)peerAbstractedStreamSet:(swypGKPeerAbstractedStreamSet *)peerAbstraction wantsDataSent:(NSData *)sendData toPeerNamed:(NSString *)peerName</Declaration>
+			
+			
+			<Anchor>//api/name/peerAbstractedStreamSet:wantsDataSent:toPeerNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypGKPeerAbstractedStreamSetDelegate/peerAbstractedStreamSetDidClose:withPeerNamed:</TokenIdentifier>
+			<Abstract type="html">Need to notify</Abstract>
+			<DeclaredIn>swypGKPeerAbstractedStreamSet.h</DeclaredIn>			
+			
+			<Declaration>- (void)peerAbstractedStreamSetDidClose:(swypGKPeerAbstractedStreamSet *)peerAbstraction withPeerNamed:(NSString *)peerName</Declaration>
+			
+			
+			<Anchor>//api/name/peerAbstractedStreamSetDidClose:withPeerNamed:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

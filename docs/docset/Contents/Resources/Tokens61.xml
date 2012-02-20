@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/swypSwypableContentSuperviewContentDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/swypSwypableContentSuperviewContentDelegate</TokenIdentifier>
+			<Abstract type="html">Delegate protocol for the swypSwypableContentSuperview. Usually a UIViewController that knows about the views contained within.</Abstract>
+			<DeclaredIn>swypSwypableContentSuperview.h</DeclaredIn>
+			
+			<NodeRef refid="61"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypSwypableContentSuperviewContentDelegate/subview:isSwypableWithSwypableContentSuperview:</TokenIdentifier>
+			<Abstract type="html">User long-pressed a subview of the swypSwypableContentSuperview
+One can have non-content subviews, so we want to know whether this content is swypable.</Abstract>
+			<DeclaredIn>swypSwypableContentSuperview.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)subview:(UIView *)subview isSwypableWithSwypableContentSuperview:(swypSwypableContentSuperview *)superview</Declaration>
+			
+			
+			<Anchor>//api/name/subview:isSwypableWithSwypableContentSuperview:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypSwypableContentSuperviewContentDelegate/contentIDForSwypableSubview:withinSwypableContentSuperview:</TokenIdentifier>
+			<Abstract type="html">Gets the model ID for the content on the swypable subview.</Abstract>
+			<DeclaredIn>swypSwypableContentSuperview.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)contentIDForSwypableSubview:(UIView *)view withinSwypableContentSuperview:(swypSwypableContentSuperview *)superview</Declaration>
+			
+			<ReturnValue><Abstract type="html">This corresponds to a newly added value in swypWorkspaceViewController's contentDataSource. You've just added it before you return the contentID. </Abstract></ReturnValue>
+			<Anchor>//api/name/contentIDForSwypableSubview:withinSwypableContentSuperview:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

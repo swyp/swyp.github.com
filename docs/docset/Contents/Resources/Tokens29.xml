@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/swypPendingConnectionManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/swypPendingConnectionManager</TokenIdentifier>
+			<Abstract type="html">This class is key in managing the prioritization of connection accross multiple interfaces.</Abstract>
+			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionManager/initWithDelegate:</TokenIdentifier>
+			<Abstract type="html">swypPendingConnectionManager is initialized with probably swypConnectionManager as delegate</Abstract>
+			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDelegate:(id&lt;swypPendingConnectionManagerDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionManager/setSwypInPending:forConnectionMethods:</TokenIdentifier>
+			<Abstract type="html">After swypConnnectionManager posts swypInfoRef to listen on interfaces, it sets it as pending here</Abstract>
+			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)setSwypInPending:(swypInfoRef *)swypRef forConnectionMethods:(NSArray *)methods</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>methods</Name>
+					<Abstract type="html">NSArray of swypConnectionMethod in NSNumber objects as ints</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSwypInPending:forConnectionMethods:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionManager/setSwypInPending:forConnectionMethod:</TokenIdentifier>
+			<Abstract type="html">After swypConnnectionManager posts swypInfoRef to listen on interfaces, it sets it as pending here
+Feel free to use both the singular and pluralized form here</Abstract>
+			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)setSwypInPending:(swypInfoRef *)swypRef forConnectionMethod:(swypConnectionMethod)method</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>method</Name>
+					<Abstract type="html">swypConnectionMethod</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSwypInPending:forConnectionMethod:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionManager/connectionMethodTimedOut:forSwypRef:</TokenIdentifier>
+			<Abstract type="html">This tells the manager that an interface method will no longer send new candidates
+This allows the manager to clear out deadspace and proceed to call swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp:</Abstract>
+			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)connectionMethodTimedOut:(swypConnectionMethod)method forSwypRef:(swypInfoRef *)swypRef</Declaration>
+			
+			
+			<Anchor>//api/name/connectionMethodTimedOut:forSwypRef:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionManager/clearAllPendingConnectionsForSwypRef:</TokenIdentifier>
+			<Abstract type="html">After swypConnnectionManager has found its match for a swypCandidate, it acts responsibly by calling this method</Abstract>
+			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)clearAllPendingConnectionsForSwypRef:(swypInfoRef *)ref</Declaration>
+			
+			
+			<Anchor>//api/name/clearAllPendingConnectionsForSwypRef:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionManager/addSwypServerCandidateConnectionSession:forSwypRef:forConnectionMethod:</TokenIdentifier>
+			<Abstract type="html">After a swypConnectionMethod has returned a swypCandidate to swypConnnectionManager, swypConnnectionManager calls this method to add it to the queue for a specific swypInfoRef.</Abstract>
+			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)addSwypServerCandidateConnectionSession:(swypConnectionSession *)connectionSession forSwypRef:(swypInfoRef *)ref forConnectionMethod:(swypConnectionMethod)method</Declaration>
+			
+			
+			<Anchor>//api/name/addSwypServerCandidateConnectionSession:forSwypRef:forConnectionMethod:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionManager/nextConnectionSessionToAttemptHandshakeForSwypRef:</TokenIdentifier>
+			<Abstract type="html">This method is called by swypConnnectionManager after the delegate protocol swypPendingConnectionManagerHasAvailableHandshakeableConnectionSessionsForSwyp: is called</Abstract>
+			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>- (swypConnectionSession *)nextConnectionSessionToAttemptHandshakeForSwypRef:(swypInfoRef *)ref</Declaration>
+			
+			<ReturnValue><Abstract type="html">swypConnectionSession object which is the next available connection session that's avilable to dequeue</Abstract></ReturnValue>
+			<Anchor>//api/name/nextConnectionSessionToAttemptHandshakeForSwypRef:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypPendingConnectionManager/prioritizedInterfaceMethodsArray</TokenIdentifier>
+			<Abstract type="html">A nice array for iterating over all the interfaceMethods defined in swypConnectionMethod</Abstract>
+			<DeclaredIn>swypPendingConnectionManager.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)prioritizedInterfaceMethodsArray</Declaration>
+			
+			<ReturnValue><Abstract type="html">returns NSArray of NSNumber objects init'd w/ int of swypConnectionMethod</Abstract></ReturnValue>
+			<Anchor>//api/name/prioritizedInterfaceMethodsArray</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/swypCloudNetService.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/swypCloudNetService</TokenIdentifier>
+			<Abstract type="html">this class basically receives and creates connections to peers matched by cloudmanager</Abstract>
+			<DeclaredIn>swypCloudNetService.h</DeclaredIn>
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

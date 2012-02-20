@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/swypInputToDataBridgeDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/swypInputToDataBridgeDelegate</TokenIdentifier>
+			<Abstract type="html">Data Recipient for stream soakage</Abstract>
+			<DeclaredIn>swypInputToDataBridge.h</DeclaredIn>
+			
+			<NodeRef refid="55"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypInputToDataBridgeDelegate/dataBridgeYieldedData:fromInputStream:withInputToDataBridge:</TokenIdentifier>
+			<Abstract type="html">Data retrieved notification</Abstract>
+			<DeclaredIn>swypInputToDataBridge.h</DeclaredIn>			
+			
+			<Declaration>- (void)dataBridgeYieldedData:(NSData *)yieldedData fromInputStream:(NSInputStream *)inputStream withInputToDataBridge:(swypInputToDataBridge *)bridge</Declaration>
+			
+			
+			<Anchor>//api/name/dataBridgeYieldedData:fromInputStream:withInputToDataBridge:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypInputToDataBridgeDelegate/dataBridgeFailedYieldingDataFromInputStream:withError:inInputToDataBridge:</TokenIdentifier>
+			<Abstract type="html">Data failed notfication... Sorry.</Abstract>
+			<DeclaredIn>swypInputToDataBridge.h</DeclaredIn>			
+			
+			<Declaration>- (void)dataBridgeFailedYieldingDataFromInputStream:(NSInputStream *)inputStream withError:(NSError *)error inInputToDataBridge:(swypInputToDataBridge *)bridge</Declaration>
+			
+			
+			<Anchor>//api/name/dataBridgeFailedYieldingDataFromInputStream:withError:inInputToDataBridge:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

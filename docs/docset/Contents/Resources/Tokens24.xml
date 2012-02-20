@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/swypInputStreamDiscerner.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/swypInputStreamDiscerner</TokenIdentifier>
+			<Abstract type="html">This class is responsible for orchastrating the breaking of an NSInputStream into its components.
+	
+It basically the manager of an NSInputStream from a swypConnectionSession connection, and handles management of reading the stream data.</Abstract>
+			<DeclaredIn>swypInputStreamDiscerner.h</DeclaredIn>
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypInputStreamDiscerner/setDiscernmentStream:</TokenIdentifier>
+			<Abstract type="html">The primary input stream</Abstract>
+			<DeclaredIn>swypInputStreamDiscerner.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInputStream *discernmentStream</Declaration>
+			
+			
+			<Anchor>//api/name/discernmentStream</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/swypInputStreamDiscerner/discernmentStream</TokenIdentifier>
+			<Abstract type="html">The primary input stream</Abstract>
+			<DeclaredIn>swypInputStreamDiscerner.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInputStream *discernmentStream</Declaration>
+			
+			
+			<Anchor>//api/name/discernmentStream</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypInputStreamDiscerner/initWithInputStream:discernerDelegate:</TokenIdentifier>
+			<Abstract type="html">The stream to manage during the connection</Abstract>
+			<DeclaredIn>swypInputStreamDiscerner.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithInputStream:(NSInputStream *)discernmentStream discernerDelegate:(id&lt;swypInputStreamDiscernerDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/initWithInputStream:discernerDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypInputStreamDiscerner/discernedStreamEndedAtStreamByteIndex:discernedInputStream:</TokenIdentifier>
+			<Abstract type="html">See discussion of endIndefiniteStreamAtByteIndex in swypDiscernedInputStream.</Abstract>
+			<DeclaredIn>swypInputStreamDiscerner.m</DeclaredIn>			
+			
+			<Declaration>- (void)discernedStreamEndedAtStreamByteIndex:(NSUInteger)endByteIndex discernedInputStream:(swypDiscernedInputStream *)inputStream</Declaration>
+			
+			
+			<Anchor>//api/name/discernedStreamEndedAtStreamByteIndex:discernedInputStream:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/swypInputStreamDiscerner/pullDataWithLength:discernedInputStream:</TokenIdentifier>
+			<Abstract type="html">How the discernedInputStream retrieves data</Abstract>
+			<DeclaredIn>swypInputStreamDiscerner.m</DeclaredIn>			
+			
+			<Declaration>- (NSData *)pullDataWithLength:(NSUInteger)maxLength discernedInputStream:(swypDiscernedInputStream *)inputStream</Declaration>
+			
+			
+			<Anchor>//api/name/pullDataWithLength:discernedInputStream:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

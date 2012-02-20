@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/swypContentDisplayViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/swypContentDisplayViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>swypContentDisplayViewControllerProtocol.h</DeclaredIn>
+			
+			<NodeRef refid="49"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDisplayViewController/removeContentFromDisplayWithID:animated:</TokenIdentifier>
+			<Abstract type="html">How model updates propigate removed content through swypContentInteractionManager</Abstract>
+			<DeclaredIn>swypContentDisplayViewControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeContentFromDisplayWithID:(NSString *)removeID animated:(BOOL)animate</Declaration>
+			
+			
+			<Anchor>//api/name/removeContentFromDisplayWithID:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDisplayViewController/addContentToDisplayWithID:animated:</TokenIdentifier>
+			<Abstract type="html">How modal updates propigate added content through swypContentInteractionManager</Abstract>
+			<DeclaredIn>swypContentDisplayViewControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)addContentToDisplayWithID:(NSString *)insertID animated:(BOOL)animate</Declaration>
+			
+			
+			<Anchor>//api/name/addContentToDisplayWithID:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDisplayViewController/allDisplayedObjectIDs</TokenIdentifier>
+			<Abstract type="html">Returns everything displayed on the VC</Abstract>
+			<DeclaredIn>swypContentDisplayViewControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)allDisplayedObjectIDs</Declaration>
+			
+			
+			<Anchor>//api/name/allDisplayedObjectIDs</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDisplayViewController/reloadAllData</TokenIdentifier>
+			<Abstract type="html">reloads all displayed content through swypContentDisplayViewControllerDelegate</Abstract>
+			<DeclaredIn>swypContentDisplayViewControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)reloadAllData</Declaration>
+			
+			
+			<Anchor>//api/name/reloadAllData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDisplayViewController/choiceMaxSizeForContentDisplay</TokenIdentifier>
+			<Abstract type="html">	Returns max size of displayed content on workspace</Abstract>
+			<DeclaredIn>swypContentDisplayViewControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (CGSize)choiceMaxSizeForContentDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/choiceMaxSizeForContentDisplay</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/swypContentDisplayViewController/moveContentWithID:toFrame:animated:</TokenIdentifier>
+			<Abstract type="html">Reposition content to frame location within view</Abstract>
+			<DeclaredIn>swypContentDisplayViewControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)moveContentWithID:(NSString *)insertID toFrame:(CGRect)frame animated:(BOOL)animate</Declaration>
+			
+			
+			<Anchor>//api/name/moveContentWithID:toFrame:animated:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
