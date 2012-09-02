@@ -1,0 +1,231 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+@font-face {
+  font-family: 'IconicStroke';
+  src: url("iconic/iconic_stroke.eot");
+  src: local('☺'), url("iconic/iconic_stroke.ttf") format('truetype'), url("iconic/iconic_stroke.svg#iconic") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  background: url("../../img/groovepaper.png") repeat;
+  border-top: 4px solid #377ad0;
+}
+body {
+  font-size: 17px;
+  font-family: 'Gill Sans';
+  width: 720px;
+  margin: 0 auto;
+  line-height: 1.5;
+  background: none;
+  text-shadow: 0px 1px 0px #fff;
+  text-align: left;
+}
+h1 {
+  font-size: 96px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 26px;
+  margin-top: 20px;
+}
+p {
+  margin-bottom: 10px;
+}
+a {
+  position: relative;
+  color: #377ad0;
+  text-decoration: none;
+}
+a:hover {
+  color: #2861aa;
+  text-decoration: underline;
+}
+a:active {
+  top: 1px;
+}
+ol {
+  list-style-type: decimal;
+  margin-left: 22px;
+}
+li {
+  margin-top: 10px;
+}
+.actions {
+  display: inline-block;
+}
+.actions #in {
+  margin-right: auto;
+  margin-left: 5px;
+}
+.actions #out {
+  margin-right: 5px;
+  margin-left: auto;
+}
+.actions a {
+  display: inline-block;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  display: inline-block;
+  text-decoration: none;
+  background: #e3e3e3;
+  border: 1px solid #c1c1c1;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 1px 1px rgba(255,255,255,0.80);
+  -moz-box-shadow: inset 0 0 1px 1px rgba(255,255,255,0.80);
+  box-shadow: inset 0 0 1px 1px rgba(255,255,255,0.80);
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 8px 20px 9px 20px;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  color: #333;
+  width: 160px;
+  margin-bottom: 5px;
+}
+.actions a:hover,
+.actions a.hover {
+  background: #d8d8d8;
+  -webkit-box-shadow: inset 0 0 1px 1px rgba(255,255,255,0.50);
+  -moz-box-shadow: inset 0 0 1px 1px rgba(255,255,255,0.50);
+  box-shadow: inset 0 0 1px 1px rgba(255,255,255,0.50);
+  cursor: pointer;
+  color: #333;
+}
+.actions a:active,
+.actions a.active {
+  background: #ccc;
+  -webkit-box-shadow: inset 0 0 1px 1px rgba(255,255,255,0.20);
+  -moz-box-shadow: inset 0 0 1px 1px rgba(255,255,255,0.20);
+  box-shadow: inset 0 0 1px 1px rgba(255,255,255,0.20);
+  color: #1a1a1a;
+}
+.actions a:focus,
+.actions a.focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 5px 1px #e3e3e3;
+  -moz-box-shadow: 0 0 5px 1px #e3e3e3;
+  box-shadow: 0 0 5px 1px #e3e3e3;
+}
+.divider {
+  border: none;
+  clear: both;
+  margin-bottom: 32px;
+}
+footer {
+  clear: both;
+  text-align: center;
+  font-size: 19px;
+  padding: 32px;
+}
+footer a {
+  position: relative;
+  color: #377ad0;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #2861aa;
+  text-decoration: underline;
+}
+footer a:active {
+  top: 1px;
+}

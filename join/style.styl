@@ -1,0 +1,100 @@
+@import '/usr/local/lib/node_modules/nib/lib/nib'
+
+global-reset()
+
+iconic-stroke('iconic')
+
+iconic-before(letter='j', size=18px)
+  &:before
+    color rgba(0,0,0,0.5)
+    position relative
+    left -13px
+    top 2px
+    line-height 10px
+    content letter
+    font-family 'IconicStroke'
+    font-size size
+    font-weight normal
+
+blue = #377ad0
+
+html
+  background url('../../img/groovepaper.png') repeat
+  border-top 4px solid blue
+
+body
+  font-size 17px
+  font-family 'Gill Sans'
+  width 720px
+  margin 0 auto
+  line-height 1.5
+  background none
+  text-shadow 0px 1px 0px #fff
+  text-align left
+
+h1
+  font-size 96px
+  text-align center
+  margin-bottom 20px
+
+h2
+  font-size 36px
+
+h3
+  font-size 26px
+  margin-top 20px
+
+p
+  margin-bottom 10px
+  
+a
+  position relative
+  color blue
+  text-decoration none
+  &:hover
+    color darken(blue, 20%)
+    text-decoration underline
+  &:active
+    top 1px
+
+ol
+  list-style-type decimal
+  margin-left 22px
+
+li
+  margin-top 10px
+
+.actions
+ display inline-block
+ #in
+   margin-right auto
+   margin-left 5px
+ #out 
+   margin-right 5px
+   margin-left auto
+ & a
+    display inline-block
+    minimal-button()
+    width 160px
+    margin-bottom: 5px
+
+.divider
+  border none
+  clear both
+  margin-bottom 32px
+
+footer
+  clear both
+  text-align center
+  font-size 19px
+  padding 32px
+
+  & a
+    position relative
+    color blue
+    text-decoration none
+    &:hover
+      color darken(blue, 20%)
+      text-decoration underline
+    &:active
+      top 1px
